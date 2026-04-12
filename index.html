@@ -16,24 +16,61 @@
 <meta property="og:image" content="pagesofpurposellc.png">
 <meta property="og:type" content="website">
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Pages of Purpose LLC",
-  "url": "https://www.pagesofpurpose.com",
-  "logo": "https://friendsenemy.github.io/pagesofpurposellc.png",
-  "sameAs": [
-    "https://www.linkedin.com/company/pages-of-purpose-llc",
-    "https://www.facebook.com/pagesofpurpose"
-  ],
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+1-227-235-9530",
-    "contactType": "Customer Service",
-    "areaServed": "US"
-  }
-}
-</script>
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://pagesofpurposellc.com/#business",
+          "name": "Pages of Purpose LLC",
+          "url": "https://pagesofpurposellc.com",
+          "description": "Pages of Purpose LLC specializes in asset recovery, unclaimed funds recovery, estate settlements, property title resolution, and cash home buying. We help individuals recover lost assets, settle estates, and sell properties for cash with transparency and no upfront costs.",
+          "telephone": "+1-227-235-9530",
+          "email": "pagesofpurposellc@gmail.com",
+          "founder": {
+            "@type": "Person",
+            "name": "Dustin Ray",
+            "jobTitle": "Founder",
+            "description": "Dustin Ray has over a decade of experience in asset recovery, title research, and property resolution services."
+          },
+          "areaServed": { "@type": "Country", "name": "United States" },
+          "serviceType": ["Asset Recovery", "Unclaimed Funds Recovery", "Estate Settlements", "Claims Processing", "Cash For Keys", "Cash Home Buying", "Property Title Resolution"],
+          "knowsAbout": ["unclaimed funds", "asset recovery", "estate settlement", "probate", "heirship laws", "property title resolution", "cash for keys", "tax liens", "real estate investment", "genealogy research for heirs"]
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://pagesofpurposellc.com/#organization",
+          "name": "Pages of Purpose LLC",
+          "url": "https://pagesofpurposellc.com",
+          "description": "Recover. Resolve. Restore. Asset recovery, estate settlements, and property solutions.",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-227-235-9530",
+            "contactType": "customer service",
+            "email": "pagesofpurposellc@gmail.com",
+            "availableLanguage": ["English"]
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://pagesofpurposellc.com/#website",
+          "name": "Pages of Purpose LLC",
+          "url": "https://pagesofpurposellc.com",
+          "publisher": { "@id": "https://pagesofpurposellc.com/#organization" }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {"@type": "Question", "name": "How do you evaluate a property for investment?", "acceptedAnswer": {"@type": "Answer", "text": "We use a combination of market research, historical trends, and on-site assessments to provide a comprehensive property evaluation."}},
+            {"@type": "Question", "name": "What types of properties do you specialize in?", "acceptedAnswer": {"@type": "Answer", "text": "We focus on residential and small commercial properties suitable for long-term investment and rental income."}},
+            {"@type": "Question", "name": "How soon can I expect a response?", "acceptedAnswer": {"@type": "Answer", "text": "Our team typically responds within 24 hours during business days."}},
+            {"@type": "Question", "name": "Are your services compliant with applicable state and federal laws?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, we are fully licensed and follow all state and federal regulations."}},
+            {"@type": "Question", "name": "How do you charge for your services?", "acceptedAnswer": {"@type": "Answer", "text": "We offer transparent pricing. Many of our recovery services have no upfront cost. We only get paid when you get paid."}}
+          ]
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
 
