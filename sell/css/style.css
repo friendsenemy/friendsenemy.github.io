@@ -1,0 +1,23 @@
+/* =========================================================
+   PropertyOptions — Master Stylesheet
+   Brand: Deep Navy #1a3a5c | Gold #e8a020 | White #ffffff
+   ========================================================= */
+
+:root {
+  --navy:   #1a3a5c;
+  --navy-light: #254d7a;
+  --gold:   #e8a020;
+  --gold-light: #f5b93e;
+  --green:  #2d7d46;
+  --red:    #c0392b;
+  --text:   #1a1a2e;
+  --text-muted: #5a6472;
+  --bg:     #f8f9fa;
+  --bg-dark:#0f2235;
+  --border: #dde3ea;
+  --white:  #ffffff;
+  --radius: 10px;
+  --shadow: 0 4px 20px rgba(0,0,0,0.10);
+  --shadow-lg: 0 12px 40px rgba(0,0,0,0.15);
+  --font:   'Segoe UI', system-ui, -apple-system, sans-serif;
+}
