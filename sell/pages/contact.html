@@ -1,3 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Your Free Property Offer | Pages of Purpose LLC</title>
+  <meta name="description" content="Get a free, no-obligation offer for your property. Any situation, any condition. We respond within 24 hours. Zero fees, zero pressure.">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">Pages of <span>Purpose LLC</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="distressed.html">Foreclosure Help</a>
+      <a href="probate.html">Inherited Property</a>
+      <a href="landlords.html">Landlords</a>
+      <a href="fsbo.html">FSBO</a>
+      <a href="land.html">Land</a>
+      <a href="../blog/index.html">Guides</a>
+      <a href="contact.html" class="nav-cta">Get My Offer &#x2192;</a>
+    </div>
+    <button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="../index.html">Home</a> <span>&#x203a;</span> Get Your Free Offer</div>
+    <h1>Let&#x2019;s Talk About Your Property.<br><span style="color:var(--gold)">Free, Fast, Zero Pressure.</span></h1>
+    <p>Fill out the form below and we&#x2019;ll reach out within 24 hours with your free offer and a clear explanation of all your options.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div style="max-width:640px;margin:0 auto">
+      <div class="inline-form" id="main-contact-form">
+        <h3 style="color:var(--navy);font-size:1.4rem">Get Your Free Property Offer</h3>
+        <p class="sub">The more you share, the more accurate our offer. All fields marked * are required.</p>
+        <form class="lead-form" action="https://formspree.io/f/xjgpnqlj" method="POST">
+          <input type="hidden" name="_subject" value="New Lead &#x2014; Contact Page (Full Form)">
+          <input type="hidden" name="source_page" value="Contact Page">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+            <div class="form-group"><label>First Name *</label><input type="text" name="first_name" placeholder="John" required></div>
+            <div class="form-group"><label>Last Name *</label><input type="text" name="last_name" placeholder="Smith" required></div>
+          </div>
+          <div class="form-group"><label>Phone Number *</label><input type="tel" name="phone" placeholder="(555) 000-0000" required></div>
+          <div class="form-group"><label>Email Address</label><input type="email" name="email" placeholder="john@example.com"></div>
+          <div class="form-group"><label>Property Street Address *</label><input type="text" name="property_street" placeholder="123 Main Street" required></div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+            <div class="form-group"><label>City *</label><input type="text" name="property_city" placeholder="Anytown" required></div>
+            <div class="form-group"><label>State *</label><input type="text" name="property_state" placeholder="TX" required></div>
+          </div>
+          <div class="form-group">
+            <label>Property Type *</label>
+            <select name="property_type" required>
+              <option value="">Select type...</option>
+              <option>Single family home</option>
+              <option>Multi-family (duplex/triplex/etc.)</option>
+              <option>Condo or townhouse</option>
+              <option>Vacant land or lot</option>
+              <option>Commercial property</option>
+              <option>Mobile home / manufactured home</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>My Situation *</label>
+            <select name="situation" required>
+              <option value="">What best describes your situation?</option>
+              <option>Facing foreclosure / behind on payments</option>
+              <option>Inherited or probate property</option>
+              <option>Title problems, liens, or code violations</option>
+              <option>Tired landlord &#x2014; want to exit rental property</option>
+              <option>Just exploring / want to know my options</option>
+              <option>Selling by owner (FSBO)</option>
+              <option>Relocating / job change</option>
+              <option>Divorce or separation</option>
+              <option>Major repairs needed &#x2014; can&#x2019;t afford to fix</option>
+              <option>Other situation</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>How soon would you like to sell?</label>
+            <select name="timeline">
+              <option value="">Select timeline...</option>
+              <option>ASAP &#x2014; I need to sell immediately</option>
+              <option>Within 30 days</option>
+              <option>1&#x2013;3 months</option>
+              <option>3&#x2013;6 months</option>
+              <option>No rush, just exploring</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Tell Us More About the Property / Situation</label>
+            <textarea name="details" rows="4" placeholder="Any details about the property condition, situation, outstanding debts, tenant status, or anything else you&#x2019;d like us to know..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" style="padding:18px;font-size:1.1rem;">
+            Send My Information &#x2014; Get Free Offer &#x2192;
+          </button>
+          <p class="form-trust" style="margin-top:14px">
+            <span>&#x1F512;</span> Your information is 100% confidential. We never sell or share your data. No spam &#x2014; ever.
+          </p>
+        </form>
+        <div class="success-msg" style="padding:30px">
+          <h3 style="color:var(--green);margin-bottom:10px">&#x2705; We Got It!</h3>
+          <p style="color:var(--text)">Thank you for reaching out. We&#x2019;ll review your property and reach out within 24 hours &#x2014; usually same business day. If you need to speak with us sooner, call <strong>(227) 235-9530</strong>.</p>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-top:40px;padding:24px;background:var(--bg);border-radius:12px">
+        <p style="color:var(--text-muted);margin-bottom:8px">Prefer to call directly?</p>
+        <a href="tel:+12272359530" class="btn btn-primary" style="font-size:1.1rem">&#x1F4DE; Call (227) 235-9530</a>
+        <p style="color:var(--text-muted);font-size:0.85rem;margin-top:12px">No hold music, no runaround. A real person answers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">Pages of <span>Purpose LLC</span></div>
+        <p>Helping ALL types of property sellers in your area find the best path forward. No pressure, no fees, no surprises.</p>
+        <p style="margin-top:12px"><strong style="color:#fff">&#x1F4DE; (227) 235-9530</strong><br>
+        <a href="mailto:pagesofpurposellc@gmail.com" style="color:rgba(255,255,255,0.65)">pagesofpurposellc@gmail.com</a></p>
+      </div>
+      <div><h4>Seller Types</h4><ul>
+        <li><a href="distressed.html">Foreclosure / Distressed</a></li>
+        <li><a href="probate.html">Probate / Inherited</a></li>
+        <li><a href="title-issues.html">Title Issues &amp; Liens</a></li>
+        <li><a href="landlords.html">Tired Landlords</a></li>
+        <li><a href="retail.html">Just Exploring</a></li>
+        <li><a href="fsbo.html">FSBO Sellers</a></li>
+        <li><a href="land.html">Land Owners</a></li>
+      </ul></div>
+      <div><h4>Company</h4><ul>
+        <li><a href="contact.html">Get Free Offer</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../blog/index.html">Seller Guides</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Pages of Purpose LLC. All rights reserved.</span>
+      <span>We are a real estate solutions company, not a licensed brokerage.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky-cta">
+  <a href="tel:+12272359530">&#x1F4DE; Call (227) 235-9530 &#x2014; Free Consultation</a>
+</div>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
