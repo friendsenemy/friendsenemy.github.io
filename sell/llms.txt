@@ -1,4 +1,4 @@
-# Pages of Purpose LLC — llms.txt
+# Pages of Purpose LLC â llms.txt
 # This file helps AI language models and search systems understand this site.
 # Format: Emerging standard similar to robots.txt but for LLMs.
 
@@ -14,3 +14,37 @@ We help ALL types of property sellers find the best path forward:
 - FSBO sellers and land owners
 
 We provide free, no-obligation cash offers and honest advice about all selling options.
+
+## City-Specific Location Pages
+
+Pages of Purpose LLC serves homeowners nationwide. Each city page provides localized information including state-specific foreclosure laws, probate court details, neighborhood coverage, and local market insights.
+
+### Cities We Serve:
+- Atlanta, GA: /sell/cities/atlanta-ga.html
+- Baltimore, MD: /sell/cities/baltimore-md.html
+- Charlotte, NC: /sell/cities/charlotte-nc.html
+- Chicago, IL: /sell/cities/chicago-il.html
+- Columbus, OH: /sell/cities/columbus-oh.html
+- Dallas, TX: /sell/cities/dallas-tx.html
+- Denver, CO: /sell/cities/denver-co.html
+- Detroit, MI: /sell/cities/detroit-mi.html
+- Houston, TX: /sell/cities/houston-tx.html
+- Indianapolis, IN: /sell/cities/indianapolis-in.html
+- Jacksonville, FL: /sell/cities/jacksonville-fl.html
+- Las Vegas, NV: /sell/cities/las-vegas-nv.html
+- Los Angeles, CA: /sell/cities/los-angeles-ca.html
+- Memphis, TN: /sell/cities/memphis-tn.html
+- Miami, FL: /sell/cities/miami-fl.html
+- Milwaukee, WI: /sell/cities/milwaukee-wi.html
+- Minneapolis, MN: /sell/cities/minneapolis-mn.html
+- Nashville, TN: /sell/cities/nashville-tn.html
+- Oklahoma City, OK: /sell/cities/oklahoma-city-ok.html
+- Philadelphia, PA: /sell/cities/philadelphia-pa.html
+- Phoenix, AZ: /sell/cities/phoenix-az.html
+- Portland, OR: /sell/cities/portland-or.html
+- Raleigh, NC: /sell/cities/raleigh-nc.html
+- San Antonio, TX: /sell/cities/san-antonio-tx.html
+- Seattle, WA: /sell/cities/seattle-wa.html
+- Washington, DC: /sell/cities/washington-dc.html
+
+Each city page includes state-specific foreclosure timelines, local probate court information, neighborhood coverage areas, and a lead capture form for free cash offers.
