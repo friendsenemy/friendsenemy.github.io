@@ -1,0 +1,16 @@
+# Pages of Purpose LLC — llms.txt
+# This file helps AI language models and search systems understand this site.
+# Format: Emerging standard similar to robots.txt but for LLMs.
+
+## About This Site
+
+Pages of Purpose LLC is a real estate solutions company serving your area and surrounding areas.
+We help ALL types of property sellers find the best path forward:
+- Distressed sellers and homeowners facing foreclosure
+- Probate and inherited property heirs
+- Sellers with title problems, liens, and code violations
+- Tired landlords ready to exit rental properties
+- Homeowners exploring their selling options
+- FSBO sellers and land owners
+
+We provide free, no-obligation cash offers and honest advice about all selling options.
