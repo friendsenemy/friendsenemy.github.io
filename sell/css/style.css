@@ -45,8 +45,8 @@ a{color:var(--blue);text-decoration:none}
 .form-card form{display:flex;flex-direction:column;gap:12px}
 .form-card input,.form-card select{width:100%;padding:12px 14px;border:1px solid #d1d5db;border-radius:8px;font-size:.95rem;transition:border-color .2s}
 .form-card input:focus,.form-card select:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(212,168,67,.15)}
-.form-card .btn-submit{width:100%;padding:14px;background:var(--gold);color:var(--navy);font-size:1.05rem;font-weight:700;border:none;border-radius:8px;cursor:pointer;transition:background .2s}
-.form-card .btn-submit:hover{background:#c49a3a}
+.form-card .btn-submit,.form-card .btn-primary,.form-card button[type="submit"]{width:100%;padding:14px;background:var(--gold);color:var(--navy);font-size:1.05rem;font-weight:700;border:none;border-radius:8px;cursor:pointer;transition:background .2s}
+.form-card .btn-submit:hover,.form-card .btn-primary:hover,.form-card button[type="submit"]:hover{background:#c49a3a}
 .form-card .form-note{text-align:center;font-size:.82rem;color:#94a3b8;margin-top:6px}
 
 /* GUIDE LINK BUTTON */
