@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>We Got Your Info — Cash Offer Coming Soon | Pages of Purpose LLC</title>
+  <meta name="description" content="Thank you for reaching out. Dustin will personally review your property and respond within 24 hours with a fair, no-obligation cash offer.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy: #1a2332;
+      --navy-light: #243044;
+      --gold: #c8a951;
+      --gold-hover: #d4b95f;
+      --white: #ffffff;
+      --gray-50: #f8f9fa;
+      --gray-100: #f1f3f5;
+      --gray-200: #e9ecef;
+      --gray-600: #6c757d;
+      --gray-700: #495057;
+      --gray-900: #212529;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: var(--gray-900); line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+
+    /* NAV */
+    .nav { position: sticky; top: 0; z-index: 100; background: var(--navy); padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .nav-logo { color: var(--gold); font-size: 1.25rem; font-weight: 700; }
+    .nav-links { display: flex; gap: 24px; align-items: center; }
+    .nav-links a { color: var(--gray-200); font-size: .9rem; transition: color .2s; }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-cta { background: var(--gold); color: var(--navy); padding: 8px 20px; border-radius: 6px; font-weight: 600; font-size: .9rem; transition: background .2s; }
+    .nav-cta:hover { background: var(--gold-hover); color: var(--navy) !important; }
+
+    /* HERO / THANK YOU */
+    .thankyou-hero {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+      color: var(--white);
+      text-align: center;
+      padding: 100px 24px 80px;
+      min-height: 60vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .check-circle {
+      width: 96px;
+      height: 96px;
+      background: var(--gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      margin: 0 auto 28px;
+      animation: scaleIn .5s ease;
+    }
+    @keyframes scaleIn {
+      0% { transform: scale(0); opacity: 0; }
+      60% { transform: scale(1.15); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    .thankyou-hero h1 {
+      font-size: 2.4rem;
+      font-weight: 800;
+      line-height: 1.2;
+      max-width: 700px;
+      margin: 0 auto 16px;
+    }
+    .thankyou-hero h1 span { color: var(--gold); }
+    .thankyou-hero .subtitle {
+      font-size: 1.15rem;
+      color: var(--gray-200);
+      max-width: 580px;
+      margin: 0 auto 40px;
+    }
+
+    /* WHAT HAPPENS NEXT */
+    .next-steps {
+      padding: 64px 24px;
+      background: var(--gray-50);
+    }
+    .next-steps-inner {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .next-steps h2 {
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 40px;
+    }
+    .timeline {
+      position: relative;
+      padding-left: 48px;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 18px;
+      top: 8px;
+      bottom: 8px;
+      width: 3px;
+      background: var(--gold);
+      border-radius: 2px;
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 36px;
+    }
+    .timeline-item:last-child { margin-bottom: 0; }
+    .timeline-dot {
+      position: absolute;
+      left: -48px;
+      top: 2px;
+      width: 40px;
+      height: 40px;
+      background: var(--gold);
+      color: var(--navy);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.1rem;
+    }
+    .timeline-item h3 {
+      font-size: 1.15rem;
+      color: var(--navy);
+      margin-bottom: 6px;
+    }
+    .timeline-item p {
+      color: var(--gray-700);
+      font-size: .95rem;
+      line-height: 1.6;
+    }
+    .timeline-item .timeframe {
+      display: inline-block;
+      background: var(--navy);
+      color: var(--gold);
+      font-size: .78rem;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 12px;
+      margin-top: 8px;
+    }
+
+    /* CTA */
+    .cta-bar {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 56px 24px;
+    }
+    .cta-bar h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .cta-bar p {
+      color: var(--gray-200);
+      margin-bottom: 28px;
+      font-size: 1rem;
+    }
+    .cta-buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn { display: inline-block; padding: 14px 32px; border-radius: 8px; font-weight: 600; font-size: 1rem; transition: all .2s; cursor: pointer; border: none; }
+    .btn-gold { background: var(--gold); color: var(--navy); }
+    .btn-gold:hover { background: var(--gold-hover); }
+    .btn-outline { border: 2px solid var(--white); color: var(--white); background: transparent; }
+    .btn-outline:hover { background: rgba(255,255,255,.1); }
+
+    /* FOOTER */
+    .footer { background: var(--navy); color: var(--gray-200); padding: 32px 24px; border-top: 1px solid rgba(255,255,255,.08); }
+    .footer-inner { max-width: 1100px; margin: 0 auto; text-align: center; }
+    .footer p { font-size: .85rem; color: var(--gray-600); }
+    .footer a { color: var(--gray-200); transition: color .2s; }
+    .footer a:hover { color: var(--gold); }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .thankyou-hero h1 { font-size: 1.8rem; }
+      .thankyou-hero { padding: 72px 20px 56px; }
+      .check-circle { width: 76px; height: 76px; font-size: 2.4rem; }
+    }
+    @media (max-width: 480px) {
+      .thankyou-hero h1 { font-size: 1.5rem; }
+      .next-steps h2 { font-size: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="/" class="nav-logo">Pages of Purpose LLC</a>
+  <div class="nav-links">
+    <a href="/#how-it-works">How It Works</a>
+    <a href="/#situations">Situations</a>
+    <a href="/#about">About</a>
+    <a href="/sell/">Sell Your Property</a>
+    <a href="/#faq">FAQ</a>
+    <a href="/#contact" class="nav-cta">Get a Cash Offer</a>
+  </div>
+</nav>
+
+<!-- THANK YOU HERO -->
+<section class="thankyou-hero">
+  <div class="check-circle">&#10003;</div>
+  <h1>We Got Your Info — <span>Your Offer Is on the Way</span></h1>
+  <p class="subtitle">Dustin will personally review your property and reach out within 24 hours with a fair, no-obligation cash offer. No pressure, no games — just a real conversation about your options.</p>
+</section>
+
+<!-- WHAT HAPPENS NEXT -->
+<section class="next-steps">
+  <div class="next-steps-inner">
+    <h2>Here's What Happens Next</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot">1</div>
+        <h3>We Review Your Property</h3>
+        <p>Dustin personally looks at every submission. He'll research your property, your area, and your situation to put together the best possible offer.</p>
+        <span class="timeframe">Within a few hours</span>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot">2</div>
+        <h3>You Get a Call or Text</h3>
+        <p>Dustin will reach out to introduce himself, ask any quick clarifying questions, and walk you through your cash offer — no scripts, no pressure.</p>
+        <span class="timeframe">Within 24 hours</span>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot">3</div>
+        <h3>You Decide on Your Terms</h3>
+        <p>If the offer works for you, we handle all the paperwork and closing costs. You pick the closing date — as fast as 7 days or whenever suits you best. If it doesn't work, no hard feelings at all.</p>
+        <span class="timeframe">100% your call</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-bar">
+  <h2>Can't Wait? Give Us a Call.</h2>
+  <p>If you'd like to speed things up, Dustin is available to chat right now.</p>
+  <div class="cta-buttons">
+    <a href="tel:+12272359530" class="btn btn-gold">&#128222; Call (227) 235-9530</a>
+    <a href="/" class="btn btn-outline">Back to Homepage</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <p>&copy; <script>document.write(new Date().getFullYear())</script> Pages of Purpose LLC &bull; All rights reserved &bull; <a href="/">Home</a> &bull; <a href="/sell/">Sell Your Property</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
