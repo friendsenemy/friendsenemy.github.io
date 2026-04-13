@@ -6,284 +6,471 @@
   <title>Sell Your House Fast for Cash — No Fees, No Repairs | Pages of Purpose LLC</title>
   <meta name="description" content="We buy houses in any condition — foreclosure, inherited, liens, vacant land, or just ready to sell. Get a fair cash offer in 24 hours with no fees, no repairs, and no hassle.">
   <link rel="canonical" href="https://pagesofpurposellc.com/sell/">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-    <!-- GEO: JSON-LD Schema Markup for AI Search Optimization -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "LocalBusiness",
-          "@id": "https://pagesofpurposellc.com/#localbusiness",
-          "name": "Pages of Purpose LLC",
-          "url": "https://pagesofpurposellc.com",
-          "description": "Pages of Purpose LLC buys houses for cash in any condition. We provide fair cash offers within 24 hours, handle all closing costs, and close on your timeline — no agents, no fees, no repairs needed.",
-          "telephone": "+1-227-235-9530",
-          "email": "pagesofpurposellc@gmail.com",
-          "priceRange": "$$",
-          "areaServed": {
-            "@type": "Country",
-            "name": "United States"
-          },
-          "serviceType": ["Cash Home Buying", "Property Acquisition", "Real Estate Investment"],
-          "knowsAbout": ["selling house fast", "cash home buyers", "foreclosure prevention", "probate property sales", "selling inherited property", "FSBO alternatives", "selling house with liens", "distressed property solutions"],
-          "sameAs": []
-        },
-        {
-          "@type": "Organization",
-          "@id": "https://pagesofpurposellc.com/#organization",
-          "name": "Pages of Purpose LLC",
-          "url": "https://pagesofpurposellc.com",
-          "description": "We buy houses for cash — any condition, any situation. Fair offers in 24 hours, no agent fees, no repairs, close on your timeline.",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+1-227-235-9530",
-            "contactType": "sales",
-            "email": "pagesofpurposellc@gmail.com",
-            "availableLanguage": ["English"]
-          }
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://pagesofpurposellc.com/#website",
-          "name": "Pages of Purpose LLC",
-          "url": "https://pagesofpurposellc.com",
-          "description": "Sell your house fast for cash. Pages of Purpose LLC provides fair cash offers in 24 hours — no repairs, no agent fees, close on your schedule.",
-          "publisher": {
-            "@id": "https://pagesofpurposellc.com/#organization"
-          },
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://pagesofpurposellc.com/sell/?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-          }
-        }
-      ]
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Pages of Purpose LLC",
+    "url": "https://pagesofpurposellc.com",
+    "telephone": "+12272359530",
+    "email": "pagesofpurposellc@gmail.com",
+    "description": "We buy houses for cash nationwide — any condition, any situation. Probate, liens, inherited homes, missing heirs, messy titles.",
+    "areaServed": "United States",
+    "priceRange": "$$"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How fast can you close on my house?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We can close in as few as 7 days. You pick the closing date that works for you." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to make repairs before selling?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. We buy houses in any condition — fire damage, foundation issues, mold, hoarding, major repairs needed. Sell as-is." }
+      },
+      {
+        "@type": "Question",
+        "name": "Are there any fees or commissions?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Zero fees, zero commissions. We cover all closing costs. The amount you agree to is the amount you walk away with." }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* ===== RESET & VARIABLES ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy: #1a2332;
+      --navy-light: #243044;
+      --gold: #c8a951;
+      --gold-hover: #d4b95f;
+      --white: #ffffff;
+      --gray-50: #f8f9fa;
+      --gray-100: #f1f3f5;
+      --gray-200: #e9ecef;
+      --gray-600: #6c757d;
+      --gray-700: #495057;
+      --gray-900: #212529;
     }
-    </script>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: var(--gray-900); line-height: 1.6; }
+    img { max-width: 100%; height: auto; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ===== NAV ===== */
+    .nav { position: sticky; top: 0; z-index: 100; background: var(--navy); padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .nav-logo { color: var(--gold); font-size: 1.25rem; font-weight: 700; }
+    .nav-links { display: flex; gap: 24px; align-items: center; }
+    .nav-links a { color: var(--gray-200); font-size: .9rem; transition: color .2s; }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-cta { background: var(--gold); color: var(--navy); padding: 8px 20px; border-radius: 6px; font-weight: 600; font-size: .9rem; transition: background .2s; }
+    .nav-cta:hover { background: var(--gold-hover); color: var(--navy) !important; }
+
+    /* ===== HERO ===== */
+    .hero { background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%); color: var(--white); text-align: center; padding: 80px 24px 72px; }
+    .hero h1 { font-size: 2.8rem; font-weight: 800; line-height: 1.15; max-width: 780px; margin: 0 auto 20px; }
+    .hero h1 span { color: var(--gold); }
+    .hero p { font-size: 1.15rem; color: var(--gray-200); max-width: 620px; margin: 0 auto 32px; }
+    .hero-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .btn { display: inline-block; padding: 14px 32px; border-radius: 8px; font-weight: 600; font-size: 1rem; transition: all .2s; cursor: pointer; border: none; }
+    .btn-gold { background: var(--gold); color: var(--navy); }
+    .btn-gold:hover { background: var(--gold-hover); }
+    .btn-outline { border: 2px solid var(--white); color: var(--white); background: transparent; }
+    .btn-outline:hover { background: rgba(255,255,255,.1); }
+
+    /* ===== SECTIONS ===== */
+    .section { padding: 72px 24px; }
+    .section-inner { max-width: 1100px; margin: 0 auto; }
+    .section-header { text-align: center; margin-bottom: 48px; }
+    .section-header h2 { font-size: 2rem; font-weight: 700; color: var(--navy); margin-bottom: 12px; }
+    .section-header p { color: var(--gray-600); font-size: 1.05rem; max-width: 640px; margin: 0 auto; }
+    .full-width { background: var(--gray-50); }
+
+    /* ===== PROPERTY TYPE CARDS ===== */
+    .type-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; max-width: 1100px; margin: 0 auto; }
+    .type-card { background: var(--white); border-radius: 12px; padding: 32px 28px; box-shadow: 0 2px 12px rgba(0,0,0,.06); transition: transform .2s, box-shadow .2s; }
+    .type-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,.1); }
+    .type-icon { font-size: 2.2rem; margin-bottom: 12px; }
+    .type-card h3 { font-size: 1.15rem; color: var(--navy); margin-bottom: 8px; }
+    .type-card p { color: var(--gray-600); font-size: .95rem; line-height: 1.55; }
+    .type-card .card-link { display: inline-block; margin-top: 12px; color: var(--gold); font-weight: 600; font-size: .9rem; }
+    .type-card .card-link:hover { text-decoration: underline; }
+
+    /* ===== HOW IT WORKS ===== */
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; max-width: 900px; margin: 0 auto; }
+    .step { text-align: center; }
+    .step-num { width: 56px; height: 56px; background: var(--gold); color: var(--navy); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800; margin: 0 auto 16px; }
+    .step h3 { font-size: 1.1rem; color: var(--navy); margin-bottom: 8px; }
+    .step p { color: var(--gray-600); font-size: .95rem; }
+
+    /* ===== WHY CHOOSE US ===== */
+    .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 28px; max-width: 1100px; margin: 0 auto; }
+    .benefit-item { text-align: center; padding: 24px; }
+    .benefit-icon { font-size: 2rem; margin-bottom: 10px; }
+    .benefit-item h3 { font-size: 1.05rem; color: var(--navy); margin-bottom: 6px; }
+    .benefit-item p { color: var(--gray-600); font-size: .92rem; }
+
+    /* ===== FAQ ===== */
+    .faq-list { max-width: 760px; margin: 0 auto; }
+    .faq-item { border-bottom: 1px solid var(--gray-200); }
+    .faq-q { width: 100%; background: none; border: none; text-align: left; padding: 20px 0; font-size: 1.05rem; font-weight: 600; color: var(--navy); cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+    .faq-q::after { content: '+'; font-size: 1.4rem; color: var(--gold); transition: transform .2s; }
+    .faq-item.active .faq-q::after { content: '\2212'; }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height .3s ease; }
+    .faq-item.active .faq-a { max-height: 200px; }
+    .faq-a p { padding: 0 0 20px; color: var(--gray-700); font-size: .95rem; line-height: 1.6; }
+
+    /* ===== CONTACT / FORM ===== */
+    .contact-section { background: var(--navy); color: var(--white); padding: 72px 24px; }
+    .contact-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
+    .contact-text h2 { font-size: 2rem; font-weight: 700; margin-bottom: 16px; }
+    .contact-text p { color: var(--gray-200); margin-bottom: 16px; font-size: 1.02rem; }
+    .phone-big { display: inline-block; font-size: 1.3rem; font-weight: 700; color: var(--gold); margin-bottom: 20px; }
+    .contact-perks { list-style: none; padding: 0; }
+    .contact-perks li { padding: 6px 0; color: var(--gray-200); font-size: .95rem; }
+    .contact-perks li::before { content: '\2713'; color: var(--gold); font-weight: 700; margin-right: 10px; }
+    .form-card { background: var(--white); border-radius: 12px; padding: 36px 32px; }
+    .form-card h3 { color: var(--navy); font-size: 1.3rem; margin-bottom: 20px; text-align: center; }
+    .form-card input, .form-card select, .form-card textarea { width: 100%; padding: 12px 14px; border: 1px solid var(--gray-200); border-radius: 8px; font-size: .95rem; margin-bottom: 14px; font-family: inherit; }
+    .form-card input:focus, .form-card select:focus, .form-card textarea:focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px rgba(200,169,81,.15); }
+    .btn-submit { width: 100%; padding: 14px; background: var(--gold); color: var(--navy); border: none; border-radius: 8px; font-size: 1.05rem; font-weight: 700; cursor: pointer; transition: background .2s; }
+    .btn-submit:hover { background: var(--gold-hover); }
+    .form-note { text-align: center; font-size: .82rem; color: var(--gray-600); margin-top: 10px; }
+
+    /* ===== CITIES ===== */
+    .cities-list { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; max-width: 1100px; margin: 0 auto; }
+    .city-tag { background: var(--white); border: 1px solid var(--gray-200); padding: 8px 18px; border-radius: 24px; font-size: .88rem; color: var(--navy); transition: all .2s; }
+    .city-tag:hover { background: var(--gold); color: var(--navy); border-color: var(--gold); }
+
+    /* ===== FOOTER ===== */
+    .footer { background: var(--navy); color: var(--gray-200); padding: 48px 24px 24px; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; }
+    .footer h4 { color: var(--gold); margin-bottom: 16px; font-size: 1rem; }
+    .footer p, .footer a { font-size: .9rem; color: var(--gray-200); display: block; margin-bottom: 8px; transition: color .2s; }
+    .footer a:hover { color: var(--gold); }
+    .footer-bottom { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.1); font-size: .82rem; color: var(--gray-600); }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hero h1 { font-size: 2rem; }
+      .steps { grid-template-columns: 1fr; gap: 32px; }
+      .contact-inner { grid-template-columns: 1fr; gap: 32px; }
+      .footer-inner { grid-template-columns: 1fr; gap: 24px; }
+      .type-grid { grid-template-columns: 1fr; }
+      .benefits-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 480px) {
+      .hero { padding: 56px 16px 48px; }
+      .hero h1 { font-size: 1.6rem; }
+      .section { padding: 48px 16px; }
+      .benefits-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
+
+<!-- NAV -->
 <nav class="nav">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo">Pages of <span>Purpose LLC</span></a>
-    <div class="nav-links" id="navLinks">
-      <a href="/" class="nav-link">Main Site</a>
-      <a href="pages/distressed.html">Foreclosure Help</a>
-      <a href="pages/probate.html">Inherited Property</a>
-      <a href="pages/landlords.html">Landlords</a>
-      <a href="pages/fsbo.html">FSBO</a>
-      <a href="pages/land.html">Land</a>
-      <a href="blog/index.html">Guides</a>
-      <a href="pages/contact.html" class="nav-cta">Get My Offer &#8594;</a>
-    </div>
-    <button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
+  <a href="/" class="nav-logo">Pages of Purpose LLC</a>
+  <div class="nav-links">
+    <a href="/#how-it-works">How It Works</a>
+    <a href="/#situations">Situations</a>
+    <a href="/#about">About</a>
+    <a href="/sell/">Sell Your Property</a>
+    <a href="/#faq">FAQ</a>
+    <a href="#contact" class="nav-cta">Get a Cash Offer</a>
   </div>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
-  <div class="container">
-    <h1>Sell Your Property Fast.<br><span style="color:var(--gold)">Cash Offer in 24 Hours.</span></h1>
-    <p>No fees. No repairs. No agents. We buy houses, land, and problem properties in any condition — and close on your timeline.</p>
-    <div class="hero-buttons">
-      <a href="pages/contact.html" class="btn btn-primary btn-lg">Get My Free Cash Offer &#8594;</a>
-      <a href="tel:+12272359530" class="btn btn-secondary btn-lg">&#128222; (227) 235-9530</a>
+  <h1>Sell Your Property Fast for <span>Cash</span></h1>
+  <p>No fees, no commissions, no repairs needed. We buy houses, land, and properties in any condition — and we handle the hard stuff so you don't have to.</p>
+  <div class="hero-btns">
+    <a href="#contact" class="btn btn-gold">Get My Free Cash Offer &rarr;</a>
+    <a href="tel:+12272359530" class="btn btn-outline">&#128222; (227) 235-9530</a>
+  </div>
+</section>
+
+<!-- WHAT WE BUY -->
+<section class="section full-width">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2>What We Buy</h2>
+      <p>No matter the property type or condition, we can make you a fair cash offer.</p>
+    </div>
+    <div class="type-grid">
+      <div class="type-card">
+        <div class="type-icon">&#127968;</div>
+        <h3>Houses in Any Condition</h3>
+        <p>Fire damage, foundation problems, mold, hoarding, outdated — we buy it all. No repairs needed, ever. Sell as-is and walk away with cash.</p>
+        <a href="/sell/pages/distressed.html" class="card-link">Learn more &rarr;</a>
+      </div>
+      <div class="type-card">
+        <div class="type-icon">&#127966;</div>
+        <h3>Vacant Land</h3>
+        <p>Inherited land, unwanted lots, rural acreage, or buildable parcels — we buy vacant land for cash with no surveys or site prep required.</p>
+        <a href="/sell/pages/land.html" class="card-link">Learn more &rarr;</a>
+      </div>
+      <div class="type-card">
+        <div class="type-icon">&#9878;</div>
+        <h3>Probate &amp; Inherited Properties</h3>
+        <p>Navigating probate can be overwhelming. We work with attorneys and courts to make selling an inherited property seamless and stress-free.</p>
+        <a href="/sell/pages/probate.html" class="card-link">Learn more &rarr;</a>
+      </div>
+      <div class="type-card">
+        <div class="type-icon">&#128196;</div>
+        <h3>Messy Titles &amp; Title Issues</h3>
+        <p>Clouded titles, breaks in chain, old liens, unknown heirs — we specialize in resolving title problems that stop other buyers in their tracks.</p>
+        <a href="/sell/pages/title-issues.html" class="card-link">Learn more &rarr;</a>
+      </div>
+      <div class="type-card">
+        <div class="type-icon">&#9888;</div>
+        <h3>Foreclosures &amp; Behind on Payments</h3>
+        <p>Falling behind on payments? We close quickly and help you avoid foreclosure, protecting your credit and equity.</p>
+        <a href="/sell/blog/stop-foreclosure.html" class="card-link">Learn more &rarr;</a>
+      </div>
+      <div class="type-card">
+        <div class="type-icon">&#128218;</div>
+        <h3>Tired Landlord Properties</h3>
+        <p>Done dealing with tenants, repairs, and late rent? We'll buy your rental property as-is — even with tenants in place.</p>
+        <a href="/sell/pages/landlords.html" class="card-link">Learn more &rarr;</a>
+      </div>
     </div>
   </div>
 </section>
 
-<div class="trust-bar">
-  <span>&#9989; No Fees or Commissions</span>
-  <span>&#9989; Close in as Few as 7 Days</span>
-  <span>&#9989; Any Condition, Any Situation</span>
-</div>
-
-<section class="section">
-  <div class="container">
-    <div class="text-center mb-4">
-      <h2>We Help Sellers in Every Situation</h2>
-      <p style="max-width:600px;margin:8px auto 0;color:#666">Whatever your reason for selling, we have a solution. Click your situation below to learn how we can help.</p>
-    </div>
-    <div class="card-grid">
-      <div class="card">
-        <h3>&#127968; Foreclosure or Behind on Payments</h3>
-        <p>Stop the bank and protect your credit. We can close before your auction date and help you walk away with cash.</p>
-        <a href="pages/distressed.html" class="btn btn-outline">Learn More &#8594;</a>
-      </div>
-      <div class="card">
-        <h3>&#128220; Inherited or Probate Property</h3>
-        <p>Dealing with an inherited house you don't want? We handle the complexity so you don't have to — even during probate.</p>
-        <a href="pages/probate.html" class="btn btn-outline">Learn More &#8594;</a>
-      </div>
-      <div class="card">
-        <h3>&#128274; Liens, Title Issues, or Code Violations</h3>
-        <p>Tax liens, judgment liens, cloudy titles — we buy properties with title problems that most buyers won't touch.</p>
-        <a href="pages/title-issues.html" class="btn btn-outline">Learn More &#8594;</a>
-      </div>
-      <div class="card">
-        <h3>&#128560; Tired Landlord</h3>
-        <p>Bad tenants, constant repairs, and slim margins? Sell your rental property fast — even with tenants still in place.</p>
-        <a href="pages/landlords.html" class="btn btn-outline">Learn More &#8594;</a>
-      </div>
-      <div class="card">
-        <h3>&#127793; Vacant Land</h3>
-        <p>Have land you no longer need? We buy vacant lots, acreage, and undeveloped land — no listing required.</p>
-        <a href="pages/land.html" class="btn btn-outline">Learn More &#8594;</a>
-      </div>
-      <div class="card">
-        <h3>&#127969; Selling on Your Own (FSBO)</h3>
-        <p>Tired of showings with no offers? We make a fair cash offer with no agent fees and close when you're ready.</p>
-        <a href="pages/fsbo.html" class="btn btn-outline">Learn More &#8594;</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section section-gray">
-  <div class="container">
-    <div class="text-center mb-4">
+<!-- HOW IT WORKS -->
+<section class="section" id="how-it-works">
+  <div class="section-inner">
+    <div class="section-header">
       <h2>How It Works</h2>
-      <p style="max-width:500px;margin:8px auto 0;color:#666">Three simple steps. No pressure. No obligation.</p>
+      <p>Three simple steps to sell your property for cash — no agents, no hassle.</p>
     </div>
-    <div class="card-grid" style="max-width:900px;margin:0 auto">
-      <div class="card" style="text-align:center">
-        <div style="font-size:2.5rem;margin-bottom:8px">1</div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
         <h3>Tell Us About Your Property</h3>
-        <p>Fill out our quick form or call us. Share the basics — address, condition, and your situation.</p>
+        <p>Fill out our short form or call us. Share basic details about your property and situation — no obligation.</p>
       </div>
-      <div class="card" style="text-align:center">
-        <div style="font-size:2.5rem;margin-bottom:8px">2</div>
+      <div class="step">
+        <div class="step-num">2</div>
         <h3>Get Your Cash Offer</h3>
-        <p>We'll research the property and present you with a fair, no-obligation cash offer within 24 hours.</p>
+        <p>Dustin will personally review your property and present a fair, no-obligation cash offer within 24 hours.</p>
       </div>
-      <div class="card" style="text-align:center">
-        <div style="font-size:2.5rem;margin-bottom:8px">3</div>
+      <div class="step">
+        <div class="step-num">3</div>
         <h3>Close on Your Timeline</h3>
-        <p>Accept the offer, pick your closing date, and get paid. We handle all the paperwork and costs.</p>
+        <p>Pick your closing date — as fast as 7 days. We handle all paperwork and pay closing costs. Get paid.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start" class="two-col">
-      <div>
-        <h2>Why Sellers Choose Us</h2>
-        <p style="margin-bottom:20px">We're not real estate agents — we're direct buyers. That means a simpler, faster process with none of the usual headaches.</p>
-        <ul style="list-style:none;padding:0">
-          <li style="padding:10px 0;border-bottom:1px solid #eee"><strong>&#10003; No agent commissions or fees</strong> — We pay all closing costs</li>
-          <li style="padding:10px 0;border-bottom:1px solid #eee"><strong>&#10003; No repairs needed</strong> — We buy as-is, any condition</li>
-          <li style="padding:10px 0;border-bottom:1px solid #eee"><strong>&#10003; Fast closing</strong> — As few as 7 days, or on your schedule</li>
-          <li style="padding:10px 0;border-bottom:1px solid #eee"><strong>&#10003; No showings or open houses</strong> — One visit, one offer</li>
-          <li style="padding:10px 0;border-bottom:1px solid #eee"><strong>&#10003; Cash offers</strong> — No bank financing to fall through</li>
-          <li style="padding:10px 0"><strong>&#10003; Confidential</strong> — No yard signs, no public listings</li>
-        </ul>
+<!-- WHY SELLERS CHOOSE US -->
+<section class="section full-width">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2>Why Sellers Choose Us</h2>
+      <p>We're not just another "we buy houses" company. Here's what makes Pages of Purpose different.</p>
+    </div>
+    <div class="benefits-grid">
+      <div class="benefit-item">
+        <div class="benefit-icon">&#128176;</div>
+        <h3>Zero Fees or Commissions</h3>
+        <p>No agent fees, no closing costs, no hidden charges. The offer you accept is what you walk away with.</p>
       </div>
-      <div>
-        <div class="inline-form">
-          <h3 style="color:var(--navy)">Get Your Free Cash Offer</h3>
-          <p class="sub">Tell us about your property. We respond within 24 hours.</p>
-          <form class="lead-form" action="https://formspree.io/f/xjgpnqlj" method="POST">
-            <input type="hidden" name="_subject" value="New Lead — Homepage">
-            <input type="hidden" name="source_page" value="Homepage">
-            <div class="form-group">
-              <label>Your Name *</label>
-              <input type="text" name="name" placeholder="John Smith" required>
-            </div>
-            <div class="form-group">
-              <label>Phone Number *</label>
-              <input type="tel" name="phone" placeholder="(555) 000-0000" required>
-            </div>
-            <div class="form-group">
-              <label>Property Address *</label>
-              <input type="text" name="property_address" placeholder="123 Main St, City, State" required>
-            </div>
-            <div class="form-group">
-              <label>Your Situation</label>
-              <select name="situation">
-                <option value="">Select one...</option>
-                <option value="foreclosure">Facing Foreclosure</option>
-                <option value="inherited">Inherited Property</option>
-                <option value="title-issues">Liens or Title Issues</option>
-                <option value="landlord">Tired Landlord</option>
-                <option value="land">Selling Land</option>
-                <option value="fsbo">Selling on My Own</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label>Anything else we should know?</label>
-              <textarea name="details" placeholder="Tell us about the property and your situation..."></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-block btn-lg">Get My Free Offer &#8594;</button>
-            <p class="form-trust"><span>&#128274;</span> Confidential. No obligation. No spam.</p>
-          </form>
-          <div class="success-msg">&#9989; Got it! We'll reach out within 24 hours with your free offer.</div>
-        </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">&#9889;</div>
+        <h3>Close in as Few as 7 Days</h3>
+        <p>We move fast when you need us to — or slow down if you need more time. Your timeline, your terms.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">&#128295;</div>
+        <h3>No Repairs Needed</h3>
+        <p>Sell your property exactly as it is. We take on all the risk and handle everything after closing.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">&#128101;</div>
+        <h3>Complex Situations Welcome</h3>
+        <p>Probate, missing heirs, liens, messy titles, divorce — we have the expertise to handle it all.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">&#128588;</div>
+        <h3>Transparent Process</h3>
+        <p>No pressure, no games. Dustin walks you through every step so you always know what to expect.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">&#127758;</div>
+        <h3>Nationwide Coverage</h3>
+        <p>We buy properties across the entire United States — no matter where your property is located.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="cta-section">
-  <div class="container">
-    <h2>Ready to Sell? Let's Talk.</h2>
-    <p>No pressure. No obligation. Just a honest conversation about your options and a fair cash offer if we're a fit.</p>
-    <div class="cta-buttons">
-      <a href="pages/contact.html" class="btn btn-primary btn-lg">Get My Free Offer &#8594;</a>
-      <a href="tel:+12272359530" class="btn btn-secondary btn-lg">&#128222; Call (227) 235-9530</a>
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2>Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('active')">How fast can you close on my house?</button>
+        <div class="faq-a"><p>We can close in as few as 7 days. You pick the closing date that works for you — whether that's next week or next month.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('active')">Do I need to make repairs before selling?</button>
+        <div class="faq-a"><p>Absolutely not. We buy houses in any condition — fire damage, foundation issues, mold, hoarding, major repairs needed, you name it. Sell as-is.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('active')">Are there any fees or commissions?</button>
+        <div class="faq-a"><p>Zero fees, zero commissions. We cover all closing costs. The amount you agree to is the amount you walk away with.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('active')">Do you buy land?</button>
+        <div class="faq-a"><p>Yes! We buy vacant land, rural acreage, buildable lots, and inherited land parcels in any condition or location.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('active')">Do you buy properties with title problems?</button>
+        <div class="faq-a"><p>Yes — that's one of our specialties. Clouded titles, breaks in chain, old liens, unknown heirs. We have the expertise and resources to resolve title issues and still close the deal.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('active')">Is your offer really no-obligation?</button>
+        <div class="faq-a"><p>100%. There's no cost and no commitment. If our offer doesn't work for you, no hard feelings. We want it to be the right fit for both sides.</p></div>
+      </div>
     </div>
   </div>
 </section>
 
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <div class="logo">Pages of <span>Purpose LLC</span></div>
-        <p>Helping ALL types of property sellers in your area find the best path forward. No pressure, no fees, no surprises.</p>
-        <p style="margin-top:12px"><strong style="color:#fff">&#128222; (227) 235-9530</strong></p>
-      </div>
-      <div>
-        <h4>Seller Types</h4>
-        <ul>
-          <li><a href="pages/distressed.html">Foreclosure / Distressed</a></li>
-          <li><a href="pages/probate.html">Probate / Inherited</a></li>
-          <li><a href="pages/title-issues.html">Title Issues &amp; Liens</a></li>
-          <li><a href="pages/landlords.html">Tired Landlords</a></li>
-          <li><a href="pages/retail.html">Just Exploring</a></li>
-          <li><a href="pages/fsbo.html">FSBO Sellers</a></li>
-          <li><a href="pages/land.html">Land Owners</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Resources</h4>
-        <ul>
-          <li><a href="blog/index.html">All Guides</a></li>
-          <li><a href="blog/stop-foreclosure.html">Stop Foreclosure</a></li>
-          <li><a href="blog/sell-inherited-house.html">Inherited House</a></li>
-          <li><a href="blog/sell-house-with-lien.html">Sell With Lien</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Company</h4>
-        <ul>
-          <li><a href="pages/contact.html">Get Free Offer</a></li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="pages/contact.html">Contact</a></li>
-        </ul>
-      </div>
+<!-- CITIES WE BUY IN -->
+<section class="section full-width">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2>Cities We Buy Houses In</h2>
+      <p>We buy houses nationwide, with dedicated pages for these major markets.</p>
     </div>
-    <div class="footer-bottom">
-      <span>&copy; 2026 Pages of Purpose LLC. All rights reserved.</span>
-      <span>Real estate solutions company — not a licensed brokerage.</span>
+    <div class="cities-list">
+      <a href="/sell/cities/atlanta-ga.html" class="city-tag">Atlanta, GA</a>
+      <a href="/sell/cities/baltimore-md.html" class="city-tag">Baltimore, MD</a>
+      <a href="/sell/cities/charlotte-nc.html" class="city-tag">Charlotte, NC</a>
+      <a href="/sell/cities/chicago-il.html" class="city-tag">Chicago, IL</a>
+      <a href="/sell/cities/columbus-oh.html" class="city-tag">Columbus, OH</a>
+      <a href="/sell/cities/dallas-tx.html" class="city-tag">Dallas, TX</a>
+      <a href="/sell/cities/denver-co.html" class="city-tag">Denver, CO</a>
+      <a href="/sell/cities/detroit-mi.html" class="city-tag">Detroit, MI</a>
+      <a href="/sell/cities/houston-tx.html" class="city-tag">Houston, TX</a>
+      <a href="/sell/cities/indianapolis-in.html" class="city-tag">Indianapolis, IN</a>
+      <a href="/sell/cities/jacksonville-fl.html" class="city-tag">Jacksonville, FL</a>
+      <a href="/sell/cities/las-vegas-nv.html" class="city-tag">Las Vegas, NV</a>
+      <a href="/sell/cities/los-angeles-ca.html" class="city-tag">Los Angeles, CA</a>
+      <a href="/sell/cities/memphis-tn.html" class="city-tag">Memphis, TN</a>
+      <a href="/sell/cities/miami-fl.html" class="city-tag">Miami, FL</a>
+      <a href="/sell/cities/milwaukee-wi.html" class="city-tag">Milwaukee, WI</a>
+      <a href="/sell/cities/minneapolis-mn.html" class="city-tag">Minneapolis, MN</a>
+      <a href="/sell/cities/nashville-tn.html" class="city-tag">Nashville, TN</a>
+      <a href="/sell/cities/oklahoma-city-ok.html" class="city-tag">Oklahoma City, OK</a>
+      <a href="/sell/cities/philadelphia-pa.html" class="city-tag">Philadelphia, PA</a>
+      <a href="/sell/cities/phoenix-az.html" class="city-tag">Phoenix, AZ</a>
+      <a href="/sell/cities/portland-or.html" class="city-tag">Portland, OR</a>
+      <a href="/sell/cities/raleigh-nc.html" class="city-tag">Raleigh, NC</a>
+      <a href="/sell/cities/san-antonio-tx.html" class="city-tag">San Antonio, TX</a>
+      <a href="/sell/cities/seattle-wa.html" class="city-tag">Seattle, WA</a>
+      <a href="/sell/cities/washington-dc.html" class="city-tag">Washington, DC</a>
     </div>
+  </div>
+</section>
+
+<!-- CONTACT / FORM -->
+<section class="contact-section" id="contact">
+  <div class="contact-inner">
+    <div class="contact-text">
+      <h2>Ready to Sell? Get Your Free Cash Offer.</h2>
+      <p>Fill out this short form and Dustin will personally review your property and respond within 24 hours with a fair, no-obligation cash offer.</p>
+      <p>Or call us directly:</p>
+      <a href="tel:+12272359530" class="phone-big">&#128222; (227) 235-9530</a>
+      <ul class="contact-perks">
+        <li>No obligation — get an offer with zero commitment</li>
+        <li>No agents, no commissions, no hidden fees</li>
+        <li>We buy in any condition — no repairs needed</li>
+        <li>Close on your timeline — as fast as 7 days</li>
+        <li>We handle probate, liens, messy titles &amp; more</li>
+      </ul>
+    </div>
+    <div class="form-card">
+      <h3>Get Your Cash Offer Today</h3>
+      <form action="https://formspree.io/f/xjgpnqlj" method="POST">
+        <input type="hidden" name="_subject" value="New Lead from Sell Page">
+        <input type="hidden" name="source_page" value="sell">
+        <input type="text" name="name" placeholder="Your Full Name" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="text" name="property_address" placeholder="Property Address">
+        <select name="situation" required>
+          <option value="" disabled selected>What's your situation?</option>
+          <option value="probate">Probate / Deceased Owner</option>
+          <option value="missing-heirs">Missing or Unknown Heirs</option>
+          <option value="messy-title">Messy Title / Title Issues</option>
+          <option value="inherited">Inherited Property</option>
+          <option value="foreclosure">Facing Foreclosure</option>
+          <option value="liens">Tax Liens / Code Violations</option>
+          <option value="divorce">Divorce or Separation</option>
+          <option value="landlord">Tired Landlord</option>
+          <option value="repairs">Needs Major Repairs</option>
+          <option value="land">Vacant Land</option>
+          <option value="relocation">Relocating</option>
+          <option value="behind-payments">Behind on Payments</option>
+          <option value="other">Other Situation</option>
+        </select>
+        <textarea name="message" rows="3" placeholder="Tell us a little about your property (optional)"></textarea>
+        <button type="submit" class="btn-submit">Get My Free Cash Offer &rarr;</button>
+        <p class="form-note">Your info is 100% confidential. We never share your data.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>Pages of Purpose LLC</h4>
+      <p>We buy houses for cash nationwide — any condition, any situation. Probate, liens, inherited homes, missing heirs, messy titles. Fair offers, no fees, close on your timeline.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="/">Home</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="/#situations">Situations We Help</a>
+      <a href="/#about">About Dustin Ray</a>
+      <a href="/sell/">Sell Your Property</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Get a Cash Offer</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="tel:+12272359530">&#128222; (227) 235-9530</a>
+      <a href="mailto:pagesofpurposellc@gmail.com">&#9993; pagesofpurposellc@gmail.com</a>
+      <p style="margin-top:12px;font-size:.85rem;opacity:.6;">Mon–Fri 9:00 AM – 6:00 PM EST</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; <span id="yr"></span> Pages of Purpose LLC &bull; All rights reserved
   </div>
 </footer>
-<div class="sticky-cta"><a href="pages/contact.html">Get My Free Property Offer &#8594;</a></div>
-<script src="js/main.js"></script>
+
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
 </body>
 </html>
