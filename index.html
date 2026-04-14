@@ -560,7 +560,11 @@ body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: var
           <option value="other">Other Situation</option>
         </select>
         <textarea name="message" rows="3" placeholder="Tell us a little about your property (optional)"></textarea>
-        <button type="submit" class="btn-submit">Get My Free Cash Offer &rarr;</button>
+        <div class="consent-group">
+<input type="checkbox" id="smsConsent" name="sms_consent" required>
+<label for="smsConsent">I agree to receive communications by text message to schedule appointments, provide updates and general inquiries from Pages of Purpose LLC. You may opt out by replying STOP or ask for more information by replying HELP. Message frequency varies. Message and data rates may apply. You may review our <a href="/privacy-policy.html" target="_blank">Privacy Policy</a> to learn how your data is used.</label>
+</div>
+<button type="submit" class="btn-submit">Get My Free Cash Offer &rarr;</button>
         <p class="form-note">Your info is 100% confidential. We never share your data.</p>
       </form>
     </div>
