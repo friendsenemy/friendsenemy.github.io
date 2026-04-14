@@ -149,7 +149,27 @@ a{color:var(--blue);text-decoration:none}
 @media(max-width:380px){
   .page-hero h1{font-size:1.3rem}
   .form-card{padding:20px 16px}
-}</style>
+}.lead-form{background:var(--white);padding:32px;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.08);max-width:600px;margin:0 auto}
+.form-group{margin-bottom:18px}
+.form-group label{display:block;font-weight:600;margin-bottom:6px;color:var(--navy);font-size:.95rem}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:12px 14px;border:1.5px solid var(--gray-200);border-radius:8px;font-size:1rem;font-family:inherit;transition:border-color .2s;background:var(--white);color:var(--text)}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(200,169,81,.15)}
+.form-group textarea{min-height:100px;resize:vertical}
+.form-group select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23495057' d='M6 8L1 3h10z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;padding-right:36px}
+.form-trust{text-align:center;margin-top:12px;font-size:.85rem;color:var(--gray-600)}
+.consent-group{margin:16px 0;display:flex;align-items:flex-start;gap:10px}
+.consent-group input[type="checkbox"]{margin-top:4px;min-width:18px;min-height:18px;accent-color:var(--gold);cursor:pointer}
+.consent-group label{font-size:.8rem;line-height:1.4;color:var(--gray-600);font-weight:400;cursor:pointer}
+.consent-group a{color:var(--gold);text-decoration:underline}
+.inline-form{background:var(--white);padding:32px;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.08);max-width:600px;margin:0 auto}
+.btn{display:inline-block;padding:14px 28px;border:none;border-radius:8px;font-size:1rem;font-weight:600;cursor:pointer;text-align:center;text-decoration:none;transition:all .2s}
+.btn-primary{background:var(--gold);color:var(--navy)}
+.btn-primary:hover{background:var(--gold-hover);transform:translateY(-1px)}
+.btn-secondary{background:transparent;color:var(--gold);border:2px solid var(--gold)}
+.btn-secondary:hover{background:var(--gold);color:var(--navy)}
+.btn-lg{padding:16px 32px;font-size:1.1rem}
+.btn-block{display:block;width:100%}
+</style>
 </head>
 <body>
 <nav class="nav"><div class="nav-inner"><a href="/" class="nav-logo">Pages of <span>Purpose LLC</span></a><button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('active')" aria-label="Menu">&#9776;</button><div class="nav-links" id="navLinks"><a href="/#how-it-works" class="nav-link">How It Works</a><a href="/#situations" class="nav-link">Situations</a><a href="/#about" class="nav-link">About</a><a href="/sell/" class="nav-link">Sell Your Property</a><a href="/#faq" class="nav-link">FAQ</a><a href="/#contact" class="nav-cta btn-nav">Get a Cash Offer</a></div></div></nav>
@@ -245,7 +265,7 @@ a{color:var(--blue);text-decoration:none}
 </div>
 </div></section>
 
-<footer style="background:var(--navy);color:rgba(255,255,255,.7);padding:40px 20px 24px;margin-top:60px"><div style="max-width:1100px;margin:0 auto;text-align:center"><p style="margin-bottom:8px">&copy; 2026 Pages of Purpose LLC &bull; All rights reserved</p><p style="font-size:.85rem"><a href="/" style="color:var(--gold);text-decoration:none">Home</a> &bull; <a href="/sell/" style="color:var(--gold);text-decoration:none">Sell Your Property</a></p></div></footer>
+<footer style="background:var(--navy);color:rgba(255,255,255,.7);padding:40px 20px 24px;margin-top:60px"><div style="max-width:1100px;margin:0 auto;text-align:center"><p style="margin-bottom:8px">&copy; 2026 Pages of Purpose LLC &bull; All rights reserved</p><p style="font-size:.85rem"><a href="/" style="color:var(--gold);text-decoration:none">Home</a> &bull; <a href="/sell/" style="color:var(--gold);text-decoration:none">Sell Your Property</a> &bull; <a href="/privacy-policy.html" style="color:var(--gold);text-decoration:none">Privacy Policy</a></p></div></footer>
 <div class="sticky-cta"><a href="/#contact" class="btn btn-primary">Get My Free Property Offer &rarr;</a></div>
 <script src="../js/main.js"></script>
 </body></html>
