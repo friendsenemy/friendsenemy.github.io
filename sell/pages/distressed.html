@@ -211,7 +211,11 @@ a{color:var(--blue);text-decoration:none}
       <label>Anything else we should know?</label>
       <textarea name="details" placeholder="Describe the situation in your own words..."></textarea>
     </div>
-    <button type="submit" class="btn btn-primary btn-block btn-lg">Get My Free Offer →</button>
+    <div class="consent-group">
+<input type="checkbox" id="smsConsent" name="sms_consent" required>
+<label for="smsConsent">I agree to receive communications by text message to schedule appointments, provide updates and general inquiries from Pages of Purpose LLC. You may opt out by replying STOP or ask for more information by replying HELP. Message frequency varies. Message and data rates may apply. You may review our <a href="/privacy-policy.html" target="_blank">Privacy Policy</a> to learn how your data is used.</label>
+</div>
+<button type="submit" class="btn btn-primary btn-block btn-lg">Get My Free Offer →</button>
     <p class="form-trust"><span>🔒</span> Confidential. No obligation. No spam.</p>
   </form>
   <div class="success-msg">✅ Got it! We'll reach out within 24 hours with your free offer.</div>
