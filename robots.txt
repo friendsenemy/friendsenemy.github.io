@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://pagesofpurposellc.com/sitemap.xml
+Sitemap: https://pagesofpurposellc.com/blog/sitemap.xml
+Sitemap: https://pagesofpurposellc.com/sell/sitemap.xml
