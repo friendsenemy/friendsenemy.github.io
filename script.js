@@ -1,149 +1,11 @@
-/* ---------- Mobile Nav, Smooth Scroll, Testimonials, Contact Form, Modal ---------- */
-
-function openModal(content) {
-  const modal = document.getElementById("tosModal");
-  const modalBody = document.getElementById("tosModalContent");
-  modalBody.innerHTML = content;
-  modal.style.display = "flex"; // show modal
-  document.body.style.overflow = "hidden"; // prevent background scroll
-}
-
-function closeModal() {
-  const modal = document.getElementById("tosModal");
-  modal.style.display = "none"; // hide modal
-  document.body.style.overflow = ""; // restore scroll
-}
-
-document.addEventListener("DOMContentLoaded", function() {
-  // -------- Mobile nav toggle --------
-  const navToggle = document.querySelector(".nav-toggle");
-  const nav = document.querySelector(".nav");
-  if (navToggle) {
-    navToggle.addEventListener("click", () => {
-      nav.style.display = nav.style.display === "flex" ? "none" : "flex";
-    });
-  }
-
-  // -------- Smooth scroll for anchor links --------
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function(e) {
-      const target = document.querySelector(this.getAttribute("href"));
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-    });
-  });
-
-  // -------- Testimonials rotation --------
-  (function rotateTestimonials() {
-    const blocks = document.querySelectorAll(".testimonial");
-    const clientLabel = document.getElementById("testimonial-client");
-    if (!blocks.length || !clientLabel) return;
-    let idx = 0;
-    const update = () => {
-      blocks.forEach((b, i) => b.classList.toggle("active", i === idx));
-      clientLabel.textContent = blocks[idx].getAttribute("data-client") || "";
-      idx = (idx + 1) % blocks.length;
-    };
-    update();
-    setInterval(update, 4500);
-  })();
-
-  // -------- Contact form submission --------
-  const form = document.getElementById("contactForm");
-  const successBox = document.getElementById("formSuccess");
-  const errorBox = document.getElementById("formError");
-  if (form) {
-    form.addEventListener("submit", function(e) {
-      e.preventDefault();
-      successBox.hidden = true;
-      errorBox.hidden = true;
-
-      const smsConsent = document.getElementById("smsConsent")?.checked || false;
-      const url = "https://api.web3forms.com/submit";
-      const formData = new FormData(form);
-      formData.append("smsConsent", smsConsent ? "Yes" : "No");
-
-      const submitBtn = form.querySelector('button[type="submit"]');
-      submitBtn.disabled = true;
-      submitBtn.textContent = "Sending...";
-
-      fetch(url, { method: "POST", body: formData })
-        .then(async res => {
-          submitBtn.disabled = false;
-          submitBtn.textContent = "Send Message";
-          if (res.ok) {
-            form.reset();
-            successBox.textContent = smsConsent
-              ? "✅ Thank you — your message has been sent. You have agreed to receive SMS updates. We will respond shortly."
-              : "✅ Thank you — your message has been sent. We will respond shortly.";
-            successBox.hidden = false;
-            setTimeout(() => { successBox.hidden = true; }, 6000);
-          } else {
-            errorBox.hidden = false;
-            console.error(await res.text());
-          }
-        })
-        .catch(err => {
-          errorBox.hidden = false;
-          submitBtn.disabled = false;
-          submitBtn.textContent = "Send Message";
-          console.error(err);
-        });
-    });
-  }
-
-  // -------- Set current year in footer --------
-  const y = new Date().getFullYear();
-  const yearEl = document.getElementById("year");
-  if (yearEl) yearEl.textContent = y;
-
-  // -------- Modal: TOS & Privacy Policy --------
-  const tosLink = document.getElementById("tosLink");
-  const privacyLink = document.getElementById("privacyLink");
-  const modalClose = document.querySelector(".modal-close");
-  const modal = document.getElementById("tosModal");
-
-  if (tosLink) {
-    tosLink.addEventListener("click", function(e) {
-      e.preventDefault();
-      openModal(tosContent);
-    });
-  }
-
-  if (privacyLink) {
-    privacyLink.addEventListener("click", function(e) {
-      e.preventDefault();
-      openModal(privacyContent);
-    });
-  }
-
-  if (modalClose) {
-    modalClose.addEventListener("click", closeModal);
-  }
-
-  window.addEventListener("click", function(e) {
-    if (e.target === modal) {
-      closeModal();
-    }
-  });
-
-  // -------- Scroll to top button --------
-  const scrollBtn = document.getElementById("scrollTopBtn");
-
-  window.onscroll = function() {
-    scrollBtn.style.display = (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) ? "block" : "none";
-  };
-
-  scrollBtn.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-
-});
-
-// -------- Example TOS & Privacy Content --------
-const tosContent = `
+function openModal(content){const modal=document.getElementById("tosModal");const modalBody=document.getElementById("tosModalContent");modalBody.innerHTML=content;modal.style.display="flex";document.body.style.overflow="hidden";}
+function closeModal(){const modal=document.getElementById("tosModal");modal.style.display="none";document.body.style.overflow="";}
+document.addEventListener("DOMContentLoaded",function(){const navToggle=document.querySelector(".nav-toggle");const nav=document.querySelector(".nav");if(navToggle){navToggle.addEventListener("click",()=>{nav.style.display=nav.style.display==="flex"?"none":"flex";});}
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{anchor.addEventListener("click",function(e){const target=document.querySelector(this.getAttribute("href"));if(target){e.preventDefault();target.scrollIntoView({behavior:"smooth",block:"start"});}});});(function rotateTestimonials(){const blocks=document.querySelectorAll(".testimonial");const clientLabel=document.getElementById("testimonial-client");if(!blocks.length||!clientLabel)return;let idx=0;const update=()=>{blocks.forEach((b,i)=>b.classList.toggle("active",i===idx));clientLabel.textContent=blocks[idx].getAttribute("data-client")||"";idx=(idx+1)%blocks.length;};update();setInterval(update,4500);})();const form=document.getElementById("contactForm");const successBox=document.getElementById("formSuccess");const errorBox=document.getElementById("formError");if(form){form.addEventListener("submit",function(e){e.preventDefault();successBox.hidden=true;errorBox.hidden=true;const smsConsent=document.getElementById("smsConsent")?.checked||false;const url="https://api.web3forms.com/submit";const formData=new FormData(form);formData.append("smsConsent",smsConsent?"Yes":"No");const submitBtn=form.querySelector('button[type="submit"]');submitBtn.disabled=true;submitBtn.textContent="Sending...";fetch(url,{method:"POST",body:formData}).then(async res=>{submitBtn.disabled=false;submitBtn.textContent="Send Message";if(res.ok){form.reset();successBox.textContent=smsConsent?"✅ Thank you — your message has been sent. You have agreed to receive SMS updates. We will respond shortly.":"✅ Thank you — your message has been sent. We will respond shortly.";successBox.hidden=false;setTimeout(()=>{successBox.hidden=true;},6000);}else{errorBox.hidden=false;console.error(await res.text());}}).catch(err=>{errorBox.hidden=false;submitBtn.disabled=false;submitBtn.textContent="Send Message";console.error(err);});});}
+const y=new Date().getFullYear();const yearEl=document.getElementById("year");if(yearEl)yearEl.textContent=y;const tosLink=document.getElementById("tosLink");const privacyLink=document.getElementById("privacyLink");const modalClose=document.querySelector(".modal-close");const modal=document.getElementById("tosModal");if(tosLink){tosLink.addEventListener("click",function(e){e.preventDefault();openModal(tosContent);});}
+if(privacyLink){privacyLink.addEventListener("click",function(e){e.preventDefault();openModal(privacyContent);});}
+if(modalClose){modalClose.addEventListener("click",closeModal);}
+window.addEventListener("click",function(e){if(e.target===modal){closeModal();}});const scrollBtn=document.getElementById("scrollTopBtn");window.onscroll=function(){scrollBtn.style.display=(document.body.scrollTop>0||document.documentElement.scrollTop>0)?"block":"none";};scrollBtn.addEventListener("click",()=>{window.scrollTo({top:0,behavior:"smooth"});});});const tosContent=`
 <h2>Terms of Service</h2>
 <p>Effective Date: 07/07/2025</p>
 <p>These Terms of Service ("Terms") govern your use of the Pages Of Purpose LLC website (the "Site") and any services provided by us ("Services"). By accessing or using our Site, you agree to these Terms. If you do not agree, you should not use our Site.</p>
@@ -172,10 +34,7 @@ const tosContent = `
 <p>These Terms will be governed by and construed in accordance with the laws of the state where Pages Of Purpose LLC is based, without regard to its conflict of law principles.</p>
 <h3>10. Changes to Terms</h3>
 <p>We may update these Terms from time to time. Any changes will be posted on this page, and the updated Terms will become effective as of the date posted.</p>
-`;
-
-/* ---------- Privacy Policy Content ---------- */
-const privacyContent = `
+`;const privacyContent=`
 <h2>Privacy Policy</h2>
 <p>At Pages Of Purpose LLC, we respect and are committed to protecting your privacy. This Privacy Policy outlines the types of information we collect and how we use, protect, and share it.</p>
 <h3>1. Information We Collect</h3>
@@ -203,6 +62,3 @@ const privacyContent = `
 <h3>6. Changes to This Policy</h3>
 <p>We may update this Privacy Policy periodically. The updated version will be posted on this page, and your continued use of our services constitutes acceptance of the revised Privacy Policy.</p>
 `;
-
-
-
