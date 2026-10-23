@@ -189,9 +189,25 @@ a{color:var(--blue);text-decoration:none}
  ]
 }
 </script>
+<link rel="preload" href="/assets/fonts/public-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/pop.css?v=1">
 </head>
-<body>
-<nav class="nav"><div class="nav-inner"><a href="/" class="nav-logo">Pages of <span>Purpose LLC</span></a><button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('active')" aria-label="Menu">&#9776;</button><div class="nav-links" id="navLinks"><a href="/#how-it-works" class="nav-link">How It Works</a><a href="/#situations" class="nav-link">Situations</a><a href="/#about" class="nav-link">About</a><a href="/sell/" class="nav-link">Sell Your Property</a><a href="/#faq" class="nav-link">FAQ</a><a href="/#contact" class="nav-cta btn-nav">Get a Cash Offer</a></div></div></nav>
+<body class="pp pp-service">
+<a class="pp-skip" href="#main">Skip to main content</a>
+<header class="pp-hd">
+  <div class="pp-wrap pp-hd-in">
+    <a class="pp-brand" href="/"><img src="/img/logo-72.png" alt="" width="36" height="36"><span>Pages of Purpose</span></a>
+    <nav class="pp-nav" aria-label="Main"><a href="/#situations">Situations</a><a href="/blog/">Guides</a><a href="/sell/">How selling works</a><a href="/about.html">About</a></nav>
+    <a class="pp-hd-phone" href="tel:+12272359530">(227) 235-9530</a>
+    <a class="pp-btn pp-btn-gold pp-hd-cta" href="#pop-ask">Ask a question</a>
+    <details class="pp-menu">
+      <summary><svg aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h14M3 10h14M3 14h14"/></svg>Menu</summary>
+      <nav aria-label="Main (mobile)"><a href="/#situations">Situations</a><a href="/blog/">Guides</a><a href="/sell/">How selling works</a><a href="/about.html">About</a><a href="tel:+12272359530">Call (227) 235-9530</a><a class="pp-btn pp-btn-gold" href="#pop-ask">Ask a question</a></nav>
+    </details>
+  </div>
+</header>
+<main id="main">
+
 
 <section class="page-hero">
   <div class="container">
@@ -205,26 +221,26 @@ a{color:var(--blue);text-decoration:none}
   <div class="container">
     <div style="max-width:640px;margin:0 auto">
       <div class="inline-form" id="main-contact-form">
-        <h3 style="color:var(--navy);font-size:1.4rem">Get Your Free Property Offer</h3>
+        <h2 style="color:var(--navy);font-size:1.4rem">Get Your Free Property Offer</h2>
         <p class="sub">The more you share, the more accurate our offer. All fields marked * are required.</p>
         <form class="lead-form" action="https://formspree.io/f/xjgpnqlj" method="POST">
 <input type="hidden" name="_next" value="https://pagesofpurposellc.com/thank-you.html">
           <input type="hidden" name="_subject" value="New Lead &#x2014; Contact Page (Full Form)">
           <input type="hidden" name="source_page" value="Contact Page">
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
-            <div class="form-group"><label>First Name *</label><input type="text" name="first_name" placeholder="John" required></div>
-            <div class="form-group"><label>Last Name *</label><input type="text" name="last_name" placeholder="Smith" required></div>
+            <div class="form-group"><label>First Name *</label><input aria-label="John" type="text" name="first_name" placeholder="John" required></div>
+            <div class="form-group"><label>Last Name *</label><input aria-label="Smith" type="text" name="last_name" placeholder="Smith" required></div>
           </div>
-          <div class="form-group"><label>Phone Number *</label><input type="tel" name="phone" placeholder="(555) 000-0000" required></div>
-          <div class="form-group"><label>Email Address</label><input type="email" name="email" placeholder="john@example.com"></div>
-          <div class="form-group"><label>Property Street Address *</label><input type="text" name="property_street" placeholder="123 Main Street" required></div>
+          <div class="form-group"><label>Phone Number *</label><input aria-label="Phone number" type="tel" name="phone" placeholder="(555) 000-0000" required autocomplete="tel"></div>
+          <div class="form-group"><label>Email Address</label><input aria-label="Email address" type="email" name="email" placeholder="john@example.com" autocomplete="email" spellcheck="false"></div>
+          <div class="form-group"><label>Property Street Address *</label><input aria-label="123 Main Street" type="text" name="property_street" placeholder="123 Main Street" required></div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
-            <div class="form-group"><label>City *</label><input type="text" name="property_city" placeholder="Anytown" required></div>
-            <div class="form-group"><label>State *</label><input type="text" name="property_state" placeholder="TX" required></div>
+            <div class="form-group"><label>City *</label><input aria-label="Anytown" type="text" name="property_city" placeholder="Anytown" required></div>
+            <div class="form-group"><label>State *</label><input aria-label="TX" type="text" name="property_state" placeholder="TX" required></div>
           </div>
           <div class="form-group">
             <label>Property Type *</label>
-            <select name="property_type" required>
+            <select aria-label="Property type" name="property_type" required>
               <option value="">Select type...</option>
               <option>Single family home</option>
               <option>Multi-family (duplex/triplex/etc.)</option>
@@ -253,7 +269,7 @@ a{color:var(--blue);text-decoration:none}
           </div>
           <div class="form-group">
             <label>How soon would you like to sell?</label>
-            <select name="timeline">
+            <select aria-label="Timeline" name="timeline">
               <option value="">Select timeline...</option>
               <option>ASAP &#x2014; I need to sell immediately</option>
               <option>Within 30 days</option>
@@ -264,7 +280,7 @@ a{color:var(--blue);text-decoration:none}
           </div>
           <div class="form-group">
             <label>Tell Us More About the Property / Situation</label>
-            <textarea name="details" rows="4" placeholder="Any details about the property condition, situation, outstanding debts, tenant status, or anything else you&#x2019;d like us to know..."></textarea>
+            <textarea aria-label="Any details about the property condition, situation, outstanding debts, tenant status, or anything else you&amp;#x2019;d like us to know..." name="details" rows="4" placeholder="Any details about the property condition, situation, outstanding debts, tenant status, or anything else you&#x2019;d like us to know..."></textarea>
           </div>
           <div class="consent-group">
 <input type="checkbox" id="smsConsent" name="sms_consent">
@@ -274,28 +290,64 @@ a{color:var(--blue);text-decoration:none}
             Send My Information &#x2014; Get Free Offer &#x2192;
           </button>
           <p class="form-trust" style="margin-top:14px">
-            <span>&#x1F512;</span> Your information is 100% confidential. We never sell or share your data. No spam &#x2014; ever.
+            <span></span> Your information is 100% confidential. We never sell or share your data. No spam &#x2014; ever.
           </p>
         </form>
         <div class="success-msg" style="padding:30px">
-          <h3 style="color:var(--green);margin-bottom:10px">&#x2705; We Got It!</h3>
+          <h3 style="color:var(--green);margin-bottom:10px">We Got It!</h3>
           <p style="color:var(--text)">Thank you for reaching out. We&#x2019;ll review your property and reach out within 24 hours &#x2014; usually same business day. If you need to speak with us sooner, call <strong>(227) 235-9530</strong>.</p>
         </div>
       </div>
 
       <div style="text-align:center;margin-top:40px;padding:24px;background:var(--bg);border-radius:12px">
         <p style="color:var(--text-muted);margin-bottom:8px">Prefer to call directly?</p>
-        <a href="tel:+12272359530" class="btn btn-primary" style="font-size:1.1rem">&#x1F4DE; Call (227) 235-9530</a>
+        <a href="tel:+12272359530" class="btn btn-primary" style="font-size:1.1rem">Call (227) 235-9530</a>
         <p style="color:var(--text-muted);font-size:0.85rem;margin-top:12px">No hold music, no runaround. A real person answers.</p>
       </div>
     </div>
   </div>
 </section>
 
-<footer style="background:var(--navy);color:rgba(255,255,255,.7);padding:40px 20px 24px;margin-top:60px"><div style="max-width:1100px;margin:0 auto;text-align:center"><p style="margin-bottom:8px">&copy; 2026 Pages of Purpose LLC &bull; All rights reserved</p><p style="font-size:.85rem"><a href="/" style="color:var(--gold);text-decoration:none">Home</a> &bull; <a href="/sell/" style="color:var(--gold);text-decoration:none">Sell Your Property</a> &bull; <a href="/privacy-policy.html" style="color:var(--gold);text-decoration:none">Privacy Policy</a></p></div></footer>
+</main>
+<a href="#pop-ask" class="pp-float">Ask a question</a>
+<footer class="pp-ft">
+  <div class="pp-wrap pp-ft-grid">
+    <div>
+      <p class="pp-ft-brand">Pages of Purpose LLC</p>
+      <p>A Maryland company buying houses for cash in all 50 states, including houses stuck in probate, heir or co-owner disputes, divorce, liens and title problems.</p>
+      <p><a href="tel:+12272359530">(227) 235-9530</a><br><a href="mailto:pagesofpurposellc@gmail.com">pagesofpurposellc@gmail.com</a></p>
+    </div>
+    <nav aria-label="Situations">
+      <h2>Situations</h2>
+      <ul>
+        <li><a href="/blog/what-happens-house-no-will.html">Probate and inherited houses</a></li>
+        <li><a href="/blog/heirs-cant-agree-sell-inherited-house.html">Heirs who can't agree</a></li>
+        <li><a href="/blog/can-co-owner-sell-house.html">Co-owner won't sell</a></li>
+        <li><a href="/blog/can-you-sell-house-while-incarcerated.html">Owner in jail or prison</a></li>
+        <li><a href="/blog/selling-house-during-divorce.html">Divorce</a></li>
+        <li><a href="/blog/partition-lawsuit-explained.html">Partition lawsuits</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Company">
+      <h2>Company</h2>
+      <ul>
+        <li><a href="/about.html">About Dustin Ray</a></li>
+        <li><a href="/sell/">How selling works</a></li>
+        <li><a href="/blog/">All guides</a></li>
+        <li><a href="/sell/pages/contact.html">Contact</a></li>
+        <li><a href="/privacy-policy.html">Privacy policy</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="pp-wrap pp-ft-legal">
+    <p>Pages of Purpose LLC is a real estate company, not a law firm. Nothing on this site is legal, tax or financial advice; speak with an attorney licensed in the state where the property is located.</p>
+    <p>&copy; 2026 Pages of Purpose LLC</p>
+  </div>
+</footer>
 
 <div class="sticky-cta"><a href="/#contact" class="btn btn-primary">Get My Free Property Offer &rarr;</a></div>
 
 <script src="../js/main.js"></script>
+<script src="/assets/pop.js" defer></script>
 </body>
 </html>

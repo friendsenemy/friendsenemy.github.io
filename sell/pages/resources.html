@@ -156,9 +156,25 @@ a{color:var(--blue);text-decoration:none}
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <style>.pop-ask{background:linear-gradient(135deg,#c8a951,#e0c67a);color:#1a2332;padding:26px 24px;border-radius:10px;margin:36px auto;max-width:640px;box-shadow:0 6px 20px rgba(200,169,81,.35);border:2px solid #1a2332;font-family:'Segoe UI',system-ui,sans-serif}.pop-ask h3{color:#1a2332;margin:0 0 8px;font-size:1.4rem;border:none;padding:0}.pop-ask p.sub{margin:0 0 14px;font-weight:600;font-size:1rem;color:#1a2332}.pop-ask input,.pop-ask textarea{width:100%;padding:12px;margin:7px 0;border:2px solid #1a2332;border-radius:5px;font-family:inherit;background:#fff;font-size:1rem;box-sizing:border-box}.pop-ask textarea{resize:vertical;min-height:70px}.pop-ask button{background:#1a2332;color:#c8a951;padding:14px 28px;border:none;border-radius:5px;font-weight:bold;cursor:pointer;font-size:1.05rem;width:100%;margin-top:10px;text-transform:uppercase;letter-spacing:.5px}.pop-ask .fine{font-size:.8rem;margin-top:10px;text-align:center;font-style:italic}.pop-float{position:fixed;bottom:24px;right:24px;background:#c8a951;color:#1a2332;padding:14px 22px;border-radius:50px;font-weight:bold;text-decoration:none;box-shadow:0 4px 15px rgba(0,0,0,.25);z-index:1000;font-family:'Segoe UI',system-ui,sans-serif;font-size:.95rem}.pop-float:hover{background:#d4b565}@media(max-width:600px){.pop-float{bottom:16px;right:16px;padding:12px 18px;font-size:.85rem}}</style>
+<link rel="preload" href="/assets/fonts/public-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/pop.css?v=1">
 </head>
-<body>
-<nav class="nav"><div class="nav-inner"><a href="/" class="nav-logo">Pages of <span>Purpose LLC</span></a><button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('active')" aria-label="Menu">&#9776;</button><div class="nav-links" id="navLinks"><a href="/#how-it-works" class="nav-link">How It Works</a><a href="/#situations" class="nav-link">Situations</a><a href="/#about" class="nav-link">About</a><a href="/sell/" class="nav-link">Sell Your Property</a><a href="/#faq" class="nav-link">FAQ</a><a href="/#contact" class="nav-cta btn-nav">Get a Cash Offer</a></div></div></nav>
+<body class="pp pp-service">
+<a class="pp-skip" href="#main">Skip to main content</a>
+<header class="pp-hd">
+  <div class="pp-wrap pp-hd-in">
+    <a class="pp-brand" href="/"><img src="/img/logo-72.png" alt="" width="36" height="36"><span>Pages of Purpose</span></a>
+    <nav class="pp-nav" aria-label="Main"><a href="/#situations">Situations</a><a href="/blog/">Guides</a><a href="/sell/">How selling works</a><a href="/about.html">About</a></nav>
+    <a class="pp-hd-phone" href="tel:+12272359530">(227) 235-9530</a>
+    <a class="pp-btn pp-btn-gold pp-hd-cta" href="#pop-ask">Ask a question</a>
+    <details class="pp-menu">
+      <summary><svg aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h14M3 10h14M3 14h14"/></svg>Menu</summary>
+      <nav aria-label="Main (mobile)"><a href="/#situations">Situations</a><a href="/blog/">Guides</a><a href="/sell/">How selling works</a><a href="/about.html">About</a><a href="tel:+12272359530">Call (227) 235-9530</a><a class="pp-btn pp-btn-gold" href="#pop-ask">Ask a question</a></nav>
+    </details>
+  </div>
+</header>
+<main id="main">
+
 
 <section class="page-hero">
   <h1>Free Home Selling Guides &amp; Resources</h1>
@@ -174,7 +190,7 @@ a{color:var(--blue);text-decoration:none}
     <div class="resource-card" id="review">
       <div class="resource-card-header">
         <span class="resource-tag">Featured</span>
-        <h3>Pages of Purpose LLC Review: Is This Cash Home Buyer Legit?</h3>
+        <h2>Pages of Purpose LLC Review: Is This Cash Home Buyer Legit?</h2>
         <p>An independent, thorough review of our company — who we are, how we work, and why sellers trust us. Read the full analysis including pros, cons, and how we compare.</p>
       </div>
       <iframe class="resource-embed" src="https://claude.site/public/artifacts/386903ed-467f-4088-b640-07a24ff0cb9d/embed" title="Pages of Purpose LLC Review" allow="clipboard-write" loading="lazy"></iframe>
@@ -243,12 +259,46 @@ a{color:var(--blue);text-decoration:none}
   <h2>Ready to Get Your Free Cash Offer?</h2>
   <p>No obligation, no pressure. Just a fair offer and a clear path forward.</p>
   <div class="cta-buttons">
-    <a href="tel:+12272359530" class="btn btn-light btn-lg">&#128222; Call (227) 235-9530</a>
+    <a href="tel:+12272359530" class="btn btn-light btn-lg">Call (227) 235-9530</a>
     <a href="/sell/pages/contact.html" class="btn btn-outline-light btn-lg">Get My Cash Offer &rarr;</a>
   </div>
 </section>
 
-<footer style="background:var(--navy);color:rgba(255,255,255,.7);padding:40px 20px 24px;margin-top:60px"><div style="max-width:1100px;margin:0 auto;text-align:center"><p style="margin-bottom:8px">&copy; 2026 Pages of Purpose LLC &bull; All rights reserved</p><p style="font-size:.85rem"><a href="/" style="color:var(--gold);text-decoration:none">Home</a> &bull; <a href="/sell/" style="color:var(--gold);text-decoration:none">Sell Your Property</a> &bull; <a href="/privacy-policy.html" style="color:var(--gold);text-decoration:none">Privacy Policy</a></p></div></footer>
+</main>
+<footer class="pp-ft">
+  <div class="pp-wrap pp-ft-grid">
+    <div>
+      <p class="pp-ft-brand">Pages of Purpose LLC</p>
+      <p>A Maryland company buying houses for cash in all 50 states, including houses stuck in probate, heir or co-owner disputes, divorce, liens and title problems.</p>
+      <p><a href="tel:+12272359530">(227) 235-9530</a><br><a href="mailto:pagesofpurposellc@gmail.com">pagesofpurposellc@gmail.com</a></p>
+    </div>
+    <nav aria-label="Situations">
+      <h2>Situations</h2>
+      <ul>
+        <li><a href="/blog/what-happens-house-no-will.html">Probate and inherited houses</a></li>
+        <li><a href="/blog/heirs-cant-agree-sell-inherited-house.html">Heirs who can't agree</a></li>
+        <li><a href="/blog/can-co-owner-sell-house.html">Co-owner won't sell</a></li>
+        <li><a href="/blog/can-you-sell-house-while-incarcerated.html">Owner in jail or prison</a></li>
+        <li><a href="/blog/selling-house-during-divorce.html">Divorce</a></li>
+        <li><a href="/blog/partition-lawsuit-explained.html">Partition lawsuits</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Company">
+      <h2>Company</h2>
+      <ul>
+        <li><a href="/about.html">About Dustin Ray</a></li>
+        <li><a href="/sell/">How selling works</a></li>
+        <li><a href="/blog/">All guides</a></li>
+        <li><a href="/sell/pages/contact.html">Contact</a></li>
+        <li><a href="/privacy-policy.html">Privacy policy</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="pp-wrap pp-ft-legal">
+    <p>Pages of Purpose LLC is a real estate company, not a law firm. Nothing on this site is legal, tax or financial advice; speak with an attorney licensed in the state where the property is located.</p>
+    <p>&copy; 2026 Pages of Purpose LLC</p>
+  </div>
+</footer>
 
 <div class="sticky-cta"><a href="/#contact" class="btn btn-primary">Get My Free Property Offer &rarr;</a></div>
 
@@ -261,14 +311,15 @@ a{color:var(--blue);text-decoration:none}
 <input type="hidden" name="_subject" value="Lead — Page sell-pages-resources">
 <input type="hidden" name="source_page" value="ask-sell-pages-resources">
 <input type="hidden" name="_next" value="https://pagesofpurposellc.com/thank-you.html">
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="text" name="contact_info" placeholder="Best way to reach you (email or phone)" required>
-<input type="text" name="property_address" placeholder="Property address (optional)">
-<textarea name="brief_situation" placeholder="Example: I own a house in your area that needs work and I just want it gone. What would you offer?" required></textarea>
+<input aria-label="Your name" type="text" name="name" placeholder="Your Name" required autocomplete="name">
+<input aria-label="Phone or email" type="text" name="contact_info" placeholder="Best way to reach you (email or phone)" required autocomplete="tel">
+<input aria-label="Property address (optional)" type="text" name="property_address" placeholder="Property address (optional)" autocomplete="street-address">
+<textarea aria-label="Your question" name="brief_situation" placeholder="Example: I own a house in your area that needs work and I just want it gone. What would you offer?" required></textarea>
 <button type="submit">Get a Free Answer</button>
 <p class="fine">100% confidential. No obligation. We reply within 2 business days.</p>
 </form>
 </div>
-<a href="#pop-ask" class="pop-float" onclick="var f=document.querySelector('#pop-ask')||document.querySelector('form');if(f){f.scrollIntoView({behavior:'smooth'});return false;}">📝 Ask Us — Free</a>
+<a href="#pop-ask" class="pop-float" onclick="var f=document.querySelector('#pop-ask')||document.querySelector('form');if(f){f.scrollIntoView({behavior:'smooth'});return false;}">Ask a question</a>
+<script src="/assets/pop.js" defer></script>
 </body>
 </html>
