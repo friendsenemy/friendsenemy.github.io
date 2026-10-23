@@ -231,9 +231,10 @@
 .home .hero-facts svg{flex:none;width:16px;height:16px;color:var(--pp-gold);transform:translateY(2px)}
 .home .hero-video{position:relative;border-radius:12px;overflow:hidden;background:#000;box-shadow:0 18px 40px rgba(5,10,20,.45)}
 .home .hero-video video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:#000}
-.home .unmute-btn{position:absolute;left:50%;bottom:56px;transform:translateX(-50%);display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:12px 22px;border:0;border-radius:999px;background:var(--pp-gold);color:var(--pp-ink);font:700 1rem/1 var(--pp-sans);cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.35)}
-.home .unmute-btn:hover{background:var(--pp-gold-2)}
-.home .unmute-btn svg{width:20px;height:20px}
+.home .unmute-btn{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);background:#39ff14;color:#000;border:2px solid rgba(255,255,255,.85);padding:14px 28px;border-radius:30px;font-size:1.05rem;font-weight:900;cursor:pointer;box-shadow:0 0 24px rgba(57,255,20,.75),0 0 48px rgba(57,255,20,.4),0 6px 18px rgba(0,0,0,.5);animation:pulse-btn 1.4s ease-in-out infinite;z-index:2;letter-spacing:.4px;text-shadow:0 1px 0 rgba(255,255,255,.4);font-family:var(--pp-sans)}
+.home .unmute-btn:hover{background:#6dff52;animation:none;transform:translateX(-50%) scale(1.06);box-shadow:0 0 36px rgba(57,255,20,.95),0 0 64px rgba(57,255,20,.5),0 8px 24px rgba(0,0,0,.6)}
+@keyframes pulse-btn{0%,100%{transform:translateX(-50%) scale(1);box-shadow:0 0 20px rgba(57,255,20,.6),0 0 40px rgba(57,255,20,.3),0 6px 18px rgba(0,0,0,.5)}50%{transform:translateX(-50%) scale(1.08);box-shadow:0 0 40px rgba(57,255,20,1),0 0 72px rgba(57,255,20,.6),0 8px 24px rgba(0,0,0,.6)}}
+@media (max-width:480px){.home .unmute-btn{padding:11px 20px;font-size:.95rem}}
 .home .unmute-btn[hidden]{display:none}
 .home .how-grid{display:grid;gap:40px;margin-top:36px;align-items:start}
 @media (min-width:1000px){.home .how-grid{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:56px}.home .how-grid .steps{grid-template-columns:1fr;margin-top:0}}
@@ -321,6 +322,14 @@
 .home .pop-ask .consent-group input{width:20px;height:20px;margin-top:4px;flex:none;accent-color:var(--pp-gold)}
 .home .pop-ask .consent-group label{margin:0;font-weight:400;color:#C4CAD5!important}
 .home .pop-ask .consent-group a{color:var(--pp-on-ink)}
+.home .ic{display:inline-block;width:1.6em;margin-right:6px;text-align:center;font-style:normal}
+.home .idx a{display:grid!important;text-decoration:none!important;grid-template-columns:2em 1fr;column-gap:4px;align-items:start}
+.home .idx a .ic{grid-row:1/3;font-size:1.25rem;line-height:1.2;width:auto;margin:0}
+.home .idx a small{grid-column:2}
+.home .idx h3 .ic,.home .steps h3 .ic{font-size:1.2rem}
+.home .methods dt .ic{width:1.5em}
+body.pp.home main .idx li a{text-decoration:none!important}
+body.pp.home main .idx li a:hover{text-decoration:underline!important}
 </style>
 </head>
 <body class="pp home">
@@ -346,7 +355,7 @@
         <source src="/with_audio_crf32_48k.mp4" type="video/mp4">
         <a href="/with_audio_crf32_48k.mp4">Watch the video</a>
       </video>
-      <button id="unmuteBtn" class="unmute-btn" type="button"><svg aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8v4h3l4 3V5L6 8H3z"/><path d="M13.5 7.5a3.5 3.5 0 010 5M15.5 5.5a6.5 6.5 0 010 9"/></svg>Click for sound</button>
+      <button id="unmuteBtn" class="unmute-btn" type="button" aria-label="Click for sound">&#128266; Click for Sound</button>
     </div>
     <div>
       <h1 id="hero-h">We buy the houses other companies walk away from, in all 50&nbsp;states.</h1>
@@ -374,60 +383,60 @@
     </div>
     <div class="idx">
       <section aria-labelledby="g1">
-        <h3 id="g1">Someone passed away</h3>
+        <h3 id="g1"><span class="ic" aria-hidden="true">🕊️</span>Someone passed away</h3>
         <p class="q">The house is still in their name.</p>
         <ul>
-          <li><a href="/blog/what-happens-house-no-will.html">Probate and deceased owners<small>No will, an estate nobody opened, court timelines.</small></a></li>
-          <li><a href="/sell/pages/probate.html">Inherited a house you don’t want<small>Sell it as-is, belongings and all.</small></a></li>
-          <li><a href="/blog/heirs-cant-agree-sell-inherited-house.html">Missing or unknown heirs<small>Genealogy research to find everyone who has to sign.</small></a></li>
+          <li><a href="/blog/what-happens-house-no-will.html"><span class="ic" aria-hidden="true">⚖️</span>Probate and deceased owners<small>No will, an estate nobody opened, court timelines.</small></a></li>
+          <li><a href="/sell/pages/probate.html"><span class="ic" aria-hidden="true">🏠</span>Inherited a house you don’t want<small>Sell it as-is, belongings and all.</small></a></li>
+          <li><a href="/blog/heirs-cant-agree-sell-inherited-house.html"><span class="ic" aria-hidden="true">👥</span>Missing or unknown heirs<small>Genealogy research to find everyone who has to sign.</small></a></li>
         </ul>
       </section>
       <section aria-labelledby="g2">
-        <h3 id="g2">The owners don’t agree</h3>
+        <h3 id="g2"><span class="ic" aria-hidden="true">🤝</span>The owners don’t agree</h3>
         <p class="q">More than one name, more than one opinion.</p>
         <ul>
-          <li><a href="/blog/heirs-cant-agree-sell-inherited-house.html">Heirs or siblings can’t agree<small>Buyouts, selling one share, or a partition.</small></a></li>
-          <li><a href="/blog/can-co-owner-sell-house.html">A co-owner won’t sell<small>Your rights, and how to cash out your share.</small></a></li>
-          <li><a href="/blog/partition-lawsuit-explained.html">Partition lawsuit filed or threatened<small>What it costs and how long it takes.</small></a></li>
-          <li><a href="/blog/selling-house-during-divorce.html">Divorce or separation<small>Before, during or after the decree.</small></a></li>
+          <li><a href="/blog/heirs-cant-agree-sell-inherited-house.html"><span class="ic" aria-hidden="true">👪</span>Heirs or siblings can’t agree<small>Buyouts, selling one share, or a partition.</small></a></li>
+          <li><a href="/blog/can-co-owner-sell-house.html"><span class="ic" aria-hidden="true">🔒</span>A co-owner won’t sell<small>Your rights, and how to cash out your share.</small></a></li>
+          <li><a href="/blog/partition-lawsuit-explained.html"><span class="ic" aria-hidden="true">📜</span>Partition lawsuit filed or threatened<small>What it costs and how long it takes.</small></a></li>
+          <li><a href="/blog/selling-house-during-divorce.html"><span class="ic" aria-hidden="true">💔</span>Divorce or separation<small>Before, during or after the decree.</small></a></li>
         </ul>
       </section>
       <section aria-labelledby="g3">
-        <h3 id="g3">The owner can’t sign</h3>
+        <h3 id="g3"><span class="ic" aria-hidden="true">✍️</span>The owner can’t sign</h3>
         <p class="q">They’re unavailable, incapacitated or far away.</p>
         <ul>
-          <li><a href="/blog/can-you-sell-house-while-incarcerated.html">Owner is in jail or prison<small>Power of attorney, facility notaries, closing without them present.</small></a></li>
-          <li><a href="/blog/sell-parents-house-power-of-attorney-maryland.html">Selling a parent’s house with power of attorney<small>What the agent can and can’t sign.</small></a></li>
-          <li><a href="/blog/sell-house-fast-pcs-orders-maryland-military.html">Military PCS orders<small>Close on your report date, from anywhere.</small></a></li>
+          <li><a href="/blog/can-you-sell-house-while-incarcerated.html"><span class="ic" aria-hidden="true">⛓️</span>Owner is in jail or prison<small>Power of attorney, facility notaries, closing without them present.</small></a></li>
+          <li><a href="/blog/sell-parents-house-power-of-attorney-maryland.html"><span class="ic" aria-hidden="true">✍️</span>Selling a parent’s house with power of attorney<small>What the agent can and can’t sign.</small></a></li>
+          <li><a href="/blog/sell-house-fast-pcs-orders-maryland-military.html"><span class="ic" aria-hidden="true">🎖️</span>Military PCS orders<small>Close on your report date, from anywhere.</small></a></li>
         </ul>
       </section>
       <section aria-labelledby="g4">
-        <h3 id="g4">Title, liens or money trouble</h3>
+        <h3 id="g4"><span class="ic" aria-hidden="true">📄</span>Title, liens or money trouble</h3>
         <p class="q">Something on the record has to be cleared first.</p>
         <ul>
-          <li><a href="/sell/pages/title-issues.html">Clouded title or a broken chain of title<small>Gaps in ownership records, old deeds, missing signatures.</small></a></li>
-          <li><a href="/blog/sell-house-with-liens-back-taxes-maryland.html">Liens, judgments and back taxes<small>Paid at settlement from the sale price.</small></a></li>
-          <li><a href="/blog/stop-foreclosure-sell-house.html">Facing foreclosure<small>Selling before the auction date.</small></a></li>
-          <li><a href="/blog/sell-maryland-house-before-tax-sale.html">Tax sale coming up<small>Getting ahead of the redemption clock.</small></a></li>
+          <li><a href="/sell/pages/title-issues.html"><span class="ic" aria-hidden="true">📄</span>Clouded title or a broken chain of title<small>Gaps in ownership records, old deeds, missing signatures.</small></a></li>
+          <li><a href="/blog/sell-house-with-liens-back-taxes-maryland.html"><span class="ic" aria-hidden="true">🏦</span>Liens, judgments and back taxes<small>Paid at settlement from the sale price.</small></a></li>
+          <li><a href="/blog/stop-foreclosure-sell-house.html"><span class="ic" aria-hidden="true">⚠️</span>Facing foreclosure<small>Selling before the auction date.</small></a></li>
+          <li><a href="/blog/sell-maryland-house-before-tax-sale.html"><span class="ic" aria-hidden="true">🧾</span>Tax sale coming up<small>Getting ahead of the redemption clock.</small></a></li>
         </ul>
       </section>
       <section aria-labelledby="g5">
-        <h3 id="g5">The house itself</h3>
+        <h3 id="g5"><span class="ic" aria-hidden="true">🏠</span>The house itself</h3>
         <p class="q">Condition, tenants or timing.</p>
         <ul>
-          <li><a href="/sell/pages/distressed.html">Major repairs, fire or water damage<small>No repairs, no cleaning, no showings.</small></a></li>
-          <li><a href="/blog/selling-vacant-distressed-property-southern-maryland.html">Vacant or abandoned<small>Before it collects violations.</small></a></li>
-          <li><a href="/blog/sell-hoarder-house-maryland-no-judgment.html">Hoarder house<small>Discreet, as-is, nothing to clear out first.</small></a></li>
-          <li><a href="/blog/tired-landlord-sell-rental-property-maryland.html">Tired landlord, tenants in place<small>Sell with the lease or the tenant still there.</small></a></li>
-          <li><a href="/blog/relocating-from-maryland-sell-home-fast.html">Relocating<small>Close on your schedule from out of state.</small></a></li>
+          <li><a href="/sell/pages/distressed.html"><span class="ic" aria-hidden="true">🚧</span>Major repairs, fire or water damage<small>No repairs, no cleaning, no showings.</small></a></li>
+          <li><a href="/blog/selling-vacant-distressed-property-southern-maryland.html"><span class="ic" aria-hidden="true">🏚️</span>Vacant or abandoned<small>Before it collects violations.</small></a></li>
+          <li><a href="/blog/sell-hoarder-house-maryland-no-judgment.html"><span class="ic" aria-hidden="true">📦</span>Hoarder house<small>Discreet, as-is, nothing to clear out first.</small></a></li>
+          <li><a href="/blog/tired-landlord-sell-rental-property-maryland.html"><span class="ic" aria-hidden="true">🔑</span>Tired landlord, tenants in place<small>Sell with the lease or the tenant still there.</small></a></li>
+          <li><a href="/blog/relocating-from-maryland-sell-home-fast.html"><span class="ic" aria-hidden="true">🚚</span>Relocating<small>Close on your schedule from out of state.</small></a></li>
         </ul>
       </section>
       <section aria-labelledby="g6">
-        <h3 id="g6">Not sure which one you are?</h3>
+        <h3 id="g6"><span class="ic" aria-hidden="true">❓</span>Not sure which one you are?</h3>
         <p class="q">That’s normal. Most files involve two or three of these.</p>
         <ul>
-          <li><a href="#contact">Describe it in a sentence or two<small>We’ll tell you what applies, free, even if the answer is “don’t sell.”</small></a></li>
-          <li><a href="/blog/">Browse all guides<small>State-specific guides added every weekday.</small></a></li>
+          <li><a href="#contact"><span class="ic" aria-hidden="true">💬</span>Describe it in a sentence or two<small>We’ll tell you what applies, free, even if the answer is “don’t sell.”</small></a></li>
+          <li><a href="/blog/"><span class="ic" aria-hidden="true">📚</span>Browse all guides<small>State-specific guides added every weekday.</small></a></li>
         </ul>
       </section>
     </div>
@@ -441,8 +450,8 @@
     <div class="how-grid">
     <ol class="steps">
       <li><h3>Tell us what’s going on</h3><p>Use the short form or call. The basics are enough: where the house is, who owns it, and what’s making it complicated. The address is optional.</p></li>
-      <li><h3>We untangle it and propose a path</h3><p>We look into the title, the heirs and any liens, then come back with options: a cash offer, a partnership, or plain guidance on next steps.</p></li>
-      <li><h3>Close on your timeline</h3><p>You choose. We handle the paperwork and closing costs. Simple sales close in as few as 7 days; complex ones take as long as the legal process requires.</p></li>
+      <li><h3><span class="ic" aria-hidden="true">🔍</span>We untangle it and propose a path</h3><p>We look into the title, the heirs and any liens, then come back with options: a cash offer, a partnership, or plain guidance on next steps.</p></li>
+      <li><h3><span class="ic" aria-hidden="true">🔑</span>Close on your timeline</h3><p>You choose. We handle the paperwork and closing costs. Simple sales close in as few as 7 days; complex ones take as long as the legal process requires.</p></li>
     </ol>
     <aside class="chain chain-how" aria-labelledby="chain-h">
       <h2 id="chain-h">What a stuck house usually looks like</h2>
@@ -470,11 +479,11 @@
       <p>Dustin Ray founded Pages of Purpose LLC after more than a decade in property research, title resolution and real estate investing, helping homeowners across the country through some of the most complicated property situations there are.</p>
       <p>The work is mostly patient research: tracking down missing heirs, clearing clouded titles, untangling probate disputes. We take on the hardest cases deliberately, and we make sure every owner gets a fair shake whatever their circumstances.</p>
       <dl class="methods">
-        <div><dt>Experienced attorneys</dt><dd>For estates, quiet-title and partition questions.</dd></div>
-        <div><dt>Private investigators</dt><dd>To locate owners and heirs who can’t be found.</dd></div>
-        <div><dt>Genealogical research</dt><dd>To prove who inherits when there’s no will.</dd></div>
-        <div><dt>Title cleanup</dt><dd>Liens, judgments and gaps in the chain of title.</dd></div>
-        <div><dt>Cash or partnership</dt><dd>Whichever leaves you better off.</dd></div>
+        <div><dt><span class="ic" aria-hidden="true">⚖️</span>Experienced attorneys</dt><dd>For estates, quiet-title and partition questions.</dd></div>
+        <div><dt><span class="ic" aria-hidden="true">🔍</span>Private investigators</dt><dd>To locate owners and heirs who can’t be found.</dd></div>
+        <div><dt><span class="ic" aria-hidden="true">🧬</span>Genealogical research</dt><dd>To prove who inherits when there’s no will.</dd></div>
+        <div><dt><span class="ic" aria-hidden="true">📄</span>Title cleanup</dt><dd>Liens, judgments and gaps in the chain of title.</dd></div>
+        <div><dt><span class="ic" aria-hidden="true">🤝</span>Cash or partnership</dt><dd>Whichever leaves you better off.</dd></div>
       </dl>
       <p style="margin-top:20px"><a href="/about.html">Read more about Dustin and the company</a></p>
     </div>
