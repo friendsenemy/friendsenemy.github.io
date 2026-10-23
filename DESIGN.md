@@ -85,4 +85,7 @@ WCAG 2.2 AA: 4.5:1 text contrast, visible `:focus-visible` ring (3px gold on dar
 
 ## 9. What not to do (enforced)
 
-Emoji as icons; purple or blue-purple gradients; neon/glow shadows; colored left-border "side tab" callouts; cards nested in cards; autoplaying media; fake testimonials, deal counts, review stars or credentials; claiming to give legal advice.
+Owner preference (2026-10-23): small emoji icons next to situations, features and list items are part of the brand and stay.
+
+
+Purple or blue-purple gradients; glow shadows (exception: the homepage video's green pulsing Click for Sound button, kept at the owner's request); colored left-border "side tab" callouts; cards nested in cards; autoplaying media; fake testimonials, deal counts, review stars or credentials; claiming to give legal advice.
