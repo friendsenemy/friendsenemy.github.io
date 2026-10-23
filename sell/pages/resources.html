@@ -155,6 +155,7 @@ a{color:var(--blue);text-decoration:none}
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<style>.pop-ask{background:linear-gradient(135deg,#c8a951,#e0c67a);color:#1a2332;padding:26px 24px;border-radius:10px;margin:36px auto;max-width:640px;box-shadow:0 6px 20px rgba(200,169,81,.35);border:2px solid #1a2332;font-family:'Segoe UI',system-ui,sans-serif}.pop-ask h3{color:#1a2332;margin:0 0 8px;font-size:1.4rem;border:none;padding:0}.pop-ask p.sub{margin:0 0 14px;font-weight:600;font-size:1rem;color:#1a2332}.pop-ask input,.pop-ask textarea{width:100%;padding:12px;margin:7px 0;border:2px solid #1a2332;border-radius:5px;font-family:inherit;background:#fff;font-size:1rem;box-sizing:border-box}.pop-ask textarea{resize:vertical;min-height:70px}.pop-ask button{background:#1a2332;color:#c8a951;padding:14px 28px;border:none;border-radius:5px;font-weight:bold;cursor:pointer;font-size:1.05rem;width:100%;margin-top:10px;text-transform:uppercase;letter-spacing:.5px}.pop-ask .fine{font-size:.8rem;margin-top:10px;text-align:center;font-style:italic}.pop-float{position:fixed;bottom:24px;right:24px;background:#c8a951;color:#1a2332;padding:14px 22px;border-radius:50px;font-weight:bold;text-decoration:none;box-shadow:0 4px 15px rgba(0,0,0,.25);z-index:1000;font-family:'Segoe UI',system-ui,sans-serif;font-size:.95rem}.pop-float:hover{background:#d4b565}@media(max-width:600px){.pop-float{bottom:16px;right:16px;padding:12px 18px;font-size:.85rem}}</style>
 </head>
 <body>
 <nav class="nav"><div class="nav-inner"><a href="/" class="nav-logo">Pages of <span>Purpose LLC</span></a><button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('active')" aria-label="Menu">&#9776;</button><div class="nav-links" id="navLinks"><a href="/#how-it-works" class="nav-link">How It Works</a><a href="/#situations" class="nav-link">Situations</a><a href="/#about" class="nav-link">About</a><a href="/sell/" class="nav-link">Sell Your Property</a><a href="/#faq" class="nav-link">FAQ</a><a href="/#contact" class="nav-cta btn-nav">Get a Cash Offer</a></div></div></nav>
@@ -252,5 +253,22 @@ a{color:var(--blue);text-decoration:none}
 <div class="sticky-cta"><a href="/#contact" class="btn btn-primary">Get My Free Property Offer &rarr;</a></div>
 
 <script src="../js/main.js"></script>
+
+<div class="pop-ask" id="pop-ask">
+<h3>Not Sure Yet? Ask Us — Free, No Pressure</h3>
+<p class="sub">Tell us what's going on in a sentence or two. We'll answer honestly and, only if you want it, send a written cash offer. Family members asking on someone's behalf welcome.</p>
+<form action="https://formspree.io/f/xjgpnqlj" method="POST">
+<input type="hidden" name="_subject" value="Lead — Page sell-pages-resources">
+<input type="hidden" name="source_page" value="ask-sell-pages-resources">
+<input type="hidden" name="_next" value="https://pagesofpurposellc.com/thank-you.html">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="text" name="contact_info" placeholder="Best way to reach you (email or phone)" required>
+<input type="text" name="property_address" placeholder="Property address (optional)">
+<textarea name="brief_situation" placeholder="Example: I own a house in your area that needs work and I just want it gone. What would you offer?" required></textarea>
+<button type="submit">Get a Free Answer</button>
+<p class="fine">100% confidential. No obligation. We reply within 2 business days.</p>
+</form>
+</div>
+<a href="#pop-ask" class="pop-float" onclick="var f=document.querySelector('#pop-ask')||document.querySelector('form');if(f){f.scrollIntoView({behavior:'smooth'});return false;}">📝 Ask Us — Free</a>
 </body>
 </html>
