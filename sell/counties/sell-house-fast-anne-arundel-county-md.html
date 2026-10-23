@@ -73,18 +73,25 @@
  ]
 }
 </script>
+<link rel="preload" href="/assets/fonts/public-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/pop.css?v=1">
 </head>
-<body>
-<header>
-<nav>
-<a href="/">Pages of Purpose LLC</a>
-<ul>
-<li><a href="/sell/">Sell</a></li>
-<li><a href="/sell/pages/contact.html">Contact</a></li>
-</ul>
-</nav>
+<body class="pp pp-local pp-t-simple">
+<a class="pp-skip" href="#main">Skip to main content</a>
+<header class="pp-hd">
+  <div class="pp-wrap pp-hd-in">
+    <a class="pp-brand" href="/"><img src="/img/logo-72.png" alt="" width="36" height="36"><span>Pages of Purpose</span></a>
+    <nav class="pp-nav" aria-label="Main"><a href="/#situations">Situations</a><a href="/blog/">Guides</a><a href="/sell/">How selling works</a><a href="/about.html">About</a></nav>
+    <a class="pp-hd-phone" href="tel:+12272359530">(227) 235-9530</a>
+    <a class="pp-btn pp-btn-gold pp-hd-cta" href="#pop-ask">Ask a question</a>
+    <details class="pp-menu">
+      <summary><svg aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h14M3 10h14M3 14h14"/></svg>Menu</summary>
+      <nav aria-label="Main (mobile)"><a href="/#situations">Situations</a><a href="/blog/">Guides</a><a href="/sell/">How selling works</a><a href="/about.html">About</a><a href="tel:+12272359530">Call (227) 235-9530</a><a class="pp-btn pp-btn-gold" href="#pop-ask">Ask a question</a></nav>
+    </details>
+  </div>
 </header>
-<main>
+
+<main id="main">
 <h1>Sell Your House Fast in Anne Arundel County, MD</h1>
 <p>Selling a house in Anne Arundel County, Maryland, can be challenging, but Pages of Purpose LLC is here to help. We are professional cash home buyers who understand the local real estate market and offer fair, competitive prices for homes in any condition.</p>
 <section>
@@ -134,18 +141,50 @@
 <input type="hidden" name="_subject" value="Lead — County page Anne Arundel County, MD">
 <input type="hidden" name="source_page" value="ask-sell-counties-sell-house-fast-anne-arundel-county-md">
 <input type="hidden" name="_next" value="https://pagesofpurposellc.com/thank-you.html">
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="text" name="contact_info" placeholder="Best way to reach you (email or phone)" required>
-<input type="text" name="property_address" placeholder="Property address (optional)">
-<textarea name="brief_situation" placeholder="Example: I inherited a house in Anne Arundel County, MD with my brother and we can't agree on what to do. What are our options?" required></textarea>
+<input aria-label="Your name" type="text" name="name" placeholder="Your Name" required autocomplete="name">
+<input aria-label="Phone or email" type="text" name="contact_info" placeholder="Best way to reach you (email or phone)" required autocomplete="tel">
+<input aria-label="Property address (optional)" type="text" name="property_address" placeholder="Property address (optional)" autocomplete="street-address">
+<textarea aria-label="Your question" name="brief_situation" placeholder="Example: I inherited a house in Anne Arundel County, MD with my brother and we can't agree on what to do. What are our options?" required></textarea>
 <button type="submit">Get a Free Answer</button>
 <p class="fine">100% confidential. No obligation. We reply within 2 business days.</p>
 </form>
 </div>
-<a href="#pop-ask" class="pop-float" onclick="var f=document.querySelector('#pop-ask')||document.querySelector('form');if(f){f.scrollIntoView({behavior:'smooth'});return false;}">📝 Ask Us — Free</a>
+<a href="#pop-ask" class="pop-float" onclick="var f=document.querySelector('#pop-ask')||document.querySelector('form');if(f){f.scrollIntoView({behavior:'smooth'});return false;}">Ask a question</a>
 </main>
-<footer>
-<p>&copy; 2026 Pages of Purpose LLC &bull; <a href="/">Home</a> &bull; <a href="/sell/">Sell Your House</a> &bull; <a href="/blog/">Guides</a></p>
+<footer class="pp-ft">
+  <div class="pp-wrap pp-ft-grid">
+    <div>
+      <p class="pp-ft-brand">Pages of Purpose LLC</p>
+      <p>A Maryland company buying houses for cash in all 50 states, including houses stuck in probate, heir or co-owner disputes, divorce, liens and title problems.</p>
+      <p><a href="tel:+12272359530">(227) 235-9530</a><br><a href="mailto:pagesofpurposellc@gmail.com">pagesofpurposellc@gmail.com</a></p>
+    </div>
+    <nav aria-label="Situations">
+      <h2>Situations</h2>
+      <ul>
+        <li><a href="/blog/what-happens-house-no-will.html">Probate and inherited houses</a></li>
+        <li><a href="/blog/heirs-cant-agree-sell-inherited-house.html">Heirs who can't agree</a></li>
+        <li><a href="/blog/can-co-owner-sell-house.html">Co-owner won't sell</a></li>
+        <li><a href="/blog/can-you-sell-house-while-incarcerated.html">Owner in jail or prison</a></li>
+        <li><a href="/blog/selling-house-during-divorce.html">Divorce</a></li>
+        <li><a href="/blog/partition-lawsuit-explained.html">Partition lawsuits</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Company">
+      <h2>Company</h2>
+      <ul>
+        <li><a href="/about.html">About Dustin Ray</a></li>
+        <li><a href="/sell/">How selling works</a></li>
+        <li><a href="/blog/">All guides</a></li>
+        <li><a href="/sell/pages/contact.html">Contact</a></li>
+        <li><a href="/privacy-policy.html">Privacy policy</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="pp-wrap pp-ft-legal">
+    <p>Pages of Purpose LLC is a real estate company, not a law firm. Nothing on this site is legal, tax or financial advice; speak with an attorney licensed in the state where the property is located.</p>
+    <p>&copy; 2026 Pages of Purpose LLC</p>
+  </div>
 </footer>
+<script src="/assets/pop.js" defer></script>
 </body>
 </html>
