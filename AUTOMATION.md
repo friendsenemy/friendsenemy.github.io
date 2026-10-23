@@ -48,3 +48,13 @@ Property address is optional on both. That is the whole point of the low-frictio
 ## Tone
 
 Honest to the point of arguing against the sale when the sale isn't right. Every page should tell the reader when listing on the open market beats selling to us — because on a sound house with agreeable heirs, it does, and saying so is what makes the rest of the page credible.
+
+
+## Blog index (added 2026-10-22)
+Every new blog page MUST also get a `<article class="post-card">` entry inserted at the top of the list in `blog/index.html` (tag = state or 'National Pillar', h3 link, one-sentence description, read-more link). Commit it in the same commit as the page. Pages missing from the index get crawled later and rank slower.
+
+## Phone number
+The only phone number on the site is (227) 235-9530 / +12272359530. Never use any other number.
+
+## Forms (site-wide rules)
+`sms_consent` checkbox and `property_address` are never `required`. Every form has hidden `_next` = https://pagesofpurposellc.com/thank-you.html and a unique `source_page`.
