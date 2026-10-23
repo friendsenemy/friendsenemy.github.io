@@ -415,120 +415,124 @@
 
     <!-- JSON-LD Schemas -->
     <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://pagesofpurposellc.com/#organization",
+   "name": "Pages of Purpose LLC",
+   "url": "https://pagesofpurposellc.com",
+   "telephone": "+1-227-235-9530"
+  },
+  {
+   "@type": "LocalBusiness",
+   "@id": "https://pagesofpurposellc.com/#localbusiness",
+   "name": "Pages of Purpose LLC",
+   "priceRange": "Free consultation",
+   "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+     "Monday",
+     "Tuesday",
+     "Wednesday",
+     "Thursday",
+     "Friday"
+    ],
+    "opens": "08:00",
+    "closes": "18:00"
+   },
+   "telephone": "+1-227-235-9530",
+   "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "MD",
+    "addressCountry": "US"
+   },
+   "url": "https://pagesofpurposellc.com"
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://pagesofpurposellc.com/#website",
+   "name": "Pages of Purpose LLC",
+   "url": "https://pagesofpurposellc.com",
+   "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+     "@type": "EntryPoint",
+     "urlTemplate": "https://pagesofpurposellc.com/blog/?s={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+   }
+  },
+  {
+   "@type": "BlogPosting",
+   "@id": "https://pagesofpurposellc.com/blog/what-happens-house-no-will.html",
+   "headline": "What Happens to a House When Someone Dies Without a Will?",
+   "description": "Learn what happens when a homeowner dies without a will. Inheritance, probate, taxes, and how to sell an inherited Maryland house fast for cash.",
+   "image": "https://pagesofpurposellc.com/pagesofpurposellc.png",
+   "datePublished": "2026-04-16T00:00:00Z",
+   "dateModified": "2026-04-16T00:00:00Z",
+   "author": {
+    "@type": "Person",
+    "name": "Dustin Ray"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://pagesofpurposellc.com/#organization"
+   },
+   "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://pagesofpurposellc.com/blog/what-happens-house-no-will.html"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Organization",
-          "@id": "https://pagesofpurposellc.com/#organization",
-          "name": "Pages of Purpose LLC",
-          "url": "https://pagesofpurposellc.com",
-          "telephone": "(227) 235-9530",
-          "sameAs": [
-            "https://www.linkedin.com/company/pages-of-purpose-llc",
-            "https://www.youtube.com/pagesofpurpose",
-            "https://www.reddit.com/r/pagesofpurpose",
-            "https://www.facebook.com/pagesofpurpose",
-            "https://maps.google.com/maps?q=pages+of+purpose+maryland"
-          ]
-        },
-        {
-          "@type": "LocalBusiness",
-          "@id": "https://pagesofpurposellc.com/#localbusiness",
-          "name": "Pages of Purpose LLC",
-          "priceRange": "Free consultation",
-          "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-            "opens": "08:00",
-            "closes": "18:00"
-          },
-          "telephone": "(227) 235-9530"
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://pagesofpurposellc.com/#website",
-          "name": "Pages of Purpose LLC",
-          "url": "https://pagesofpurposellc.com",
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": {
-              "@type": "EntryPoint",
-              "urlTemplate": "https://pagesofpurposellc.com/blog/?s={search_term_string}"
-            },
-            "query-input": "required name=search_term_string"
-          }
-        },
-        {
-          "@type": "BlogPosting",
-          "@id": "https://pagesofpurposellc.com/blog/what-happens-house-no-will.html",
-          "headline": "What Happens to a House When Someone Dies Without a Will?",
-          "description": "Learn what happens when a homeowner dies without a will. Inheritance, probate, taxes, and how to sell an inherited Maryland house fast for cash.",
-          "image": "https://pagesofpurposellc.com/images/blog-hero.jpg",
-          "datePublished": "2026-04-16T00:00:00Z",
-          "dateModified": "2026-04-16T00:00:00Z",
-          "author": {
-            "@type": "Person",
-            "name": "Dustin Ray",
-            "url": "https://www.linkedin.com/in/dustin-ray-pages-of-purpose"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "@id": "https://pagesofpurposellc.com/#organization"
-          },
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://pagesofpurposellc.com/blog/what-happens-house-no-will.html"
-          }
-        },
-        {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "What happens to a house when the owner dies without a will?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "When someone dies without a will, their property passes through probate and is distributed according to state intestacy laws. In Maryland, the estate typically goes to the surviving spouse, children, or nearest relatives in order. The process can take 6 to 18 months and requires court involvement."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Can you sell an inherited house before probate is complete?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes, in many cases you can sell an inherited house before probate is finalized, but you typically need court approval or permission from the administrator. Alternatively, you can work with a cash buyer who specializes in inherited properties and can handle the process more quickly."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Who inherits a house if there is no will?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Under Maryland intestacy law, property is inherited in a specific order: surviving spouse, then children, then parents, then siblings, and so on. If there are no relatives, the property passes to the state."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How long does probate take for a house with no will?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Probate for a house with no will typically takes 6 to 12 months in most states. In Maryland, it averages 9 to 18 months, especially if the estate is contested or complex."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Do all heirs have to agree to sell an inherited house?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes, all heirs generally must agree to sell an inherited property. If heirs disagree, it can lead to delays, legal disputes, and the property remaining unsold. A cash buyer or real estate professional can help mediate and facilitate a faster sale."
-              }
-            }
-          ]
-        }
-      ]
+     "@type": "Question",
+     "name": "What happens to a house when the owner dies without a will?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "When someone dies without a will, their property passes through probate and is distributed according to state intestacy laws. In Maryland, the estate typically goes to the surviving spouse, children, or nearest relatives in order. The process can take 6 to 18 months and requires court involvement."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can you sell an inherited house before probate is complete?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, in many cases you can sell an inherited house before probate is finalized, but you typically need court approval or permission from the administrator. Alternatively, you can work with a cash buyer who specializes in inherited properties and can handle the process more quickly."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Who inherits a house if there is no will?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Under Maryland intestacy law, property is inherited in a specific order: surviving spouse, then children, then parents, then siblings, and so on. If there are no relatives, the property passes to the state."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How long does probate take for a house with no will?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Probate for a house with no will typically takes 6 to 12 months in most states. In Maryland, it averages 9 to 18 months, especially if the estate is contested or complex."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do all heirs have to agree to sell an inherited house?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, all heirs generally must agree to sell an inherited property. If heirs disagree, it can lead to delays, legal disputes, and the property remaining unsold. A cash buyer or real estate professional can help mediate and facilitate a faster sale."
+     }
     }
-    </script>
+   ]
+  }
+ ]
+}
+</script>
 <style>.pop-ask{background:linear-gradient(135deg,#c8a951,#e0c67a);color:#1a2332;padding:26px 24px;border-radius:10px;margin:36px auto;max-width:640px;box-shadow:0 6px 20px rgba(200,169,81,.35);border:2px solid #1a2332;font-family:'Segoe UI',system-ui,sans-serif}.pop-ask h3{color:#1a2332;margin:0 0 8px;font-size:1.4rem;border:none;padding:0}.pop-ask p.sub{margin:0 0 14px;font-weight:600;font-size:1rem;color:#1a2332}.pop-ask input,.pop-ask textarea{width:100%;padding:12px;margin:7px 0;border:2px solid #1a2332;border-radius:5px;font-family:inherit;background:#fff;font-size:1rem;box-sizing:border-box}.pop-ask textarea{resize:vertical;min-height:70px}.pop-ask button{background:#1a2332;color:#c8a951;padding:14px 28px;border:none;border-radius:5px;font-weight:bold;cursor:pointer;font-size:1.05rem;width:100%;margin-top:10px;text-transform:uppercase;letter-spacing:.5px}.pop-ask .fine{font-size:.8rem;margin-top:10px;text-align:center;font-style:italic}.pop-float{position:fixed;bottom:24px;right:24px;background:#c8a951;color:#1a2332;padding:14px 22px;border-radius:50px;font-weight:bold;text-decoration:none;box-shadow:0 4px 15px rgba(0,0,0,.25);z-index:1000;font-family:'Segoe UI',system-ui,sans-serif;font-size:.95rem}.pop-float:hover{background:#d4b565}@media(max-width:600px){.pop-float{bottom:16px;right:16px;padding:12px 18px;font-size:.85rem}}</style>
 </head>
 <body>
@@ -550,7 +554,7 @@
 
     <!-- Page Hero -->
     <section class="page-hero">
-        <h1>What Happens to a House When Someone Dies Without a Will?</h1>
+        <h1>Someone Died Without a Will — What Happens to Their House?</h1>
         <div class="breadcrumb">
             <a href="/">Home</a> &rarr; <a href="/blog/">Blog</a> &rarr; What Happens to a House When Someone Dies Without a Will?
         </div>
