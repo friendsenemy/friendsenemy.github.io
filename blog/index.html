@@ -97,25 +97,29 @@ nav ul.active{display:flex}
  ]
 }
 </script>
+<link rel="preload" href="/assets/fonts/public-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/pop.css?v=1">
 </head>
-<body>
-<header>
-<div class="nav-container">
-<a href="/" class="logo">Pages of Purpose</a>
-<button class="nav-toggle" aria-label="Menu">&#9776;</button>
-<nav><ul id="navLinks">
-<li><a href="/">Home</a></li>
-<li><a href="/sell/">Sell Your Property</a></li>
-<li><a href="/blog/">Blog</a></li>
-<li><a href="/#contact">Get Cash Offer</a></li>
-</ul></nav>
-</div>
+<body class="pp pp-index">
+<a class="pp-skip" href="#main">Skip to main content</a>
+<header class="pp-hd">
+  <div class="pp-wrap pp-hd-in">
+    <a class="pp-brand" href="/"><img src="/img/logo-72.png" alt="" width="36" height="36"><span>Pages of Purpose</span></a>
+    <nav class="pp-nav" aria-label="Main"><a href="/#situations">Situations</a><a href="/blog/">Guides</a><a href="/sell/">How selling works</a><a href="/about.html">About</a></nav>
+    <a class="pp-hd-phone" href="tel:+12272359530">(227) 235-9530</a>
+    <a class="pp-btn pp-btn-gold pp-hd-cta" href="/#contact">Ask a question</a>
+    <details class="pp-menu">
+      <summary><svg aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h14M3 10h14M3 14h14"/></svg>Menu</summary>
+      <nav aria-label="Main (mobile)"><a href="/#situations">Situations</a><a href="/blog/">Guides</a><a href="/sell/">How selling works</a><a href="/about.html">About</a><a href="tel:+12272359530">Call (227) 235-9530</a><a class="pp-btn pp-btn-gold" href="/#contact">Ask a question</a></nav>
+    </details>
+  </div>
 </header>
+
 <section class="hero">
 <h1>Cash Home Buyer Blog</h1>
 <p>Straight answers and practical guides for homeowners who need to sell fast—any situation, any condition, nationwide and Maryland-specific.</p>
 </section>
-<main class="main-content">
+<main id="main" class="main-content">
 <div class="intro">
 <h2>Real Guides for Real Situations</h2>
 <p>Every article here covers a situation we've actually helped sellers navigate. Whether you're dealing with co-ownership disputes, inherited property, incarceration, foreclosure, or something more complicated, we've written it plainly so you can make an informed decision.</p>
@@ -348,18 +352,41 @@ nav ul.active{display:flex}
 <a href="/#contact" class="btn">Get Your Free Cash Offer</a>
 <p class="phone-cta">Or call: <a href="tel:+12272359530">(227) 235-9530</a></p>
 </section>
-<footer>
-<p>&copy; 2026 Pages of Purpose LLC &bull; <a href="/about.html" style="color:inherit">About Dustin Ray</a> &bull; All rights reserved</p>
-<p style="font-size:.9rem;margin-top:10px">
-<a href="/">Home</a> &bull;
-<a href="/sell/">Sell Your Property</a> &bull;
-<a href="/blog/">Blog</a> &bull;
-<a href="/sell/pages/resources.html">Free Home Selling Guides</a> &bull;
-<a href="/privacy-policy.html">Privacy Policy</a>
-</p>
+<footer class="pp-ft">
+  <div class="pp-wrap pp-ft-grid">
+    <div>
+      <p class="pp-ft-brand">Pages of Purpose LLC</p>
+      <p>A Maryland company buying houses for cash in all 50 states, including houses stuck in probate, heir or co-owner disputes, divorce, liens and title problems.</p>
+      <p><a href="tel:+12272359530">(227) 235-9530</a><br><a href="mailto:pagesofpurposellc@gmail.com">pagesofpurposellc@gmail.com</a></p>
+    </div>
+    <nav aria-label="Situations">
+      <h2>Situations</h2>
+      <ul>
+        <li><a href="/blog/what-happens-house-no-will.html">Probate and inherited houses</a></li>
+        <li><a href="/blog/heirs-cant-agree-sell-inherited-house.html">Heirs who can't agree</a></li>
+        <li><a href="/blog/can-co-owner-sell-house.html">Co-owner won't sell</a></li>
+        <li><a href="/blog/can-you-sell-house-while-incarcerated.html">Owner in jail or prison</a></li>
+        <li><a href="/blog/selling-house-during-divorce.html">Divorce</a></li>
+        <li><a href="/blog/partition-lawsuit-explained.html">Partition lawsuits</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Company">
+      <h2>Company</h2>
+      <ul>
+        <li><a href="/about.html">About Dustin Ray</a></li>
+        <li><a href="/sell/">How selling works</a></li>
+        <li><a href="/blog/">All guides</a></li>
+        <li><a href="/sell/pages/contact.html">Contact</a></li>
+        <li><a href="/privacy-policy.html">Privacy policy</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="pp-wrap pp-ft-legal">
+    <p>Pages of Purpose LLC is a real estate company, not a law firm. Nothing on this site is legal, tax or financial advice; speak with an attorney licensed in the state where the property is located.</p>
+    <p>&copy; 2026 Pages of Purpose LLC</p>
+  </div>
 </footer>
-<script>
-document.querySelector('.nav-toggle').addEventListener('click',()=>document.getElementById('navLinks').classList.toggle('active'));
-</script>
+
+<script src="/assets/pop.js" defer></script>
 </body>
 </html>

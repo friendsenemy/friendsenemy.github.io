@@ -447,10 +447,26 @@
  ]
 }
 </script>
+<link rel="preload" href="/assets/fonts/public-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/pop.css?v=1">
 </head>
-<body>
+<body class="pp pp-guide pp-relight">
+<a class="pp-skip" href="#main">Skip to main content</a>
+<header class="pp-hd">
+  <div class="pp-wrap pp-hd-in">
+    <a class="pp-brand" href="/"><img src="/img/logo-72.png" alt="" width="36" height="36"><span>Pages of Purpose</span></a>
+    <nav class="pp-nav" aria-label="Main"><a href="/#situations">Situations</a><a href="/blog/">Guides</a><a href="/sell/">How selling works</a><a href="/about.html">About</a></nav>
+    <a class="pp-hd-phone" href="tel:+12272359530">(227) 235-9530</a>
+    <a class="pp-btn pp-btn-gold pp-hd-cta" href="#pop-ask">Ask a question</a>
+    <details class="pp-menu">
+      <summary><svg aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h14M3 10h14M3 14h14"/></svg>Menu</summary>
+      <nav aria-label="Main (mobile)"><a href="/#situations">Situations</a><a href="/blog/">Guides</a><a href="/sell/">How selling works</a><a href="/about.html">About</a><a href="tel:+12272359530">Call (227) 235-9530</a><a class="pp-btn pp-btn-gold" href="#pop-ask">Ask a question</a></nav>
+    </details>
+  </div>
+</header>
+<main id="main">
 
-<header class="hero">
+<div class="pp-pagehead">
   <div class="hero-inner">
     <div class="eyebrow">The Complete 2026 Guide</div>
     <h1>How to Sell Your House Fast for Cash in 2026</h1>
@@ -461,7 +477,7 @@
       <span><strong>For:</strong> Homeowners &amp; Heirs</span>
     </div>
   </div>
-</header>
+</div>
 
 <article>
 
@@ -508,7 +524,7 @@
 <div class="process-grid">
   <div class="step">
     <div class="step-num">1</div>
-    <h4>Initial Contact</h4>
+    <h3>Initial Contact</h3>
     <p>You submit basic info about the property via a form or phone call — address, condition, and your situation.</p>
   </div>
   <div class="step">
@@ -549,7 +565,7 @@
 
 <div class="signal-grid">
   <div class="signal-box good">
-    <h4>✓ Green Flags</h4>
+    <h3>✓ Green Flags</h3>
     <ul>
       <li><strong>Transparent pricing</strong> — no fees, no commissions, no surprise deductions at closing</li>
       <li><strong>Written offers</strong> with clear terms, not verbal promises</li>
@@ -586,7 +602,7 @@
 
 <div class="situation-grid">
   <div class="situation">
-    <h4>Foreclosure</h4>
+    <h3>Foreclosure</h3>
     <p>When the clock is running, 7 days beats 90 days. A cash sale can stop foreclosure before it hits your credit report.</p>
   </div>
   <div class="situation">
@@ -682,7 +698,7 @@
 <h2 id="faq">Frequently Asked Questions</h2>
 
 <div class="faq-item">
-  <h4>How fast can I actually sell my house for cash?</h4>
+  <h3>How fast can I actually sell my house for cash?</h3>
   <p>As fast as 7 days from accepting an offer, though most closings land in the 10–21 day range depending on how quickly title can be verified and scheduled. If you need more time, good buyers will close on your timeline instead.</p>
 </div>
 
@@ -756,19 +772,53 @@
 <input type="hidden" name="_subject" value="Lead — Blog blog-sell-house-fast-cash-guide">
 <input type="hidden" name="source_page" value="ask-blog-sell-house-fast-cash-guide">
 <input type="hidden" name="_next" value="https://pagesofpurposellc.com/thank-you.html">
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="text" name="contact_info" placeholder="Best way to reach you (email or phone)" required>
-<input type="text" name="property_address" placeholder="Property address (optional)">
-<textarea name="brief_situation" placeholder="Example: my mother passed and the house is still in her name. Nobody has filed anything. What do we do?" required></textarea>
+<input aria-label="Your name" type="text" name="name" placeholder="Your Name" required autocomplete="name">
+<input aria-label="Phone or email" type="text" name="contact_info" placeholder="Best way to reach you (email or phone)" required autocomplete="tel">
+<input aria-label="Property address (optional)" type="text" name="property_address" placeholder="Property address (optional)" autocomplete="street-address">
+<textarea aria-label="Your question" name="brief_situation" placeholder="Example: my mother passed and the house is still in her name. Nobody has filed anything. What do we do?" required></textarea>
 <button type="submit">Get a Free Answer</button>
 <p class="fine">100% confidential. No obligation. We reply within 2 business days.</p>
 </form>
 </div>
 </article>
 
-<footer>
-  This guide is provided for informational purposes. Every homeowner's situation is unique — consult appropriate professionals (real estate attorneys, tax advisors, financial planners) before making major decisions about your property.
+</main>
+<a href="#pop-ask" class="pp-float">Ask a question</a>
+<footer class="pp-ft">
+  <div class="pp-wrap pp-ft-grid">
+    <div>
+      <p class="pp-ft-brand">Pages of Purpose LLC</p>
+      <p>A Maryland company buying houses for cash in all 50 states, including houses stuck in probate, heir or co-owner disputes, divorce, liens and title problems.</p>
+      <p><a href="tel:+12272359530">(227) 235-9530</a><br><a href="mailto:pagesofpurposellc@gmail.com">pagesofpurposellc@gmail.com</a></p>
+    </div>
+    <nav aria-label="Situations">
+      <h2>Situations</h2>
+      <ul>
+        <li><a href="/blog/what-happens-house-no-will.html">Probate and inherited houses</a></li>
+        <li><a href="/blog/heirs-cant-agree-sell-inherited-house.html">Heirs who can't agree</a></li>
+        <li><a href="/blog/can-co-owner-sell-house.html">Co-owner won't sell</a></li>
+        <li><a href="/blog/can-you-sell-house-while-incarcerated.html">Owner in jail or prison</a></li>
+        <li><a href="/blog/selling-house-during-divorce.html">Divorce</a></li>
+        <li><a href="/blog/partition-lawsuit-explained.html">Partition lawsuits</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Company">
+      <h2>Company</h2>
+      <ul>
+        <li><a href="/about.html">About Dustin Ray</a></li>
+        <li><a href="/sell/">How selling works</a></li>
+        <li><a href="/blog/">All guides</a></li>
+        <li><a href="/sell/pages/contact.html">Contact</a></li>
+        <li><a href="/privacy-policy.html">Privacy policy</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="pp-wrap pp-ft-legal">
+    <p>Pages of Purpose LLC is a real estate company, not a law firm. Nothing on this site is legal, tax or financial advice; speak with an attorney licensed in the state where the property is located.</p>
+    <p>&copy; 2026 Pages of Purpose LLC</p>
+  </div>
 </footer>
 
+<script src="/assets/pop.js" defer></script>
 </body>
 </html>
