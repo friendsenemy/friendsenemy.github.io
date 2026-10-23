@@ -21,7 +21,7 @@
 | 2 | P1 | `sell-probate-house-dallas-tx.html` | cash buyer for probate house Dallas TX | "buy dallas probate home quick for cash" pos 17.3 | what-happens-house-no-will || done |
 | 3 | P1 | `sell-house-while-in-jail-texas.html` | sell house while in jail Texas | "can you sell property while in jail in texas" pos 4.7, 16 impr | can-you-sell-house-while-incarcerated || done |
 | 4 | P1 | `sell-inherited-house-charlotte-nc.html` | sell inherited house Charlotte NC | 242 impr / city, pos 36–48 | heirs-cant-agree-sell-inherited-house || done |
-| 5 | P1 | `sell-house-before-foreclosure-phoenix-az.html` | sell house before foreclosure Phoenix AZ | "sell my house before foreclosure phoenix" pos 11.8 | stop-foreclosure-sell-house | todo |
+| 5 | P1 | `sell-house-before-foreclosure-phoenix-az.html` | sell house before foreclosure Phoenix AZ | "sell my house before foreclosure phoenix" pos 11.8 | stop-foreclosure-sell-house | done |
 | 6 | P1 | `sell-probate-house-columbus-oh.html` | sell probate house Columbus OH | "probate house sale columbus" pos 23.7 | what-happens-house-no-will | todo |
 | 7 | P1 | `sell-house-stop-foreclosure-columbus-oh.html` | sell house to stop foreclosure Columbus OH | "sell house to stop foreclosure columbus" pos 16.7 | stop-foreclosure-sell-house | todo |
 | 8 | P1 | `sell-inherited-house-nashville-tn.html` | sell inherited house Nashville TN | 146 impr Antioch + 19 Nashville | heirs-cant-agree-sell-inherited-house | todo |
