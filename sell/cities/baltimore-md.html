@@ -29,52 +29,166 @@
   <link rel="stylesheet" href="../css/style.css">
   <!-- GEO: JSON-LD Schema for AI Search -->
   <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "RealEstateAgent",
-        "image": "https://pagesofpurposellc.com/pagesofpurposellc.png",
-        "priceRange": "$$",
-        "address": {"@type": "PostalAddress", "addressCountry": "US"},
-        "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "00:00", "closes": "23:59"}],
-        "@id": "https://pagesofpurposellc.com/sell/cities/baltimore-md.html#business",
-        "name": "Pages of Purpose LLC &mdash; Baltimore, MD",
-        "url": "https://pagesofpurposellc.com/sell/cities/baltimore-md.html",
-        "description": "We buy houses for cash in Baltimore, MD. Fair cash offers within 24 hours, no agent fees, no repairs needed. Close on your timeline.",
-        "telephone": "+1-227-235-9530",
-        "email": "pagesofpurposellc@gmail.com",
-        "areaServed": {
-          "@type": "City",
-          "name": "Baltimore",
-          "containedInPlace": {
-            "@type": "State",
-            "name": "Maryland"
-          }
-        },
-        "serviceType": ["Cash Home Buying", "As-Is Property Purchase", "Foreclosure Prevention", "Probate Property Purchase"],
-        "parentOrganization": {
-          "@id": "https://pagesofpurposellc.com/#organization"
-        }
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {"@type": "Question", "name": "How fast can you close on my house in Baltimore?", "acceptedAnswer": {"@type": "Answer", "text": "We can close in as few as 7 days in Baltimore, MD. If you need more time, we work on your schedule. There are no financing contingencies or appraisal delays &mdash; we pay cash."}},
-          {"@type": "Question", "name": "Do I need to make repairs before selling my Baltimore home?", "acceptedAnswer": {"@type": "Answer", "text": "No repairs needed. We buy houses in any condition in Baltimore and surrounding areas. Whether your home has foundation issues, roof damage, mold, or just needs updating &mdash; we buy it as-is."}},
-          {"@type": "Question", "name": "How much will you pay for my house in Baltimore, MD?", "acceptedAnswer": {"@type": "Answer", "text": "Our cash offers are based on the current Baltimore market, comparable sales in your neighborhood, and the condition of your property. While our offers may be below full retail, you save on agent commissions (5-6%), repair costs, holding costs, and months of uncertainty."}},
-          {"@type": "Question", "name": "Are there any fees or commissions?", "acceptedAnswer": {"@type": "Answer", "text": "Zero fees and zero commissions. We also cover all standard closing costs. The cash offer you accept is the amount you receive at closing."}},
-          {"@type": "Question", "name": "Can you buy a Baltimore house with unpaid ground rent?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Baltimore's ground rent system is unique and creates title complications that scare off retail buyers. We work with Maryland title companies that regularly handle ground rent payoffs, redemption filings with the State Department of Assessments and Taxation (SDAT), and ejectment defense. If the ground lease holder cannot be located, our title partners can often clear title through established curative procedures."}},
-          {"@type": "Question", "name": "Can I sell a Baltimore house that is behind on property taxes or scheduled for tax sale?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Baltimore City holds one of the most aggressive tax sales in the country &mdash; hundreds of properties are sold to tax lien investors every May. If you have received a tax sale notice or a certificate of sale has already been issued, we can still close. We pay delinquent taxes, interest, and redemption amounts at settlement. The sooner you call, the more options you have."}},
-          {"@type": "Question", "name": "Do Maryland lead paint laws affect selling my Baltimore rental?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Maryland's Reduction of Lead Risk in Housing Act applies to rental properties built before 1978 and requires registration, inspections, and risk-reduction work. Many tired landlords sell to us specifically to exit these obligations. We buy lead-paint-affected rentals as-is, so you do not need to complete a risk reduction inspection or a Modified Risk Reduction standard before closing."}},
-          {"@type": "Question", "name": "Can I sell a vacant Baltimore rowhouse?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Baltimore has more than 15,000 vacant properties, and we buy them. Whether your rowhouse is boarded up, has a Vacant Building Notice (VBN) from Baltimore Housing, is missing the roof, or is part of a shell block, we are interested. You do not need to resolve code violations or VBN citations before selling to us."}},
-          {"@type": "Question", "name": "Can I sell a Baltimore property in a Historic District or under CHAP review?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Properties in Baltimore City's local historic districts (Fell's Point, Mount Vernon, Federal Hill, Bolton Hill, and others) fall under the Commission for Historical and Architectural Preservation (CHAP). We handle CHAP-reviewed properties routinely. We do not require you to obtain a Certificate of Appropriateness or complete historic-consistent repairs before selling."}},
-          {"@type": "Question", "name": "Do you buy Baltimore homes in the Orphans' Court probate process?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Maryland's Orphans' Court (Register of Wills in Harford and Montgomery counties) handles probate. We close on inherited Baltimore homes during regular estate administration, under the small estate procedure (for estates under $50,000), or with a Modified Administration. Bring in your Letters Testamentary or Letters of Administration and we can schedule closing."}}
-        ]
-      }
-    ]
+   "@type": "Organization",
+   "@id": "https://pagesofpurposellc.com/#organization",
+   "name": "Pages of Purpose LLC",
+   "url": "https://pagesofpurposellc.com",
+   "logo": "https://pagesofpurposellc.com/pagesofpurposellc.png",
+   "telephone": "+1-227-235-9530",
+   "email": "pagesofpurposellc@gmail.com",
+   "founder": {
+    "@type": "Person",
+    "name": "Dustin Ray",
+    "url": "https://pagesofpurposellc.com/about.html"
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "MD",
+    "addressCountry": "US"
+   },
+   "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+   }
+  },
+  {
+   "@type": "RealEstateAgent",
+   "image": "https://pagesofpurposellc.com/pagesofpurposellc.png",
+   "priceRange": "Free cash offer",
+   "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "MD",
+    "addressCountry": "US"
+   },
+   "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+     ],
+     "opens": "00:00",
+     "closes": "23:59"
+    }
+   ],
+   "@id": "https://pagesofpurposellc.com/sell/cities/baltimore-md.html#business",
+   "name": "Pages of Purpose LLC",
+   "url": "https://pagesofpurposellc.com/sell/cities/baltimore-md.html",
+   "description": "We buy houses for cash in Baltimore, MD. Fair cash offers within 24 hours, no agent fees, no repairs needed. Close on your timeline.",
+   "telephone": "+1-227-235-9530",
+   "email": "pagesofpurposellc@gmail.com",
+   "areaServed": {
+    "@type": "City",
+    "name": "Baltimore",
+    "containedInPlace": {
+     "@type": "State",
+     "name": "Maryland"
+    }
+   },
+   "serviceType": [
+    "Cash Home Buying",
+    "As-Is Property Purchase",
+    "Foreclosure Prevention",
+    "Probate Property Purchase"
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "How fast can you close on my house in Baltimore?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "We can close in as few as 7 days in Baltimore, MD. If you need more time, we work on your schedule. There are no financing contingencies or appraisal delays — we pay cash."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I need to make repairs before selling my Baltimore home?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No repairs needed. We buy houses in any condition in Baltimore and surrounding areas. Whether your home has foundation issues, roof damage, mold, or just needs updating — we buy it as-is."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How much will you pay for my house in Baltimore, MD?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Our cash offers are based on the current Baltimore market, comparable sales in your neighborhood, and the condition of your property. While our offers may be below full retail, you save on agent commissions (5-6%), repair costs, holding costs, and months of uncertainty."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Are there any fees or commissions?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Zero fees and zero commissions. We also cover all standard closing costs. The cash offer you accept is the amount you receive at closing."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can you buy a Baltimore house with unpaid ground rent?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Baltimore's ground rent system is unique and creates title complications that scare off retail buyers. We work with Maryland title companies that regularly handle ground rent payoffs, redemption filings with the State Department of Assessments and Taxation (SDAT), and ejectment defense. If the ground lease holder cannot be located, our title partners can often clear title through established curative procedures."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I sell a Baltimore house that is behind on property taxes or scheduled for tax sale?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Baltimore City holds one of the most aggressive tax sales in the country — hundreds of properties are sold to tax lien investors every May. If you have received a tax sale notice or a certificate of sale has already been issued, we can still close. We pay delinquent taxes, interest, and redemption amounts at settlement. The sooner you call, the more options you have."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do Maryland lead paint laws affect selling my Baltimore rental?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Maryland's Reduction of Lead Risk in Housing Act applies to rental properties built before 1978 and requires registration, inspections, and risk-reduction work. Many tired landlords sell to us specifically to exit these obligations. We buy lead-paint-affected rentals as-is, so you do not need to complete a risk reduction inspection or a Modified Risk Reduction standard before closing."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I sell a vacant Baltimore rowhouse?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Baltimore has more than 15,000 vacant properties, and we buy them. Whether your rowhouse is boarded up, has a Vacant Building Notice (VBN) from Baltimore Housing, is missing the roof, or is part of a shell block, we are interested. You do not need to resolve code violations or VBN citations before selling to us."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I sell a Baltimore property in a Historic District or under CHAP review?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Properties in Baltimore City's local historic districts (Fell's Point, Mount Vernon, Federal Hill, Bolton Hill, and others) fall under the Commission for Historical and Architectural Preservation (CHAP). We handle CHAP-reviewed properties routinely. We do not require you to obtain a Certificate of Appropriateness or complete historic-consistent repairs before selling."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do you buy Baltimore homes in the Orphans' Court probate process?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Maryland's Orphans' Court (Register of Wills in Harford and Montgomery counties) handles probate. We close on inherited Baltimore homes during regular estate administration, under the small estate procedure (for estates under $50,000), or with a Modified Administration. Bring in your Letters Testamentary or Letters of Administration and we can schedule closing."
+     }
+    }
+   ]
   }
-  </script>
+ ]
+}
+</script>
 </head>
 <body>
 <nav class="nav">

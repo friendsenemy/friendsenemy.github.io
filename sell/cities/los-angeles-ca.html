@@ -29,52 +29,166 @@
   <link rel="stylesheet" href="../css/style.css">
   <!-- GEO: JSON-LD Schema for AI Search -->
   <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "RealEstateAgent",
-        "image": "https://pagesofpurposellc.com/pagesofpurposellc.png",
-        "priceRange": "$$",
-        "address": {"@type": "PostalAddress", "addressCountry": "US"},
-        "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "00:00", "closes": "23:59"}],
-        "@id": "https://pagesofpurposellc.com/sell/cities/los-angeles-ca.html#business",
-        "name": "Pages of Purpose LLC &mdash; Los Angeles, CA",
-        "url": "https://pagesofpurposellc.com/sell/cities/los-angeles-ca.html",
-        "description": "We buy houses for cash in Los Angeles, CA. Fair cash offers within 24 hours, no agent fees, no repairs needed. Close on your timeline.",
-        "telephone": "+1-227-235-9530",
-        "email": "pagesofpurposellc@gmail.com",
-        "areaServed": {
-          "@type": "City",
-          "name": "Los Angeles",
-          "containedInPlace": {
-            "@type": "State",
-            "name": "California"
-          }
-        },
-        "serviceType": ["Cash Home Buying", "As-Is Property Purchase", "Foreclosure Prevention", "Probate Property Purchase"],
-        "parentOrganization": {
-          "@id": "https://pagesofpurposellc.com/#organization"
-        }
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {"@type": "Question", "name": "How fast can you close on my house in Los Angeles?", "acceptedAnswer": {"@type": "Answer", "text": "We can close in as few as 7 days in Los Angeles, CA. If you need more time, we work on your schedule. There are no financing contingencies or appraisal delays &mdash; we pay cash."}},
-          {"@type": "Question", "name": "Do I need to make repairs before selling my Los Angeles home?", "acceptedAnswer": {"@type": "Answer", "text": "No repairs needed. We buy houses in any condition in Los Angeles and surrounding areas. Whether your home has foundation issues, roof damage, mold, or just needs updating &mdash; we buy it as-is."}},
-          {"@type": "Question", "name": "How much will you pay for my house in Los Angeles, CA?", "acceptedAnswer": {"@type": "Answer", "text": "Our cash offers are based on the current Los Angeles market, comparable sales in your neighborhood, and the condition of your property. While our offers may be below full retail, you save on agent commissions (5-6%), repair costs, holding costs, and months of uncertainty."}},
-          {"@type": "Question", "name": "Are there any fees or commissions?", "acceptedAnswer": {"@type": "Answer", "text": "Zero fees and zero commissions. We also cover all standard closing costs. The cash offer you accept is the amount you receive at closing."}},
-          {"@type": "Question", "name": "How does Proposition 19 affect selling an inherited Los Angeles house?", "acceptedAnswer": {"@type": "Answer", "text": "California Proposition 19, which took effect February 2021, dramatically narrowed the parent-child exclusion from property tax reassessment. Unless the inherited home becomes the heir's primary residence within one year and qualifies for the homestead cap, it will be reassessed to current fair market value &mdash; often a 5x to 10x increase in annual property taxes. Many heirs can no longer afford to hold inherited Los Angeles property and sell to us to avoid the reassessment hit."}},
-          {"@type": "Question", "name": "Can I sell a Los Angeles rental property with tenants under the RSO?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The Los Angeles Rent Stabilization Ordinance (RSO) and the statewide Tenant Protection Act of 2019 (AB 1482) restrict rent increases and require just-cause eviction. We buy occupied rentals subject to RSO, including duplexes, triplexes, and fourplexes, without requiring the seller to vacate tenants, pay relocation assistance, or complete Ellis Act proceedings. We take the property subject to existing leases."}},
-          {"@type": "Question", "name": "Can I sell a wildfire-damaged Los Angeles property?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We buy homes damaged or destroyed by wildfires including Woolsey, Bobcat, Saddleridge, Palisades, and Eaton fires. Whether your property is a total loss lot, has smoke and ash damage, is in a mandatory debris removal zone, or is awaiting insurance settlement, we can make a cash offer. We also coordinate with your insurance adjuster and can close before or after your insurance payout."}},
-          {"@type": "Question", "name": "What about unpermitted ADUs, additions, or garage conversions?", "acceptedAnswer": {"@type": "Answer", "text": "Los Angeles has one of the highest rates of unpermitted work in the country &mdash; garage conversions, backyard ADUs, second-story additions, and bootleg units are everywhere. Traditional buyers walk away when they discover unpermitted square footage. We buy as-is with all unpermitted work intact. You do not need to legalize, demolish, or disclose it to us as a surprise. We handle it."}},
-          {"@type": "Question", "name": "Do Mello-Roos special taxes or HOA super liens block a cash sale?", "acceptedAnswer": {"@type": "Answer", "text": "No. Mello-Roos Community Facilities District (CFD) special taxes and delinquent HOA assessments are resolved at closing through the title company's payoff process. California gives HOAs strong lien priority &mdash; in some cases a foreclosure-grade super lien &mdash; but we have closed on properties with five-figure HOA arrears, active HOA foreclosure actions, and pending Mello-Roos delinquency filings."}},
-          {"@type": "Question", "name": "Do you buy Los Angeles homes in Superior Court probate?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Los Angeles County probate is administered by the Superior Court at the Stanley Mosk Courthouse. Estates over $184,500 require formal probate, which typically runs 12-18 months with statutory attorney fees of 4% on the first $100,000 down to 0.5% above $25M. We can buy during probate using a Probate Purchase Agreement with court confirmation under the Independent Administration of Estates Act (IAEA), and for small estates we can close using a Small Estate Affidavit after the 40-day wait."}}
-        ]
-      }
-    ]
+   "@type": "Organization",
+   "@id": "https://pagesofpurposellc.com/#organization",
+   "name": "Pages of Purpose LLC",
+   "url": "https://pagesofpurposellc.com",
+   "logo": "https://pagesofpurposellc.com/pagesofpurposellc.png",
+   "telephone": "+1-227-235-9530",
+   "email": "pagesofpurposellc@gmail.com",
+   "founder": {
+    "@type": "Person",
+    "name": "Dustin Ray",
+    "url": "https://pagesofpurposellc.com/about.html"
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "MD",
+    "addressCountry": "US"
+   },
+   "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+   }
+  },
+  {
+   "@type": "RealEstateAgent",
+   "image": "https://pagesofpurposellc.com/pagesofpurposellc.png",
+   "priceRange": "Free cash offer",
+   "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "MD",
+    "addressCountry": "US"
+   },
+   "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+     ],
+     "opens": "00:00",
+     "closes": "23:59"
+    }
+   ],
+   "@id": "https://pagesofpurposellc.com/sell/cities/los-angeles-ca.html#business",
+   "name": "Pages of Purpose LLC",
+   "url": "https://pagesofpurposellc.com/sell/cities/los-angeles-ca.html",
+   "description": "We buy houses for cash in Los Angeles, CA. Fair cash offers within 24 hours, no agent fees, no repairs needed. Close on your timeline.",
+   "telephone": "+1-227-235-9530",
+   "email": "pagesofpurposellc@gmail.com",
+   "areaServed": {
+    "@type": "City",
+    "name": "Los Angeles",
+    "containedInPlace": {
+     "@type": "State",
+     "name": "California"
+    }
+   },
+   "serviceType": [
+    "Cash Home Buying",
+    "As-Is Property Purchase",
+    "Foreclosure Prevention",
+    "Probate Property Purchase"
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "How fast can you close on my house in Los Angeles?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "We can close in as few as 7 days in Los Angeles, CA. If you need more time, we work on your schedule. There are no financing contingencies or appraisal delays — we pay cash."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I need to make repairs before selling my Los Angeles home?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No repairs needed. We buy houses in any condition in Los Angeles and surrounding areas. Whether your home has foundation issues, roof damage, mold, or just needs updating — we buy it as-is."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How much will you pay for my house in Los Angeles, CA?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Our cash offers are based on the current Los Angeles market, comparable sales in your neighborhood, and the condition of your property. While our offers may be below full retail, you save on agent commissions (5-6%), repair costs, holding costs, and months of uncertainty."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Are there any fees or commissions?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Zero fees and zero commissions. We also cover all standard closing costs. The cash offer you accept is the amount you receive at closing."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How does Proposition 19 affect selling an inherited Los Angeles house?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "California Proposition 19, which took effect February 2021, dramatically narrowed the parent-child exclusion from property tax reassessment. Unless the inherited home becomes the heir's primary residence within one year and qualifies for the homestead cap, it will be reassessed to current fair market value — often a 5x to 10x increase in annual property taxes. Many heirs can no longer afford to hold inherited Los Angeles property and sell to us to avoid the reassessment hit."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I sell a Los Angeles rental property with tenants under the RSO?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. The Los Angeles Rent Stabilization Ordinance (RSO) and the statewide Tenant Protection Act of 2019 (AB 1482) restrict rent increases and require just-cause eviction. We buy occupied rentals subject to RSO, including duplexes, triplexes, and fourplexes, without requiring the seller to vacate tenants, pay relocation assistance, or complete Ellis Act proceedings. We take the property subject to existing leases."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I sell a wildfire-damaged Los Angeles property?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. We buy homes damaged or destroyed by wildfires including Woolsey, Bobcat, Saddleridge, Palisades, and Eaton fires. Whether your property is a total loss lot, has smoke and ash damage, is in a mandatory debris removal zone, or is awaiting insurance settlement, we can make a cash offer. We also coordinate with your insurance adjuster and can close before or after your insurance payout."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What about unpermitted ADUs, additions, or garage conversions?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Los Angeles has one of the highest rates of unpermitted work in the country — garage conversions, backyard ADUs, second-story additions, and bootleg units are everywhere. Traditional buyers walk away when they discover unpermitted square footage. We buy as-is with all unpermitted work intact. You do not need to legalize, demolish, or disclose it to us as a surprise. We handle it."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do Mello-Roos special taxes or HOA super liens block a cash sale?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Mello-Roos Community Facilities District (CFD) special taxes and delinquent HOA assessments are resolved at closing through the title company's payoff process. California gives HOAs strong lien priority — in some cases a foreclosure-grade super lien — but we have closed on properties with five-figure HOA arrears, active HOA foreclosure actions, and pending Mello-Roos delinquency filings."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do you buy Los Angeles homes in Superior Court probate?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Los Angeles County probate is administered by the Superior Court at the Stanley Mosk Courthouse. Estates over $184,500 require formal probate, which typically runs 12-18 months with statutory attorney fees of 4% on the first $100,000 down to 0.5% above $25M. We can buy during probate using a Probate Purchase Agreement with court confirmation under the Independent Administration of Estates Act (IAEA), and for small estates we can close using a Small Estate Affidavit after the 40-day wait."
+     }
+    }
+   ]
   }
-  </script>
+ ]
+}
+</script>
 </head>
 <body>
 <nav class="nav">

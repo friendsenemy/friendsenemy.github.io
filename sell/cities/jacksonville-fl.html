@@ -29,46 +29,118 @@
   <link rel="stylesheet" href="../css/style.css">
   <!-- GEO: JSON-LD Schema for AI Search -->
   <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "RealEstateAgent",
-        "image": "https://pagesofpurposellc.com/pagesofpurposellc.png",
-        "priceRange": "$$",
-        "address": {"@type": "PostalAddress", "addressCountry": "US"},
-        "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "00:00", "closes": "23:59"}],
-        "@id": "https://pagesofpurposellc.com/sell/cities/jacksonville-fl.html#business",
-        "name": "Pages of Purpose LLC &mdash; Jacksonville, FL",
-        "url": "https://pagesofpurposellc.com/sell/cities/jacksonville-fl.html",
-        "description": "We buy houses for cash in Jacksonville, FL. Fair cash offers within 24 hours, no agent fees, no repairs needed. Close on your timeline.",
-        "telephone": "+1-227-235-9530",
-        "email": "pagesofpurposellc@gmail.com",
-        "areaServed": {
-          "@type": "City",
-          "name": "Jacksonville",
-          "containedInPlace": {
-            "@type": "State",
-            "name": "Florida"
-          }
-        },
-        "serviceType": ["Cash Home Buying", "As-Is Property Purchase", "Foreclosure Prevention", "Probate Property Purchase"],
-        "parentOrganization": {
-          "@id": "https://pagesofpurposellc.com/#organization"
-        }
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {"@type": "Question", "name": "How fast can you close on my house in Jacksonville?", "acceptedAnswer": {"@type": "Answer", "text": "We can close in as few as 7 days in Jacksonville, FL. If you need more time, we work on your schedule. There are no financing contingencies or appraisal delays &mdash; we pay cash."}},
-          {"@type": "Question", "name": "Do I need to make repairs before selling my Jacksonville home?", "acceptedAnswer": {"@type": "Answer", "text": "No repairs needed. We buy houses in any condition in Jacksonville and surrounding areas. Whether your home has foundation issues, roof damage, mold, or just needs updating &mdash; we buy it as-is."}},
-          {"@type": "Question", "name": "How much will you pay for my house in Jacksonville, FL?", "acceptedAnswer": {"@type": "Answer", "text": "Our cash offers are based on the current Jacksonville market, comparable sales in your neighborhood, and the condition of your property. While our offers may be below full retail, you save on agent commissions (5-6%), repair costs, holding costs, and months of uncertainty."}},
-          {"@type": "Question", "name": "Are there any fees or commissions?", "acceptedAnswer": {"@type": "Answer", "text": "Zero fees and zero commissions. We also cover all standard closing costs. The cash offer you accept is the amount you receive at closing."}}
-        ]
-      }
-    ]
+   "@type": "Organization",
+   "@id": "https://pagesofpurposellc.com/#organization",
+   "name": "Pages of Purpose LLC",
+   "url": "https://pagesofpurposellc.com",
+   "logo": "https://pagesofpurposellc.com/pagesofpurposellc.png",
+   "telephone": "+1-227-235-9530",
+   "email": "pagesofpurposellc@gmail.com",
+   "founder": {
+    "@type": "Person",
+    "name": "Dustin Ray",
+    "url": "https://pagesofpurposellc.com/about.html"
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "MD",
+    "addressCountry": "US"
+   },
+   "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+   }
+  },
+  {
+   "@type": "RealEstateAgent",
+   "image": "https://pagesofpurposellc.com/pagesofpurposellc.png",
+   "priceRange": "Free cash offer",
+   "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "MD",
+    "addressCountry": "US"
+   },
+   "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+     ],
+     "opens": "00:00",
+     "closes": "23:59"
+    }
+   ],
+   "@id": "https://pagesofpurposellc.com/sell/cities/jacksonville-fl.html#business",
+   "name": "Pages of Purpose LLC",
+   "url": "https://pagesofpurposellc.com/sell/cities/jacksonville-fl.html",
+   "description": "We buy houses for cash in Jacksonville, FL. Fair cash offers within 24 hours, no agent fees, no repairs needed. Close on your timeline.",
+   "telephone": "+1-227-235-9530",
+   "email": "pagesofpurposellc@gmail.com",
+   "areaServed": {
+    "@type": "City",
+    "name": "Jacksonville",
+    "containedInPlace": {
+     "@type": "State",
+     "name": "Florida"
+    }
+   },
+   "serviceType": [
+    "Cash Home Buying",
+    "As-Is Property Purchase",
+    "Foreclosure Prevention",
+    "Probate Property Purchase"
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "How fast can you close on my house in Jacksonville?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "We can close in as few as 7 days in Jacksonville, FL. If you need more time, we work on your schedule. There are no financing contingencies or appraisal delays — we pay cash."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I need to make repairs before selling my Jacksonville home?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No repairs needed. We buy houses in any condition in Jacksonville and surrounding areas. Whether your home has foundation issues, roof damage, mold, or just needs updating — we buy it as-is."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How much will you pay for my house in Jacksonville, FL?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Our cash offers are based on the current Jacksonville market, comparable sales in your neighborhood, and the condition of your property. While our offers may be below full retail, you save on agent commissions (5-6%), repair costs, holding costs, and months of uncertainty."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Are there any fees or commissions?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Zero fees and zero commissions. We also cover all standard closing costs. The cash offer you accept is the amount you receive at closing."
+     }
+    }
+   ]
   }
-  </script>
+ ]
+}
+</script>
 </head>
 <body>
 <nav class="nav">
