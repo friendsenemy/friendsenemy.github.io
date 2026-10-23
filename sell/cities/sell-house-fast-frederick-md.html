@@ -93,11 +93,26 @@ a{color:var(--gold)}
 .internal-links li{margin:0}
 .internal-links a{display:block;padding:8px 12px;background:var(--gray-50);border-radius:6px;text-decoration:none;font-size:.93rem;transition:background .2s}
 .internal-links a:hover{background:var(--gray-100)}</style>
+<link rel="preload" href="/assets/fonts/public-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/pop.css?v=1">
 </head>
-<body>
+<body class="pp pp-local">
+<a class="pp-skip" href="#main">Skip to main content</a>
+<header class="pp-hd">
+  <div class="pp-wrap pp-hd-in">
+    <a class="pp-brand" href="/"><img src="/img/logo-72.png" alt="" width="36" height="36"><span>Pages of Purpose</span></a>
+    <nav class="pp-nav" aria-label="Main"><a href="/#situations">Situations</a><a href="/blog/">Guides</a><a href="/sell/">How selling works</a><a href="/about.html">About</a></nav>
+    <a class="pp-hd-phone" href="tel:+12272359530">(227) 235-9530</a>
+    <a class="pp-btn pp-btn-gold pp-hd-cta" href="#pop-ask">Ask a question</a>
+    <details class="pp-menu">
+      <summary><svg aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h14M3 10h14M3 14h14"/></svg>Menu</summary>
+      <nav aria-label="Main (mobile)"><a href="/#situations">Situations</a><a href="/blog/">Guides</a><a href="/sell/">How selling works</a><a href="/about.html">About</a><a href="tel:+12272359530">Call (227) 235-9530</a><a class="pp-btn pp-btn-gold" href="#pop-ask">Ask a question</a></nav>
+    </details>
+  </div>
+</header>
 
-<nav class="nav"><div class="nav-inner"><a href="/" class="nav-logo">Pages of <span>Purpose LLC</span></a><button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('active')" aria-label="Menu">&#9776;</button><div class="nav-links" id="navLinks"><a href="/#how-it-works" class="nav-link">How It Works</a><a href="/#situations" class="nav-link">Situations</a><a href="/#about" class="nav-link">About</a><a href="/sell/" class="nav-link">Sell Your Property</a><a href="/#faq" class="nav-link">FAQ</a><a href="/#contact" class="btn-nav nav-link">Get a Cash Offer</a></div></div></nav>
-<main role="main" aria-label="Main content">
+
+<main id="main" role="main" aria-label="Main content">
 
 <section class="page-hero">
 <h1>Sell Your House Fast in Frederick, MD</h1>
@@ -145,10 +160,10 @@ A legitimate cash buyer like Pages of Purpose LLC will never charge you fees, ne
 <section class="section">
 <h2>Why Choose Pages of Purpose LLC in Frederick?</h2>
 <div class="benefits">
-<div class="benefit"><div class="benefit-icon">⏰</div><div><h4>Fast Closing</h4><p>As little as 7 to 14 days</p></div></div>
-<div class="benefit"><div class="benefit-icon">🛡️</div><div><h4>No Hidden Costs</h4><p>The offer is what you get</p></div></div>
-<div class="benefit"><div class="benefit-icon">🏠</div><div><h4>Any Condition</h4><p>We buy houses as they are</p></div></div>
-<div class="benefit"><div class="benefit-icon">⭐</div><div><h4>Local Expertise</h4><p>We know the area</p></div></div>
+<div class="benefit"><div class="benefit-icon"></div><div><h3>Fast Closing</h3><p>As little as 7 to 14 days</p></div></div>
+<div class="benefit"><div class="benefit-icon"></div><div><h4>No Hidden Costs</h4><p>The offer is what you get</p></div></div>
+<div class="benefit"><div class="benefit-icon"></div><div><h4>Any Condition</h4><p>We buy houses as they are</p></div></div>
+<div class="benefit"><div class="benefit-icon"></div><div><h4>Local Expertise</h4><p>We know the area</p></div></div>
 </div>
 </section>
 
@@ -189,9 +204,9 @@ A legitimate cash buyer like Pages of Purpose LLC will never charge you fees, ne
 <input type="hidden" name="source_page" value="frederick-city">
 <input type="hidden" name="_next" value="https://pagesofpurposellc.com/thank-you.html">
 <input type="hidden" name="_source" value="frederick-city">
-<div class="form-group"><label for="name">Full Name</label><input type="text" id="name" name="name" required placeholder="Your full name"></div>
-<div class="form-group"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567"></div>
-<div class="form-group"><label for="email">Email Address</label><input type="email" id="email" name="email" required placeholder="you@example.com"></div>
+<div class="form-group"><label for="name">Full Name</label><input type="text" id="name" name="name" required placeholder="Your full name" autocomplete="name"></div>
+<div class="form-group"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567" autocomplete="tel"></div>
+<div class="form-group"><label for="email">Email Address</label><input type="email" id="email" name="email" required placeholder="you@example.com" autocomplete="email" spellcheck="false"></div>
 <div class="form-group"><label for="address">Property Address</label><input type="text" id="address" name="address" required placeholder="123 Main St, Frederick, MD"></div>
 <div class="form-group"><label for="situation">Tell Us About Your Situation</label><textarea id="situation" name="situation" placeholder="Brief description of your property and why you want to sell..."></textarea></div>
 <div class="consent-group">
@@ -206,9 +221,44 @@ A legitimate cash buyer like Pages of Purpose LLC will never charge you fees, ne
 </section>
 
 </main>
-<footer style="background:var(--navy);color:rgba(255,255,255,.7);padding:40px 20px 24px;margin-top:60px"><div style="max-width:1100px;margin:0 auto;text-align:center"><p style="margin-bottom:8px">&copy; 2026 Pages of Purpose LLC &bull; All rights reserved</p><p style="font-size:.85rem"><a href="/" style="color:var(--gold);text-decoration:none">Home</a> &bull; <a href="/sell/" style="color:var(--gold);text-decoration:none">Sell Your Property</a> &bull; <a href="/privacy-policy.html" style="color:var(--gold);text-decoration:none">Privacy Policy</a></p></div></footer>
+<a href="#pop-ask" class="pp-float">Ask a question</a>
+<footer class="pp-ft">
+  <div class="pp-wrap pp-ft-grid">
+    <div>
+      <p class="pp-ft-brand">Pages of Purpose LLC</p>
+      <p>A Maryland company buying houses for cash in all 50 states, including houses stuck in probate, heir or co-owner disputes, divorce, liens and title problems.</p>
+      <p><a href="tel:+12272359530">(227) 235-9530</a><br><a href="mailto:pagesofpurposellc@gmail.com">pagesofpurposellc@gmail.com</a></p>
+    </div>
+    <nav aria-label="Situations">
+      <h2>Situations</h2>
+      <ul>
+        <li><a href="/blog/what-happens-house-no-will.html">Probate and inherited houses</a></li>
+        <li><a href="/blog/heirs-cant-agree-sell-inherited-house.html">Heirs who can't agree</a></li>
+        <li><a href="/blog/can-co-owner-sell-house.html">Co-owner won't sell</a></li>
+        <li><a href="/blog/can-you-sell-house-while-incarcerated.html">Owner in jail or prison</a></li>
+        <li><a href="/blog/selling-house-during-divorce.html">Divorce</a></li>
+        <li><a href="/blog/partition-lawsuit-explained.html">Partition lawsuits</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Company">
+      <h2>Company</h2>
+      <ul>
+        <li><a href="/about.html">About Dustin Ray</a></li>
+        <li><a href="/sell/">How selling works</a></li>
+        <li><a href="/blog/">All guides</a></li>
+        <li><a href="/sell/pages/contact.html">Contact</a></li>
+        <li><a href="/privacy-policy.html">Privacy policy</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="pp-wrap pp-ft-legal">
+    <p>Pages of Purpose LLC is a real estate company, not a law firm. Nothing on this site is legal, tax or financial advice; speak with an attorney licensed in the state where the property is located.</p>
+    <p>&copy; 2026 Pages of Purpose LLC</p>
+  </div>
+</footer>
 
 <script>document.querySelectorAll('.faq-q').forEach(function(q){q.addEventListener('click',function(){this.parentElement.classList.toggle('active');});});</script>
 
+<script src="/assets/pop.js" defer></script>
 </body>
 </html>
