@@ -29,47 +29,127 @@
   <link rel="stylesheet" href="../css/style.css">
   <!-- GEO: JSON-LD Schema for AI Search -->
   <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "RealEstateAgent",
-        "image": "https://pagesofpurposellc.com/pagesofpurposellc.png",
-        "priceRange": "$$",
-        "address": {"@type": "PostalAddress", "addressCountry": "US"},
-        "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "00:00", "closes": "23:59"}],
-        "@id": "https://pagesofpurposellc.com/sell/cities/severna-park-md.html#business",
-        "name": "Pages of Purpose LLC &mdash; Severna Park, MD",
-        "url": "https://pagesofpurposellc.com/sell/cities/severna-park-md.html",
-        "description": "We buy houses for cash in Severna Park, MD. Fair cash offers within 24 hours, no agent fees, no repairs needed. Close on your timeline.",
-        "telephone": "+1-227-235-9530",
-        "email": "pagesofpurposellc@gmail.com",
-        "areaServed": {
-          "@type": "City",
-          "name": "Severna Park",
-          "containedInPlace": {
-            "@type": "State",
-            "name": "Maryland"
-          }
-        },
-        "serviceType": ["Cash Home Buying", "As-Is Property Purchase", "Foreclosure Prevention", "Probate Property Purchase", "Tired Landlord Buyouts"],
-        "parentOrganization": {
-          "@id": "https://pagesofpurposellc.com/#organization"
-        }
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {"@type": "Question", "name": "How fast can you close on my house in Severna Park?", "acceptedAnswer": {"@type": "Answer", "text": "We can close in as few as 7 days in Severna Park, MD. If you need more time, we work on your schedule. There are no financing contingencies or appraisal delays &mdash; we pay cash."}},
-          {"@type": "Question", "name": "Do I need to make repairs before selling my Severna Park home?", "acceptedAnswer": {"@type": "Answer", "text": "No repairs needed. We buy houses in any condition in Severna Park and throughout Anne Arundel County. Foundation issues, roof damage, mold, code violations, inherited disrepair &mdash; we buy it as-is."}},
-          {"@type": "Question", "name": "How much will you pay for my house in Severna Park, MD?", "acceptedAnswer": {"@type": "Answer", "text": "Our cash offers are based on the current Severna Park market, comparable sales in your neighborhood, and the property's condition. While our offers may be below full retail, you save on agent commissions (5-6%), repair costs, holding costs, and months of uncertainty."}},
-          {"@type": "Question", "name": "Are there any fees or commissions?", "acceptedAnswer": {"@type": "Answer", "text": "Zero fees and zero commissions. We also cover all standard closing costs. The cash offer you accept is the amount you receive at closing."}},
-          {"@type": "Question", "name": "Can you stop a foreclosure in Anne Arundel County?", "acceptedAnswer": {"@type": "Answer", "text": "Anne Arundel County foreclosures follow Maryland's judicial process through the Circuit Court. From Notice of Intent to Foreclose to auction is typically 3–6 months. We can close before auction — including on waterfront and private-well/septic properties traditional buyers decline. Call us as soon as you receive a Notice of Intent to Foreclose &mdash; every day matters."}}
-        ]
-      }
-    ]
+   "@type": "Organization",
+   "@id": "https://pagesofpurposellc.com/#organization",
+   "name": "Pages of Purpose LLC",
+   "url": "https://pagesofpurposellc.com",
+   "logo": "https://pagesofpurposellc.com/pagesofpurposellc.png",
+   "telephone": "+1-227-235-9530",
+   "email": "pagesofpurposellc@gmail.com",
+   "founder": {
+    "@type": "Person",
+    "name": "Dustin Ray",
+    "url": "https://pagesofpurposellc.com/about.html"
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "MD",
+    "addressCountry": "US"
+   },
+   "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+   }
+  },
+  {
+   "@type": "RealEstateAgent",
+   "image": "https://pagesofpurposellc.com/pagesofpurposellc.png",
+   "priceRange": "Free cash offer",
+   "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "MD",
+    "addressCountry": "US"
+   },
+   "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+     ],
+     "opens": "00:00",
+     "closes": "23:59"
+    }
+   ],
+   "@id": "https://pagesofpurposellc.com/sell/cities/severna-park-md.html#business",
+   "name": "Pages of Purpose LLC",
+   "url": "https://pagesofpurposellc.com/sell/cities/severna-park-md.html",
+   "description": "We buy houses for cash in Severna Park, MD. Fair cash offers within 24 hours, no agent fees, no repairs needed. Close on your timeline.",
+   "telephone": "+1-227-235-9530",
+   "email": "pagesofpurposellc@gmail.com",
+   "areaServed": {
+    "@type": "City",
+    "name": "Severna Park",
+    "containedInPlace": {
+     "@type": "State",
+     "name": "Maryland"
+    }
+   },
+   "serviceType": [
+    "Cash Home Buying",
+    "As-Is Property Purchase",
+    "Foreclosure Prevention",
+    "Probate Property Purchase",
+    "Tired Landlord Buyouts"
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "How fast can you close on my house in Severna Park?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "We can close in as few as 7 days in Severna Park, MD. If you need more time, we work on your schedule. There are no financing contingencies or appraisal delays — we pay cash."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I need to make repairs before selling my Severna Park home?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No repairs needed. We buy houses in any condition in Severna Park and throughout Anne Arundel County. Foundation issues, roof damage, mold, code violations, inherited disrepair — we buy it as-is."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How much will you pay for my house in Severna Park, MD?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Our cash offers are based on the current Severna Park market, comparable sales in your neighborhood, and the property's condition. While our offers may be below full retail, you save on agent commissions (5-6%), repair costs, holding costs, and months of uncertainty."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Are there any fees or commissions?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Zero fees and zero commissions. We also cover all standard closing costs. The cash offer you accept is the amount you receive at closing."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can you stop a foreclosure in Anne Arundel County?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Anne Arundel County foreclosures follow Maryland's judicial process through the Circuit Court. From Notice of Intent to Foreclose to auction is typically 3–6 months. We can close before auction — including on waterfront and private-well/septic properties traditional buyers decline. Call us as soon as you receive a Notice of Intent to Foreclose — every day matters."
+     }
+    }
+   ]
   }
-  </script>
+ ]
+}
+</script>
 </head>
 <body>
 <nav class="nav">
