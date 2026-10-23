@@ -421,7 +421,7 @@ body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: var
 <nav class="nav">
   <div class="nav-inner">
     <a href="/" class="logo">
-      <img src="/pagesofpurposellc.png" alt="Pages of Purpose LLC">
+      <img src="/img/logo-72.png" alt="Pages of Purpose LLC" width="36" height="36">
       <span>Pages</span> of Purpose
     </a>
     <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">&#9776;</button>
@@ -619,7 +619,7 @@ body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: var
 <!-- ABOUT DUSTIN RAY (without video, video is now in hero) -->
 <section class="section" id="about">
   <div style="max-width:760px;margin:0 auto;text-align:center;">
-    <img src="/dustin-ray.jpg" alt="Dustin Ray &mdash; Founder of Pages of Purpose LLC" class="about-img">
+    <img src="/img/dustin-ray-400.jpg" alt="Dustin Ray &mdash; Founder of Pages of Purpose LLC" class="about-img" width="120" height="120" loading="lazy" decoding="async">
     <h2>Meet Dustin Ray</h2>
     <p>Dustin is the founder of Pages of Purpose LLC. With over a decade of experience in property research, title resolution, and real estate investing, he's helped homeowners across the country navigate some of the most complex property situations.</p>
     <p>From tracking down missing heirs to clearing clouded titles and untangling probate disputes &mdash; Dustin and his team bring transparency, patience, and results to every deal.</p>
@@ -729,7 +729,7 @@ body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: var
         <input type="tel" name="phone" placeholder="Phone Number" required>
         <input type="email" name="email" placeholder="Email Address" required>
         <input type="text" name="property_address" placeholder="Property Address">
-        <select name="situation" required>
+        <select name="situation" aria-label="What is your situation?" required>
           <option value="" disabled selected>What's your situation?</option>
           <option value="probate">Probate / Deceased Owner</option>
           <option value="missing-heirs">Missing or Unknown Heirs</option>
@@ -773,7 +773,7 @@ body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: var
       <input type="tel" name="phone" placeholder="Phone Number" required>
       <input type="email" name="email" placeholder="Email Address" required>
       <input type="text" name="property_address" placeholder="Property Address">
-      <select name="situation" required>
+      <select name="situation" aria-label="What is your situation?" required>
         <option value="" disabled selected>What's your situation?</option>
         <option value="probate">Probate / Deceased Owner</option>
         <option value="missing-heirs">Missing or Unknown Heirs</option>
