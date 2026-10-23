@@ -25,7 +25,7 @@
 | 6 | P1 | `sell-probate-house-columbus-oh.html` | sell probate house Columbus OH | "probate house sale columbus" pos 23.7 | what-happens-house-no-will | done |
 | 7 | P1 | `sell-house-stop-foreclosure-columbus-oh.html` | sell house to stop foreclosure Columbus OH | "sell house to stop foreclosure columbus" pos 16.7 | stop-foreclosure-sell-house | done |
 | 8 | P1 | `sell-inherited-house-nashville-tn.html` | sell inherited house Nashville TN | 146 impr Antioch + 19 Nashville | heirs-cant-agree-sell-inherited-house | done |
-| 9 | P1 | `sell-house-while-in-jail-florida.html` | sell house while in jail Florida | national jail pillar pos 4.4 | can-you-sell-house-while-incarcerated | todo |
+| 9 | P1 | `sell-house-while-in-jail-florida.html` | sell house while in jail Florida | national jail pillar pos 4.4 | can-you-sell-house-while-incarcerated | done |
 | 10 | P1 | `heirs-cant-agree-sell-house-florida.html` | heirs can't agree sell house Florida | "do all heirs have to agree to sell property" pos 52 | heirs-cant-agree-sell-inherited-house | todo |
 | 11 | P2 | `sell-co-owned-house-portland-or.html` | sell co-owned house Portland OR | 642 impr / city + co-owner pillar pos 20.9 | can-co-owner-sell-house | todo |
 | 12 | P2 | `sell-probate-house-charlotte-nc.html` | cash buyer for probate house Charlotte NC | 242 impr / city | what-happens-house-no-will | todo |
