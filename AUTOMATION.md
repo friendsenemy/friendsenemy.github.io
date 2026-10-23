@@ -58,3 +58,10 @@ The only phone number on the site is (227) 235-9530 / +12272359530. Never use an
 
 ## Forms (site-wide rules)
 `sms_consent` checkbox and `property_address` are never `required`. Every form has hidden `_next` = https://pagesofpurposellc.com/thank-you.html and a unique `source_page`.
+
+## Design shell (added 2026-10-23)
+Every user-facing page uses the shared design system. Full rules: `DESIGN.md`. Non-negotiable for the daily engine:
+- Copy the `<head>` asset lines, header, footer, floating button and `/assets/pop.js` script tag exactly as they appear in `blog/sell-probate-house-dallas-tx.html` (the engine template). That means: `<link rel="stylesheet" href="/assets/pop.css?v=1">` + the font preload before `</head>`; `<body class="pp pp-guide">`; the skip link and `<header class="pp-hd">` right after `<body>`; `<footer class="pp-ft">` at the end.
+- Lead forms keep class `inline-lead-form` / `pop-ask`; do not add inline colors or gradients to them, `pop.css` styles them.
+- No emoji as icons. No colored `border-left` callouts. No gradient backgrounds. No new colors outside DESIGN.md.
+- Headings never skip a level (h2 → h3, not h2 → h4). One H1 per page.
