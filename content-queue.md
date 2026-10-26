@@ -28,7 +28,7 @@
 | 9 | P1 | `sell-house-while-in-jail-florida.html` | sell house while in jail Florida | national jail pillar pos 4.4 | can-you-sell-house-while-incarcerated | done |
 | 10 | P1 | `heirs-cant-agree-sell-house-florida.html` | heirs can't agree sell house Florida | "do all heirs have to agree to sell property" pos 52 | heirs-cant-agree-sell-inherited-house | done |
 | 11 | P2 | `sell-co-owned-house-portland-or.html` | sell co-owned house Portland OR | 642 impr / city + co-owner pillar pos 20.9 | can-co-owner-sell-house | done |
-| 12 | P2 | `sell-probate-house-charlotte-nc.html` | cash buyer for probate house Charlotte NC | 242 impr / city | what-happens-house-no-will | todo |
+| 12 | P2 | `sell-probate-house-charlotte-nc.html` | cash buyer for probate house Charlotte NC | 242 impr / city | what-happens-house-no-will | done |
 | 13 | P2 | `sell-inherited-house-detroit-mi.html` | sell inherited house Detroit MI | "sell inherited house detroit" in multi-query, pos 9.9 | heirs-cant-agree-sell-inherited-house | todo |
 | 14 | P2 | `sell-probate-house-detroit-mi.html` | sell probate house Detroit MI | "sell probate house detroit" in multi-query, pos 9.9 | what-happens-house-no-will | todo |
 | 15 | P2 | `sell-inherited-house-miami-fl.html` | sell inherited house Miami FL | 53 impr / city, "fast home sale miami no repairs" pos 9.5 | heirs-cant-agree-sell-inherited-house | todo |
