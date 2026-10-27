@@ -31,7 +31,7 @@
 | 12 | P2 | `sell-probate-house-charlotte-nc.html` | cash buyer for probate house Charlotte NC | 242 impr / city | what-happens-house-no-will | done |
 | 13 | P2 | `sell-inherited-house-detroit-mi.html` | sell inherited house Detroit MI | "sell inherited house detroit" in multi-query, pos 9.9 | heirs-cant-agree-sell-inherited-house | done |
 | 14 | P2 | `sell-probate-house-detroit-mi.html` | sell probate house Detroit MI | "sell probate house detroit" in multi-query, pos 9.9 | what-happens-house-no-will | done |
-| 15 | P2 | `sell-inherited-house-miami-fl.html` | sell inherited house Miami FL | 53 impr / city, "fast home sale miami no repairs" pos 9.5 | heirs-cant-agree-sell-inherited-house | todo |
+| 15 | P2 | `sell-inherited-house-miami-fl.html` | sell inherited house Miami FL | 53 impr / city, "fast home sale miami no repairs" pos 9.5 | heirs-cant-agree-sell-inherited-house | done |
 | 16 | P2 | `sell-house-during-divorce-charlotte-nc.html` | sell house during divorce Charlotte NC | divorce queries pos 23–36 + 242 city impr | selling-house-during-divorce | todo |
 | 17 | P2 | `sell-co-owned-house-chicago-il.html` | sell co-owned house Chicago IL | "we buy houses pilsen" pos 58, 22 impr city | can-co-owner-sell-house | todo |
 | 18 | P2 | `sell-inherited-house-phoenix-az.html` | sell inherited house Phoenix AZ | 78 impr / city | heirs-cant-agree-sell-inherited-house | todo |
