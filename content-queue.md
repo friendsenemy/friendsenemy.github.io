@@ -36,7 +36,7 @@
 | 17 | P2 | `sell-co-owned-house-chicago-il.html` | sell co-owned house Chicago IL | "we buy houses pilsen" pos 58, 22 impr city | can-co-owner-sell-house | done |
 | 18 | P2 | `sell-inherited-house-phoenix-az.html` | sell inherited house Phoenix AZ | 78 impr / city | heirs-cant-agree-sell-inherited-house | done |
 | 19 | P2 | `sell-probate-house-phoenix-az.html` | sell probate house Phoenix AZ | 78 impr / city | what-happens-house-no-will | done |
-| 20 | P2 | `sell-inherited-house-columbus-oh.html` | sell inherited house Columbus OH | 72 impr / city | heirs-cant-agree-sell-inherited-house | todo |
+| 20 | P2 | `sell-inherited-house-columbus-oh.html` | sell inherited house Columbus OH | 72 impr / city | heirs-cant-agree-sell-inherited-house | done |
 | 21 | P2 | `sell-house-while-in-jail-california.html` | sell house while in jail California | national jail pillar authority | can-you-sell-house-while-incarcerated | todo |
 | 22 | P2 | `sell-house-while-in-jail-ohio.html` | sell house while in jail Ohio | national jail pillar + 72 impr Columbus | can-you-sell-house-while-incarcerated | todo |
 | 23 | P2 | `sell-house-while-in-jail-georgia.html` | sell house while in jail Georgia | national jail pillar authority | can-you-sell-house-while-incarcerated | todo |
