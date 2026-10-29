@@ -41,7 +41,7 @@
 | 22 | P2 | `sell-house-while-in-jail-ohio.html` | sell house while in jail Ohio | national jail pillar + 72 impr Columbus | can-you-sell-house-while-incarcerated | done |
 | 23 | P2 | `sell-house-while-in-jail-georgia.html` | sell house while in jail Georgia | national jail pillar authority | can-you-sell-house-while-incarcerated | done |
 | 24 | P2 | `sell-house-while-in-jail-pennsylvania.html` | sell house while in jail Pennsylvania | national jail pillar authority | can-you-sell-house-while-incarcerated | done |
-| 25 | P2 | `heirs-cant-agree-sell-house-texas.html` | heirs can't agree sell house Texas | heirs pillar pos 52 + TX jail pos 4.7 | heirs-cant-agree-sell-inherited-house | todo |
+| 25 | P2 | `heirs-cant-agree-sell-house-texas.html` | heirs can't agree sell house Texas | heirs pillar pos 52 + TX jail pos 4.7 | heirs-cant-agree-sell-inherited-house | done |
 | 26 | P2 | `heirs-cant-agree-sell-house-california.html` | heirs can't agree sell house California | heirs pillar pos 52 | heirs-cant-agree-sell-inherited-house | todo |
 | 27 | P2 | `heirs-cant-agree-sell-house-north-carolina.html` | heirs can't agree sell house North Carolina | heirs pillar + 242 impr Charlotte | heirs-cant-agree-sell-inherited-house | todo |
 | 28 | P2 | `sell-partial-interest-inherited-house-texas.html` | sell my share of inherited house Texas | "how to sell inherited property without co-owner agreement" pos 50 | selling-partial-interest-property-maryland | todo |
