@@ -46,7 +46,7 @@
 | 27 | P2 | `heirs-cant-agree-sell-house-north-carolina.html` | heirs can't agree sell house North Carolina | heirs pillar + 242 impr Charlotte | heirs-cant-agree-sell-inherited-house | done |
 | 28 | P2 | `sell-partial-interest-inherited-house-texas.html` | sell my share of inherited house Texas | "how to sell inherited property without co-owner agreement" pos 50 | selling-partial-interest-property-maryland | done |
 | 29 | P2 | `sell-partial-interest-inherited-house-florida.html` | sell my share of inherited house Florida | partial-interest intent, pos 50 nationally | selling-partial-interest-property-maryland | done |
-| 30 | P2 | `sell-co-owned-house-texas.html` | one owner sell jointly owned house Texas | "can jointly owned property be sold by one owner" pos 24.1 | can-co-owner-sell-house | todo |
+| 30 | P2 | `sell-co-owned-house-texas.html` | one owner sell jointly owned house Texas | "can jointly owned property be sold by one owner" pos 24.1 | can-co-owner-sell-house | done |
 | 31 | P2 | `sell-co-owned-house-florida.html` | one owner sell jointly owned house Florida | "forcing a sale of a jointly owned property" pos 27.1 | can-co-owner-sell-house | todo |
 | 32 | P2 | `partition-lawsuit-texas.html` | partition lawsuit Texas how to avoid | "sale in lieu of partition" pos 33.2 | partition-lawsuit-explained | todo |
 | 33 | P2 | `partition-lawsuit-florida.html` | partition lawsuit Florida how to avoid | "sale in lieu of partition" pos 33.2 | partition-lawsuit-explained | todo |
