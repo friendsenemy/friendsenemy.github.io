@@ -49,7 +49,7 @@
 | 30 | P2 | `sell-co-owned-house-texas.html` | one owner sell jointly owned house Texas | "can jointly owned property be sold by one owner" pos 24.1 | can-co-owner-sell-house | done |
 | 31 | P2 | `sell-co-owned-house-florida.html` | one owner sell jointly owned house Florida | "forcing a sale of a jointly owned property" pos 27.1 | can-co-owner-sell-house | done |
 | 32 | P2 | `partition-lawsuit-texas.html` | partition lawsuit Texas how to avoid | "sale in lieu of partition" pos 33.2 | partition-lawsuit-explained | done |
-| 33 | P2 | `partition-lawsuit-florida.html` | partition lawsuit Florida how to avoid | "sale in lieu of partition" pos 33.2 | partition-lawsuit-explained | todo |
+| 33 | P2 | `partition-lawsuit-florida.html` | partition lawsuit Florida how to avoid | "sale in lieu of partition" pos 33.2 | partition-lawsuit-explained | done |
 | 34 | P3 | `sell-inherited-house-dallas-tx.html` | sell inherited house Dallas TX | 28 impr + "sell distressed property dallas" pos 34 | heirs-cant-agree-sell-inherited-house | todo |
 | 35 | P3 | `sell-house-during-divorce-portland-or.html` | sell house during divorce Portland OR | 642 impr city + divorce pos 31 | selling-house-during-divorce | todo |
 | 36 | P3 | `sell-probate-house-miami-fl.html` | sell probate house Miami FL | 53 impr / city | what-happens-house-no-will | todo |
