@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>We Got Your Info — Cash Offer Coming Soon | Pages of Purpose LLC</title>
-  <meta name="description" content="Thank you for reaching out. Dustin will personally review your property and respond within 24 hours with a fair, no-obligation cash offer.">
+  <title>Thank You, We Have Your Request | Pages of Purpose LLC</title>
+  <meta name="description" content="Thank you for reaching out. We&#x27;ll review your situation and explain whether we may be able to make an offer.">
   <meta name="robots" content="noindex, nofollow">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <style>
@@ -200,6 +200,13 @@
   </style>
 <link rel="preload" href="/assets/fonts/public-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/pop.css?v=1">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1EYF11Z492"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-1EYF11Z492');
+</script>
 </head>
 <body class="pp pp-utility">
 <a class="pp-skip" href="#main">Skip to main content</a>
@@ -222,8 +229,8 @@
 <!-- THANK YOU HERO -->
 <section class="thankyou-hero">
   <div class="check-circle">&#10003;</div>
-  <h1>We Got Your Info — <span>Your Offer Is on the Way</span></h1>
-  <p class="subtitle">Dustin will personally review your property and reach out within 24 hours with a fair, no-obligation cash offer. No pressure, no games — just a real conversation about your options.</p>
+  <h1>Thank You. <span>We Have Your Request.</span></h1>
+  <p class="subtitle">We'll review your situation and explain whether we may be able to make an offer. No pressure and no obligation, just an honest conversation about your options.</p>
 </section>
 
 <!-- WHAT HAPPENS NEXT -->
@@ -234,19 +241,19 @@
       <div class="timeline-item">
         <div class="timeline-dot">1</div>
         <h3>We Review Your Property</h3>
-        <p>Dustin personally looks at every submission. He'll research your property, your area, and your situation to put together the best possible offer.</p>
-        <span class="timeframe">Within a few hours</span>
+        <p>We look at the public records, the property's likely value as-is, and what stands between it and a sale.</p>
+        <span class="timeframe">Usually within 2 business days</span>
       </div>
       <div class="timeline-item">
         <div class="timeline-dot">2</div>
-        <h3>You Get a Call or Text</h3>
-        <p>Dustin will reach out to introduce himself, ask any quick clarifying questions, and walk you through your cash offer — no scripts, no pressure.</p>
-        <span class="timeframe">Within 24 hours</span>
+        <h3>We Reach Out</h3>
+        <p>We'll contact you the way you asked, ask any follow-up questions, and explain where things stand, including what would need to happen before a sale.</p>
+        <span class="timeframe">No scripts, no pressure</span>
       </div>
       <div class="timeline-item">
         <div class="timeline-dot">3</div>
         <h3>You Decide on Your Terms</h3>
-        <p>If the offer works for you, we handle all the paperwork and closing costs. You pick the closing date — as fast as 7 days or whenever suits you best. If it doesn't work, no hard feelings at all.</p>
+        <p>If we're able to make an offer, it will spell out the price, the terms and a realistic timeline for your situation. If it isn't a fit, we'll tell you, and there are no hard feelings.</p>
         <span class="timeframe">100% your call</span>
       </div>
     </div>
@@ -300,6 +307,13 @@
   </div>
 </footer>
 
+<script>
+/* Count a lead only when a form submission just happened (flag set by the form), not on direct visits. No personal data. */
+(function(){try{var f=sessionStorage.getItem('pp_conv_pending');if(!f)return;sessionStorage.removeItem('pp_conv_pending');f=JSON.parse(f);if(Date.now()-f.t>30*60*1000)return;
+if(typeof gtag==='function')gtag('event','generate_lead',{form_id:f.form,lead_priority:f.p});
+(window.ppLeadConversionHooks||[]).forEach(function(fn){try{fn({form:f.form});}catch(e){}});
+document.dispatchEvent(new CustomEvent('pp:lead',{detail:{form:f.form}}));}catch(e){}})();
+</script>
 <script src="/assets/pop.js" defer></script>
 </body>
 </html>
