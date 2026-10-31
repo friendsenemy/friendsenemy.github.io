@@ -153,9 +153,9 @@
   }
 
   /* ---------- conversion (success only; no personal data) ---------- */
-  function conversion(p) {
+  function conversion(p, done) {
     try {
-      if (typeof window.gtag === 'function') window.gtag('event', 'generate_lead', { form_id: 'sell-property-review', lead_priority: p });
+      if (typeof window.gtag === 'function') window.gtag('event', 'generate_lead', { form_id: 'sell-property-review', lead_priority: p, transport_type: 'beacon', event_callback: done || function () {}, event_timeout: 1000 });
       (window.ppLeadConversionHooks || []).forEach(function (fn) { try { fn({ form: 'sell-property-review' }); } catch (e) {} });
       document.dispatchEvent(new CustomEvent('pp:lead', { detail: { form: 'sell-property-review' } }));
     } catch (e) {}
@@ -200,11 +200,14 @@
     var label = 'Request My Property Review';
     btnSubmit.textContent = 'Sending…';
     function nativeSubmit() {
-      /* Formspree refused the background send (e.g. reCAPTCHA is on). Post the normal way so the lead is never lost;
-         the thank-you page records the conversion using this flag. */
+      /* Free Formspree plan: reCAPTCHA is on and visitors end on Formspree's own "Thanks" page, never ours,
+         so the lead is counted here, once the completed form is actually being sent. */
       store.set('sl_sent', JSON.stringify({ fp: fp, t: Date.now() }));
-      store.set('pp_conv_pending', JSON.stringify({ form: 'sell-property-review', p: pr[0], t: Date.now() }));
-      HTMLFormElement.prototype.submit.call(form);
+      store.del(DRAFT);
+      var sent = false;
+      function go() { if (sent) return; sent = true; HTMLFormElement.prototype.submit.call(form); }
+      conversion(pr[0], go);
+      setTimeout(go, 1200);
     }
     fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
       .then(function (r) { if (!r.ok) { var e = new Error('status ' + r.status); e.http = r.status; throw e; } return r; })
