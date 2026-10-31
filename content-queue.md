@@ -15,6 +15,8 @@
 
 ## Queue
 
+**Order:** work the `todo` rows in the order they appear in this table, top to bottom. Row numbers are IDs, not priority (rows 66–69 were moved up on 2026-10-31 so the core jail guides publish first).
+
 | # | Pri | Target page (slug under `blog/`) | Primary query | GSC signal | Match pillar | Status |
 |---|-----|----------------------------------|---------------|-----------|--------------|--------|
 | 1 | P1 | `sell-inherited-house-portland-or.html` | sell inherited house Portland OR | 642 impr / city, pos 35–39, 0 clicks | heirs-cant-agree-sell-inherited-house | done |
@@ -51,6 +53,10 @@
 | 32 | P2 | `partition-lawsuit-texas.html` | partition lawsuit Texas how to avoid | "sale in lieu of partition" pos 33.2 | partition-lawsuit-explained | done |
 | 33 | P2 | `partition-lawsuit-florida.html` | partition lawsuit Florida how to avoid | "sale in lieu of partition" pos 33.2 | partition-lawsuit-explained | done |
 | 34 | P3 | `sell-inherited-house-dallas-tx.html` | sell inherited house Dallas TX | 28 impr + "sell distressed property dallas" pos 34 | heirs-cant-agree-sell-inherited-house | done |
+| 66 | P1 | `sell-house-spouse-in-jail.html` | can I sell my house if my husband is in jail | "if my husband goes to jail can i sell his stuff" 68 impr pos 6; "i need to sell my house fast my husband in jail" 73 impr pos 10; "can i sell my house if my husband is in jail" pos 2.6 | can-you-sell-house-while-incarcerated | todo |
+| 67 | P1 | `sell-house-owner-in-federal-prison.html` | sell a house while in federal prison (BOP) | jail pillar 7,538 impr pos 5; federal facilities have their own notary and legal-mail rules | can-you-sell-house-while-incarcerated | todo |
+| 68 | P1 | `sell-house-before-going-to-prison.html` | should I sell my house before going to prison | "if i go to jail what happens to my house" pos 8, "what happens to your house if you go to jail" pos 14 | can-you-sell-house-while-incarcerated | todo |
+| 69 | P1 | `notary-in-jail-to-sell-house.html` | how to get a notary in jail or prison to sign house documents | jail pillar long-tail; notary logistics is the most common failure point in the state guides | can-you-sell-house-while-incarcerated | todo |
 | 35 | P3 | `sell-house-during-divorce-portland-or.html` | sell house during divorce Portland OR | 642 impr city + divorce pos 31 | selling-house-during-divorce | todo |
 | 36 | P3 | `sell-probate-house-miami-fl.html` | sell probate house Miami FL | 53 impr / city | what-happens-house-no-will | todo |
 | 37 | P3 | `sell-probate-house-nashville-tn.html` | sell probate house Nashville TN | 165 impr Antioch+Nashville | what-happens-house-no-will | todo |
@@ -82,10 +88,6 @@
 | 63 | P2 | `sell-house-while-in-jail-new-york.html` | sell house while in jail New York | national jail cluster pos 4–10 | can-you-sell-house-while-incarcerated | todo |
 | 64 | P3 | `sell-inherited-house-with-liens-washington-dc.html` | sell inherited house with liens Washington DC | "sell inherited property with liens washington dc" 14 impr pos 29 | heirs-cant-agree-sell-inherited-house | todo |
 | 65 | P3 | `partition-lawsuit-california.html` | partition lawsuit California how to avoid | "partition lawsuit" 65 impr pos 70, "how to win a partition action" 51 impr pos 79 | partition-lawsuit-explained | todo |
-| 66 | P1 | `sell-house-spouse-in-jail.html` | can I sell my house if my husband is in jail | "if my husband goes to jail can i sell his stuff" 68 impr pos 6; "i need to sell my house fast my husband in jail" 73 impr pos 10; "can i sell my house if my husband is in jail" pos 2.6 | can-you-sell-house-while-incarcerated | todo |
-| 67 | P1 | `sell-house-owner-in-federal-prison.html` | sell a house while in federal prison (BOP) | jail pillar 7,538 impr pos 5; federal facilities have their own notary and legal-mail rules | can-you-sell-house-while-incarcerated | todo |
-| 68 | P1 | `sell-house-before-going-to-prison.html` | should I sell my house before going to prison | "if i go to jail what happens to my house" pos 8, "what happens to your house if you go to jail" pos 14 | can-you-sell-house-while-incarcerated | todo |
-| 69 | P1 | `notary-in-jail-to-sell-house.html` | how to get a notary in jail or prison to sign house documents | jail pillar long-tail; notary logistics is the most common failure point in the state guides | can-you-sell-house-while-incarcerated | todo |
 | 70 | P2 | `inmate-inherits-house.html` | inheriting a house while incarcerated | heir + jail overlap; MD partial-interest/incarcerated page exists only for Maryland | can-you-sell-house-while-incarcerated | todo |
 | 71 | P2 | `mortgage-while-incarcerated.html` | what happens to the mortgage when someone goes to prison | jail pillar long-tail; foreclosure risk drives urgency in every state guide | can-you-sell-house-while-incarcerated | todo |
 | 72 | P2 | `sell-house-while-in-jail-louisiana.html` | sell house while in jail Louisiana | national jail cluster pos 4–10; state prison population top 35 | can-you-sell-house-while-incarcerated | todo |
