@@ -65,3 +65,18 @@ Every user-facing page uses the shared design system. Full rules: `DESIGN.md`. N
 - Lead forms keep class `inline-lead-form` / `pop-ask`; do not add inline colors or gradients to them, `pop.css` styles them.
 - Icons: the owner likes the small emoji icons. Use one fitting emoji icon next to situation/feature headings and list items, as the existing pages do. No colored `border-left` callouts. No gradient backgrounds. No new colors outside DESIGN.md.
 - Headings never skip a level (h2 → h3, not h2 → h4). One H1 per page.
+
+## Specialist pages and llms.txt (added 2026-10-31)
+AI assistants recommend the most *specific* business for a problem, so every guide must point to the page that says plainly what we do for that problem.
+
+1. **Specialist callout.** Directly after the `.byline` paragraph, every new page gets exactly one box linking to its matching specialist page:
+   `<div class="callout pp-specialist"><p><strong>🤝 Need a buyer, not just answers?</strong> {SENTENCE} <a href="/sell/pages/{SLUG}.html">{LINK TEXT}</a>.</p></div>`
+   | Topic | SLUG | SENTENCE | LINK TEXT |
+   |---|---|---|---|
+   | jail / prison / incarcerated | `incarcerated-owner` | Pages of Purpose specializes in buying houses when an owner or co-owner is in jail or prison. | See how we handle these sales |
+   | heirs / inherited / probate | `heirs-disagree` | Pages of Purpose specializes in buying inherited houses when the heirs can't agree, probate was never opened, or an heir is missing. | See how we handle these sales |
+   | co-owned / partial interest / partition | `co-owner-buyout` | Pages of Purpose specializes in co-owned houses, including buying one owner's share when the other owner won't sell. | See how we buy co-owned houses and shares |
+   | divorce | `divorce` | Pages of Purpose specializes in buying houses during and after a divorce, with one written offer both spouses can see. | See how we handle divorce sales |
+   Topics outside these four (foreclosure, liens, tax sale): no callout.
+2. **llms.txt.** In the same commit, add the new page to `llms.txt` as one line, `- [<title text before any " | ">](https://pagesofpurposellc.com/blog/<slug>.html): <meta description>`, at the end of the matching `### ` list under "Guides by situation" (Owner in jail or prison / Divorce / Co-owners, partial interests and partition / Heirs, probate and inherited houses / Foreclosure, liens, back taxes and tax sales / Other guides). Surgical insert only; never rewrite the file.
+3. **Specialist page guide lists.** Also add the new page as an `<li><a href="/blog/<slug>.html"><title></a></li>` at the end of the "📚 Read our guides…" list on the matching `/sell/pages/{SLUG}.html`.
