@@ -82,6 +82,32 @@
 | 63 | P2 | `sell-house-while-in-jail-new-york.html` | sell house while in jail New York | national jail cluster pos 4–10 | can-you-sell-house-while-incarcerated | todo |
 | 64 | P3 | `sell-inherited-house-with-liens-washington-dc.html` | sell inherited house with liens Washington DC | "sell inherited property with liens washington dc" 14 impr pos 29 | heirs-cant-agree-sell-inherited-house | todo |
 | 65 | P3 | `partition-lawsuit-california.html` | partition lawsuit California how to avoid | "partition lawsuit" 65 impr pos 70, "how to win a partition action" 51 impr pos 79 | partition-lawsuit-explained | todo |
+| 66 | P1 | `sell-house-spouse-in-jail.html` | can I sell my house if my husband is in jail | "if my husband goes to jail can i sell his stuff" 68 impr pos 6; "i need to sell my house fast my husband in jail" 73 impr pos 10; "can i sell my house if my husband is in jail" pos 2.6 | can-you-sell-house-while-incarcerated | todo |
+| 67 | P1 | `sell-house-owner-in-federal-prison.html` | sell a house while in federal prison (BOP) | jail pillar 7,538 impr pos 5; federal facilities have their own notary and legal-mail rules | can-you-sell-house-while-incarcerated | todo |
+| 68 | P1 | `sell-house-before-going-to-prison.html` | should I sell my house before going to prison | "if i go to jail what happens to my house" pos 8, "what happens to your house if you go to jail" pos 14 | can-you-sell-house-while-incarcerated | todo |
+| 69 | P1 | `notary-in-jail-to-sell-house.html` | how to get a notary in jail or prison to sign house documents | jail pillar long-tail; notary logistics is the most common failure point in the state guides | can-you-sell-house-while-incarcerated | todo |
+| 70 | P2 | `inmate-inherits-house.html` | inheriting a house while incarcerated | heir + jail overlap; MD partial-interest/incarcerated page exists only for Maryland | can-you-sell-house-while-incarcerated | todo |
+| 71 | P2 | `mortgage-while-incarcerated.html` | what happens to the mortgage when someone goes to prison | jail pillar long-tail; foreclosure risk drives urgency in every state guide | can-you-sell-house-while-incarcerated | todo |
+| 72 | P2 | `sell-house-while-in-jail-louisiana.html` | sell house while in jail Louisiana | national jail cluster pos 4–10; state prison population top 35 | can-you-sell-house-while-incarcerated | todo |
+| 73 | P2 | `sell-house-while-in-jail-alabama.html` | sell house while in jail Alabama | national jail cluster pos 4–10; state prison population top 35 | can-you-sell-house-while-incarcerated | todo |
+| 74 | P2 | `sell-house-while-in-jail-missouri.html` | sell house while in jail Missouri | national jail cluster pos 4–10; state prison population top 35 | can-you-sell-house-while-incarcerated | todo |
+| 75 | P2 | `sell-house-while-in-jail-indiana.html` | sell house while in jail Indiana | national jail cluster pos 4–10; state prison population top 35 | can-you-sell-house-while-incarcerated | todo |
+| 76 | P2 | `sell-house-while-in-jail-oklahoma.html` | sell house while in jail Oklahoma | national jail cluster pos 4–10; state prison population top 35 | can-you-sell-house-while-incarcerated | todo |
+| 77 | P2 | `sell-house-while-in-jail-kentucky.html` | sell house while in jail Kentucky | national jail cluster pos 4–10; state prison population top 35 | can-you-sell-house-while-incarcerated | todo |
+| 78 | P2 | `sell-house-while-in-jail-south-carolina.html` | sell house while in jail South Carolina | national jail cluster pos 4–10; state prison population top 35 | can-you-sell-house-while-incarcerated | todo |
+| 79 | P2 | `sell-house-while-in-jail-mississippi.html` | sell house while in jail Mississippi | national jail cluster pos 4–10; state prison population top 35 | can-you-sell-house-while-incarcerated | todo |
+| 80 | P2 | `sell-house-while-in-jail-washington.html` | sell house while in jail Washington | national jail cluster pos 4–10; state prison population top 35 | can-you-sell-house-while-incarcerated | todo |
+| 81 | P2 | `sell-house-while-in-jail-colorado.html` | sell house while in jail Colorado | national jail cluster pos 4–10; state prison population top 35 | can-you-sell-house-while-incarcerated | todo |
+| 82 | P2 | `sell-house-while-in-jail-new-jersey.html` | sell house while in jail New Jersey | national jail cluster pos 4–10; state prison population top 35 | can-you-sell-house-while-incarcerated | todo |
+| 83 | P2 | `sell-house-while-in-jail-wisconsin.html` | sell house while in jail Wisconsin | national jail cluster pos 4–10; state prison population top 35 | can-you-sell-house-while-incarcerated | todo |
+| 84 | P2 | `sell-house-while-in-jail-nevada.html` | sell house while in jail Nevada | national jail cluster pos 4–10; state prison population top 35 | can-you-sell-house-while-incarcerated | todo |
+| 85 | P2 | `sell-house-while-in-jail-arkansas.html` | sell house while in jail Arkansas | national jail cluster pos 4–10; state prison population top 35 | can-you-sell-house-while-incarcerated | todo |
+| 86 | P2 | `sell-house-while-in-jail-oregon.html` | sell house while in jail Oregon | national jail cluster pos 4–10; state prison population top 35 | can-you-sell-house-while-incarcerated | todo |
+| 87 | P2 | `sell-house-while-in-jail-massachusetts.html` | sell house while in jail Massachusetts | national jail cluster pos 4–10; state prison population top 35 | can-you-sell-house-while-incarcerated | todo |
+| 88 | P2 | `sell-house-while-in-jail-minnesota.html` | sell house while in jail Minnesota | national jail cluster pos 4–10; state prison population top 35 | can-you-sell-house-while-incarcerated | todo |
+| 89 | P2 | `sell-house-while-in-jail-connecticut.html` | sell house while in jail Connecticut | national jail cluster pos 4–10; state prison population top 35 | can-you-sell-house-while-incarcerated | todo |
+| 90 | P2 | `sell-house-while-in-jail-iowa.html` | sell house while in jail Iowa | national jail cluster pos 4–10; state prison population top 35 | can-you-sell-house-while-incarcerated | todo |
+| 91 | P2 | `sell-house-while-in-jail-kansas.html` | sell house while in jail Kansas | national jail cluster pos 4–10; state prison population top 35 | can-you-sell-house-while-incarcerated | todo |
 
 ## Batch 2 (added 2026-10-31)
 
@@ -93,6 +119,15 @@ Rows 41–65 come from Google Search Console, 2026-08-01 → 2026-10-29 (1,000 q
 - **Foreclosure by city** (Charlotte, Miami, Dallas) ranks 13–30 on city pages that don't target it.
 - **Jail** remains the strongest cluster (position 4–10), so more states extend proven authority.
 - Every page in this batch also gets the specialist-page callout and an llms.txt entry (see AUTOMATION.md).
+
+## Batch 3: own the jail niche (added 2026-10-31)
+
+Jail is the site's strongest cluster (national guide at position ~5, 7,538 impressions in 90 days). Rows 66–91 aim to make Pages of Purpose the single most complete source on selling a house when someone is incarcerated:
+
+- **Rows 66–71, situation guides.** These answer the questions people actually type: a spouse in jail, federal prison, selling before a sentence starts, getting a notary inside, inheriting while inside, and the mortgage. GSC shows the spouse framing is the largest share of jail queries.
+- **Rows 72–91, 20 more states,** ordered roughly by state prison population. Together with states already done or queued, that covers about 35 states.
+- **Every jail state page must be genuinely state-specific:** the state's POA statute and witness/notary rules, how that state's prison system handles notaries and legal mail, spousal/homestead/community-property rules, and state-specific liens (restitution, court costs, child support). If a state has nothing distinctive to say on a point, say less, not more. Near-duplicate pages with the state name swapped can get the whole set demoted.
+- Add each new jail page to the state hub on `/sell/pages/incarcerated-owner.html` (see AUTOMATION.md).
 
 ## Deliberately excluded
 
