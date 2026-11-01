@@ -2,3 +2,5 @@
 .pp .internal-links a,.pp .referral-section a,.pp .callout a,.pp .author-bio a,.pp .base-card a,.pp article li a,.pp article p a{color:var(--pp-brass)!important}.pp .cta-section a,.pp .pp-pagehead a,.pp .hero a{color:inherit!important}.pp .breadcrumb a{text-decoration:underline!important}
 .pp .phone-cta a{color:var(--pp-ink)!important;opacity:1!important}
 .pp .form-note,.pp .step p{color:var(--pp-muted)!important}
+.pp-brand img{width:44px!important;height:44px!important;border-radius:8px!important;background:#fff!important;padding:2px;box-sizing:border-box;flex:none}.pp-brand span{display:flex;flex-direction:column;line-height:1.1}.pp-brand span::after{content:"Complicated Properties. Real Solutions.";font:500 .72rem/1.2 var(--pp-sans);color:var(--pp-gold-2);letter-spacing:.01em;margin-top:3px}
+@media(max-width:480px){.pp-brand{min-width:0}.pp-brand span::after{content:"Complicated Properties.\A Real Solutions.";white-space:pre;font-size:.68rem;line-height:1.2}}
