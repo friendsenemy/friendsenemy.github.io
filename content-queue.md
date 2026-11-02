@@ -63,7 +63,7 @@
 | 38 | P3 | `sell-house-while-in-jail-north-carolina.html` | sell house while in jail North Carolina | jail pillar + 242 impr Charlotte | can-you-sell-house-while-incarcerated | todo |
 | 39 | P3 | `sell-house-while-in-jail-arizona.html` | sell house while in jail Arizona | jail pillar + 78 impr Phoenix | can-you-sell-house-while-incarcerated | todo |
 | 40 | P3 | `sell-house-while-in-jail-illinois.html` | sell house while in jail Illinois | jail pillar + 22 impr Chicago | can-you-sell-house-while-incarcerated | todo |
-| 41 | P1 | `sell-inherited-house-baltimore-md.html` | sell inherited house Baltimore MD | 74 impr Baltimore inherited/probate queries, pos 17–23; plus Towson/Catonsville inherited queries pos 22–24 | heirs-cant-agree-sell-inherited-house | todo |
+| 41 | P1 | `sell-inherited-house-baltimore-md.html` | sell inherited house Baltimore MD | 74 impr Baltimore inherited/probate queries, pos 17–23; plus Towson/Catonsville inherited queries pos 22–24 | heirs-cant-agree-sell-inherited-house | done |
 | 42 | P1 | `sell-probate-house-baltimore-md.html` | sell probate house Baltimore MD | "sell house probate baltimore" pos 23, "can i sell my house while in probate in baltimore" pos 29; MD inherited cluster 364 impr | what-happens-house-no-will | todo |
 | 43 | P1 | `sell-house-during-divorce-baltimore-md.html` | sell house during divorce Baltimore MD | "sell my house in divorce baltimore" pos 20; MD divorce cluster 159 impr, pos 17–28 | selling-house-during-divorce | todo |
 | 44 | P1 | `sell-house-during-divorce-texas.html` | sell house during divorce Texas | national divorce cluster 1,094 impr at pos 36 (0 clicks); "sell house during divorce spring tx" pos 16 | selling-house-during-divorce | todo |
