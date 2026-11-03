@@ -10,6 +10,15 @@
   function get(){ try { return localStorage.getItem(KEY); } catch(e){ return null; } }
   function set(v){ try { localStorage.setItem(KEY, v); } catch(e){} }
 
+  var GA_ID = 'G-1EYF11Z492';
+  if (!document.querySelector('script[src*="googletagmanager.com/gtag"]')) {
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function(){ dataLayer.push(arguments); };
+    gtag('js', new Date()); gtag('config', GA_ID);
+    var g = document.createElement('script'); g.async = true;
+    g.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID; document.head.appendChild(g);
+  }
+
   var loaded = false;
   function loadPixel(){
     if (loaded || !/^\d{6,}$/.test(PIXEL_ID)) return;
@@ -28,12 +37,20 @@
     if (loaded && window.fbq) { try { fbq('track', 'Lead'); } catch(e){} }
   }, true);
 
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a[href^="tel:"]');
+    if (!a) return;
+    if (window.gtag) { try { gtag('event', 'phone_click', { link_url: a.href }); } catch(x){} }
+    if (loaded && window.fbq) { try { fbq('track', 'Contact'); } catch(x){} }
+  }, true);
+
   var css = '#pp-cb{position:fixed;left:16px;right:16px;bottom:16px;z-index:9999;max-width:560px;margin:0 auto;background:#14213A;color:#fff;border-top:3px solid #C9A44C;border-radius:6px;box-shadow:0 8px 24px rgba(0,0,0,.25);padding:16px 18px;font:15px/1.5 inherit;font-family:inherit}'
+    + '#pp-cb strong{display:block;color:#fff;font-size:17px;margin:0 0 4px}'
     + '#pp-cb p{margin:0 0 12px;color:#E6EAF0}#pp-cb a{color:#C9A44C;text-decoration:underline}'
-    + '#pp-cb .pp-cb-b{display:flex;gap:10px;flex-wrap:wrap}'
+    + '#pp-cb .pp-cb-b{display:flex;gap:14px;flex-wrap:wrap;align-items:center}'
     + '#pp-cb button{font:inherit;font-weight:600;border-radius:4px;padding:9px 18px;cursor:pointer;min-height:44px}'
-    + '#pp-cb .pp-y{background:#C9A44C;color:#14213A;border:1px solid #C9A44C}'
-    + '#pp-cb .pp-n{background:transparent;color:#fff;border:1px solid #566173}'
+    + '#pp-cb .pp-y{background:#C9A44C;color:#14213A;border:1px solid #C9A44C;flex:1 1 auto;padding:11px 24px;font-size:16px}'
+    + '#pp-cb .pp-n{background:transparent;color:#B9C2CF;border:0;font-weight:500;padding:9px 6px;text-decoration:underline}'
     + '#pp-cb button:focus-visible{outline:2px solid #fff;outline-offset:2px}';
 
   function banner(){
@@ -43,8 +60,8 @@
     }
     var d = document.createElement('div');
     d.id = 'pp-cb'; d.setAttribute('role', 'region'); d.setAttribute('aria-label', 'Privacy choices');
-    d.innerHTML = '<p>Can we use a Meta (Facebook) cookie to measure visits and show you our ads later? It never sees what you type in our forms. <a href="/privacy-policy.html#cookies">Privacy policy</a></p>'
-      + '<div class="pp-cb-b"><button type="button" class="pp-y">Allow</button><button type="button" class="pp-n">No thanks</button></div>';
+    d.innerHTML = '<p><strong>Help us help the next family.</strong>Most people who land here are dealing with a house that&rsquo;s stuck. We use Google Analytics to see which pages actually help. Allowing Meta cookies too lets us stay in front of you on Facebook and Instagram while you decide. Forms and calls work either way. <a href="/privacy-policy.html#cookies">Privacy details</a></p>'
+      + '<div class="pp-cb-b"><button type="button" class="pp-y">Allow &amp; continue</button><button type="button" class="pp-n">No thanks</button></div>';
     document.body.appendChild(d);
     d.querySelector('.pp-y').onclick = function(){ set('yes'); d.remove(); loadPixel(); };
     d.querySelector('.pp-n').onclick = function(){ set('no'); d.remove(); if (loaded) location.reload(); };
@@ -75,7 +92,10 @@
     if (optedOut) return;
     var c = get();
     if (c === 'yes') loadPixel();
-    else if (c !== 'no') banner();
+    else if (c !== 'no') {
+      var shown = false, show = function(){ if (shown) return; shown = true; window.removeEventListener('scroll', show); banner(); };
+      window.addEventListener('scroll', show, { passive: true }); setTimeout(show, 4000);
+    }
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
 })();
