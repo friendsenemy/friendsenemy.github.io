@@ -19,6 +19,13 @@
     g.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID; document.head.appendChild(g);
   }
 
+  // Microsoft Clarity: heat maps + session recordings (form inputs are masked by Clarity)
+  if (!window.clarity) {
+    (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","z7m35nfn7s");
+  }
+
   var loaded = false;
   function loadPixel(){
     if (loaded || !/^\d{6,}$/.test(PIXEL_ID)) return;
