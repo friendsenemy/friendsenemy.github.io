@@ -61,12 +61,14 @@
     if (window.fbq && tagsOn) { try { fbq('track', 'Contact'); } catch(x){} }
   }, true);
 
-  var css = '#pp-cb{position:fixed;left:12px;right:12px;bottom:12px;z-index:9999;max-width:620px;margin:0 auto;background:#14213A;color:#fff;border-top:3px solid #C9A44C;border-radius:6px;box-shadow:0 8px 24px rgba(0,0,0,.25);padding:14px 16px;font:15px/1.5 inherit;font-family:inherit}'
-    + '#pp-cb p{margin:0 0 10px;color:#E6EAF0}#pp-cb a{color:#E9D59B;text-decoration:underline}'
-    + '#pp-cb .pp-cb-b{display:flex;gap:12px;flex-wrap:wrap;align-items:center}'
-    + '#pp-cb button{font:inherit;font-weight:600;border-radius:4px;padding:9px 18px;cursor:pointer;min-height:44px}'
-    + '#pp-cb .pp-y{background:#C9A44C;color:#14213A;border:1px solid #C9A44C}'
-    + '#pp-cb .pp-n{background:transparent;color:#E6EAF0;border:1px solid rgba(255,255,255,.45)}'
+  var css = '#pp-cb{position:fixed;left:10px;right:10px;bottom:10px;z-index:9999;max-width:760px;margin:0 auto;background:#14213A;color:#fff;border-top:2px solid #C9A44C;border-radius:6px;box-shadow:0 6px 18px rgba(0,0,0,.22);padding:10px 12px;font:14px/1.45 inherit;font-family:inherit;display:flex;align-items:center;gap:8px 14px;flex-wrap:wrap}'
+    + '#pp-cb p{margin:0;color:#E6EAF0;flex:1 1 260px}#pp-cb a{color:#E9D59B;text-decoration:underline}'
+    + '#pp-cb .pp-cb-b{display:flex;gap:6px;align-items:center;flex:0 0 auto}'
+    + '#pp-cb button{font:inherit;font-weight:600;border-radius:4px;cursor:pointer;min-height:44px}'
+    + '#pp-cb .pp-y{background:#C9A44C;color:#14213A;border:1px solid #C9A44C;padding:8px 22px}'
+    + '#pp-cb .pp-n{background:transparent;color:#E6EAF0;border:0;padding:8px 10px;font-weight:500;text-decoration:underline}'
+    + '#pp-cb.pp-panel{display:block;padding:14px 16px}#pp-cb.pp-panel p{margin:0 0 10px}'
+    + '#pp-cb.pp-panel .pp-n{border:1px solid rgba(255,255,255,.45);text-decoration:none;padding:8px 16px}'
     + '#pp-cb button:focus-visible{outline:2px solid #fff;outline-offset:2px}';
 
   function addCss(){
@@ -79,9 +81,7 @@
     addCss();
     var d = document.createElement('div');
     d.id = 'pp-cb'; d.setAttribute('role', 'region'); d.setAttribute('aria-label', 'Privacy notice');
-    d.innerHTML = '<p>This site uses cookies and similar tools from Google, Microsoft and Meta to measure visits, improve our pages and show our ads on Facebook and Instagram. '
-      + 'By continuing to use this site, you agree to this as described in our <a href="/privacy-policy.html#tracking">Privacy Policy</a> and <a href="/terms.html">Terms of Use</a>. '
-      + 'You can opt out anytime. Forms and calls work either way.</p>'
+    d.innerHTML = '<p>We use cookies to measure visits and show our ads. By continuing, you agree to our <a href="/privacy-policy.html#tracking">Privacy Policy</a> and <a href="/terms.html">Terms</a>.</p>'
       + '<div class="pp-cb-b"><button type="button" class="pp-y">Got it</button><button type="button" class="pp-n">Opt out</button></div>';
     document.body.appendChild(d);
     d.querySelector('.pp-y').onclick = function(){ stop(); set('ack'); d.remove(); loadTags(); };
@@ -100,7 +100,7 @@
     addCss();
     var old = document.getElementById('pp-cb'); if (old) old.remove();
     var d = document.createElement('div');
-    d.id = 'pp-cb'; d.setAttribute('role', 'dialog'); d.setAttribute('aria-label', 'Your privacy choices');
+    d.id = 'pp-cb'; d.className = 'pp-panel'; d.setAttribute('role', 'dialog'); d.setAttribute('aria-label', 'Your privacy choices');
     var off = get() === 'no' || signal;
     d.innerHTML = '<p><strong>Your privacy choices.</strong> '
       + (signal ? 'Your browser is sending a privacy signal (Global Privacy Control or Do Not Track), so Microsoft Clarity and the Meta Pixel are already off for you. '
