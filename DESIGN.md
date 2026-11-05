@@ -59,10 +59,12 @@ No gradients. No colored glows. Shadows are neutral and used only for things tha
 
 Self-hosted, OFL-licensed, free:
 
-- **Public Sans** (variable, 400–800) — headings, UI, body on marketing pages. Built for U.S. government services; reads as public-record, not startup.
-- **Source Serif 4** (variable, 400–700) — body copy of long guides only, where reading comfort matters.
+- **Fraunces** (variable, weight 700) — headlines (h1–h3) and the brand name in the header. Soft, rounded serif that matches the claymation logo and icons. Never for menus, buttons, form labels or small text.
+- **Nunito Sans** (variable, 400–800, with italic) — everything else: body copy on every page including long guides, navigation, buttons, forms, the slogan.
 
-Scale (1.25 ratio, rem): 0.875 / 1 / 1.125 / 1.375 / 1.75 / 2.25 / 2.875. Body 1.0625rem/1.6 sans, 1.125rem/1.7 serif. Headings weight 750, letter-spacing −0.015em, `text-wrap: balance`. Measure ≤ 70ch. Sentence case everywhere. No all-caps eyebrows, no single-word color accents in headlines, no "→" glued to button labels, no middle-dot meta strings.
+Files: `/assets/fonts/fraunces-latin.woff2`, `/assets/fonts/nunito-sans-latin.woff2`, `/assets/fonts/nunito-sans-latin-italic.woff2` (changed 2026-11-05; replaced Public Sans and Source Serif 4). Every page preloads the Fraunces and Nunito Sans (normal) files.
+
+Scale (1.25 ratio, rem): 0.875 / 1 / 1.125 / 1.375 / 1.75 / 2.25 / 2.875. Body 1.0625rem/1.6, guides 1.125rem/1.7. Headings Fraunces 700, letter-spacing −0.01em, `text-wrap: balance`. Measure ≤ 70ch. Sentence case everywhere. No all-caps eyebrows, no single-word color accents in headlines, no "→" glued to button labels, no middle-dot meta strings.
 
 ## 6. Space and layout
 
