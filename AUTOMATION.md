@@ -84,3 +84,6 @@ AI assistants recommend the most *specific* business for a problem, so every gui
 
 ## Tracking and privacy (added 2026-11-04)
 Every page must load `/assets/consent.js` and `/assets/pop.js` exactly as the template (`blog/sell-probate-house-dallas-tx.html`) does, with the same `?v=` numbers. `consent.js` loads Google Analytics, Microsoft Clarity and the Meta Pixel, shows the privacy notice, honors Global Privacy Control / Do Not Track, and adds the "Your privacy choices" and "Terms of use" footer links. Never add tracking code directly to a page, never send form contents or personal data to any tracking tool, and never remove the consent.js tag. Before committing a new page, check it contains `assets/consent.js`.
+
+## Inherited / probate / heirs video (added 2026-11-05)
+Every new inherited-house, probate or heirs-can't-agree guide must include the explainer video right after the `pp-specialist` callout: copy the whole `<figure class="pp-video">…</figure>` block and the `VideoObject` JSON-LD script from `blog/sell-inherited-house-dallas-tx.html` exactly (video file `/video/when-someone-passes-away.mp4`, poster `.jpg`, captions `.vtt`). Do not re-encode or rename the video files.
