@@ -78,7 +78,7 @@
 | 53 | P2 | `sell-co-owned-house-georgia.html` | one owner sell jointly owned house Georgia | national co-owner cluster 804 impr, pos 21–36 | can-co-owner-sell-house | done |
 | 54 | P2 | `sell-co-owned-house-california.html` | one owner sell jointly owned house California | national co-owner cluster 804 impr, pos 21–36 | can-co-owner-sell-house | done |
 | 55 | P2 | `sell-co-owned-house-north-carolina.html` | one owner sell jointly owned house North Carolina | co-owner cluster + 242 impr Charlotte city | can-co-owner-sell-house | done |
-| 56 | P2 | `sell-co-owned-house-pennsylvania.html` | one owner sell jointly owned house Pennsylvania | co-owner cluster; PA jail guide already published | can-co-owner-sell-house | todo |
+| 56 | P2 | `sell-co-owned-house-pennsylvania.html` | one owner sell jointly owned house Pennsylvania | co-owner cluster; PA jail guide already published | can-co-owner-sell-house | done |
 | 57 | P2 | `heirs-cant-agree-sell-house-ohio.html` | heirs can't agree sell house Ohio | "do all heirs have to agree to sell property" pos 46; Columbus inherited queries pos 19–20 | heirs-cant-agree-sell-inherited-house | todo |
 | 58 | P2 | `heirs-cant-agree-sell-house-georgia.html` | heirs can't agree sell house Georgia | heirs cluster pos 30–46; "sell inherited house sandy springs ga" | heirs-cant-agree-sell-inherited-house | todo |
 | 59 | P2 | `heirs-cant-agree-sell-house-pennsylvania.html` | heirs can't agree sell house Pennsylvania | heirs cluster pos 30–46; "sell estate house in philadelphia" | heirs-cant-agree-sell-inherited-house | todo |
