@@ -76,7 +76,7 @@
 | 51 | P2 | `sell-house-during-divorce-california.html` | sell house during divorce California | national divorce cluster pos 36; California community property is a distinct, high-search angle | selling-house-during-divorce | done |
 | 52 | P2 | `sell-co-owned-house-ohio.html` | one owner sell jointly owned house Ohio | national co-owner cluster 804 impr; "can co owner sell house" 192 impr pos 21 | can-co-owner-sell-house | done |
 | 53 | P2 | `sell-co-owned-house-georgia.html` | one owner sell jointly owned house Georgia | national co-owner cluster 804 impr, pos 21–36 | can-co-owner-sell-house | done |
-| 54 | P2 | `sell-co-owned-house-california.html` | one owner sell jointly owned house California | national co-owner cluster 804 impr, pos 21–36 | can-co-owner-sell-house | todo |
+| 54 | P2 | `sell-co-owned-house-california.html` | one owner sell jointly owned house California | national co-owner cluster 804 impr, pos 21–36 | can-co-owner-sell-house | done |
 | 55 | P2 | `sell-co-owned-house-north-carolina.html` | one owner sell jointly owned house North Carolina | co-owner cluster + 242 impr Charlotte city | can-co-owner-sell-house | todo |
 | 56 | P2 | `sell-co-owned-house-pennsylvania.html` | one owner sell jointly owned house Pennsylvania | co-owner cluster; PA jail guide already published | can-co-owner-sell-house | todo |
 | 57 | P2 | `heirs-cant-agree-sell-house-ohio.html` | heirs can't agree sell house Ohio | "do all heirs have to agree to sell property" pos 46; Columbus inherited queries pos 19–20 | heirs-cant-agree-sell-inherited-house | todo |
