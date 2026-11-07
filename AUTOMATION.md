@@ -101,3 +101,4 @@ Google treats pages that repeat the same text with a different place name swappe
 - Location pages (city, town, county, state) must lead with a fact specific to that place, use that place's real numbers (for Maryland: the SDAT tax rates and homestead cap for that county/town, the county's Register of Wills seat), and use their own headings. No shared paragraphs of boilerplate wearing a different place name.
 - When a page targets the same situation as an existing page in another state or city, the body must be about what is different in the new place (its statutes, courts, deadlines, taxes, local institutions), not a reworded copy.
 - Report the highest score in the run report: `— dup max <score> vs <page>`.
+- Every SEO audit must run `python3 tools/check_duplicates.py --all` across the whole site and list every FAIL; as of 2026-11-07, 70 older location pages (67 city, 3 county, built from one template in April 2026) still fail and are being rewritten.
