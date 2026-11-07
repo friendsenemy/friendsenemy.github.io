@@ -94,3 +94,10 @@ Google cuts titles at about 60 characters and descriptions at about 155–160. T
 - `<meta name="description">`: 120–155 characters. When `og:`/`twitter:` title or description copy the meta values, keep them identical.
 - Before committing, check both lengths with python and confirm the page's URL appears exactly once in `llms.txt`.
 - Never link to a redirect stub (any page with `http-equiv="refresh"`, e.g. `/blog/what-happens-to-your-house-if-you-go-to-prison.html`, `/blog/sell-house-owner-in-jail.html`, `/blog/selling-partial-interest-property-maryland.html`). Link the stub's canonical page instead (`/blog/can-you-sell-house-while-incarcerated.html` for the two jail stubs, `/blog/can-co-owner-sell-house-maryland.html` for the partial-interest stub).
+
+## No near-duplicate pages (added 2026-11-07, hard rule)
+Google treats pages that repeat the same text with a different place name swapped in as duplicate or doorway content and can drop all of them. In November 2026 the Maryland town and county pages were 80–88% identical and all 62 had to be rewritten.
+- Every new or edited page (blog guide, city, county, state or situation page) MUST pass `python3 tools/check_duplicates.py <path-to-new-page>` before it is committed. The script compares the page's visible `<main>` text (5-word shingles, Jaccard) against every indexable page on the site. A score of 0.30 or more against any page is a FAIL: rewrite the page and run it again. Never commit a FAIL, and never "fix" a FAIL by adding noindex or deleting the other page.
+- Location pages (city, town, county, state) must lead with a fact specific to that place, use that place's real numbers (for Maryland: the SDAT tax rates and homestead cap for that county/town, the county's Register of Wills seat), and use their own headings. No shared paragraphs of boilerplate wearing a different place name.
+- When a page targets the same situation as an existing page in another state or city, the body must be about what is different in the new place (its statutes, courts, deadlines, taxes, local institutions), not a reworded copy.
+- Report the highest score in the run report: `— dup max <score> vs <page>`.
