@@ -80,7 +80,7 @@
 | 55 | P2 | `sell-co-owned-house-north-carolina.html` | one owner sell jointly owned house North Carolina | co-owner cluster + 242 impr Charlotte city | can-co-owner-sell-house | done |
 | 56 | P2 | `sell-co-owned-house-pennsylvania.html` | one owner sell jointly owned house Pennsylvania | co-owner cluster; PA jail guide already published | can-co-owner-sell-house | done |
 | 57 | P2 | `heirs-cant-agree-sell-house-ohio.html` | heirs can't agree sell house Ohio | "do all heirs have to agree to sell property" pos 46; Columbus inherited queries pos 19–20 | heirs-cant-agree-sell-inherited-house | done |
-| 58 | P2 | `heirs-cant-agree-sell-house-georgia.html` | heirs can't agree sell house Georgia | heirs cluster pos 30–46; "sell inherited house sandy springs ga" | heirs-cant-agree-sell-inherited-house | todo |
+| 58 | P2 | `heirs-cant-agree-sell-house-georgia.html` | heirs can't agree sell house Georgia | heirs cluster pos 30–46; "sell inherited house sandy springs ga" | heirs-cant-agree-sell-inherited-house | done |
 | 59 | P2 | `heirs-cant-agree-sell-house-pennsylvania.html` | heirs can't agree sell house Pennsylvania | heirs cluster pos 30–46; "sell estate house in philadelphia" | heirs-cant-agree-sell-inherited-house | todo |
 | 60 | P2 | `sell-house-while-in-jail-michigan.html` | sell house while in jail Michigan | national jail cluster pos 4–10 (strongest authority on the site) | can-you-sell-house-while-incarcerated | todo |
 | 61 | P2 | `sell-house-while-in-jail-virginia.html` | sell house while in jail Virginia | national jail cluster pos 4–10; neighbours the Maryland home market | can-you-sell-house-while-incarcerated | todo |
