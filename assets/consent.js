@@ -2,6 +2,8 @@
    - Google Analytics loads on every page.
    - Microsoft Clarity and the Meta Pixel load after the visitor has been shown a notice and keeps using
      the site (scroll, click, key press, "Got it", or 8 seconds with the notice on screen).
+     Ad landing pages marked <meta name="pp-tags" content="immediate"> load them when the page opens,
+     with the notice still shown.
      Returning visitors who already saw the notice load them right away.
    - Global Privacy Control and Do Not Track signals are honored: Clarity and Meta never load.
    - "Your privacy choices" (footer) lets anyone opt out or back in. Choice is kept in localStorage.
@@ -141,6 +143,10 @@
     if (c === 'no') return;
     if (c === 'ack' || c === 'yes') { loadTags(); return; }
     notice();
+    /* Ad landing pages (<meta name="pp-tags" content="immediate">) load the tags while the notice is shown,
+       so ad platforms can count short visits. "Opt out", GPC and DNT still stop them. */
+    var m = document.querySelector('meta[name="pp-tags"]');
+    if (m && m.getAttribute('content') === 'immediate') loadTags();
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
 })();
