@@ -87,3 +87,10 @@ Every page must load `/assets/consent.js` and `/assets/pop.js` exactly as the te
 
 ## Inherited / probate / heirs video (added 2026-11-05)
 Every new inherited-house, probate or heirs-can't-agree guide must include the explainer video right after the `pp-specialist` callout: copy the whole `<figure class="pp-video">…</figure>` block and the `VideoObject` JSON-LD script from `blog/sell-inherited-house-dallas-tx.html` exactly (video file `/video/when-someone-passes-away-captioned.mp4`, which has the captions burned in, and poster `/video/when-someone-passes-away.jpg`). Updated 2026-11-06: no `<track>` element and no "Read the transcript" dropdown; keep the transcript only inside the VideoObject JSON-LD. Do not re-encode or rename the video files.
+
+## Titles, descriptions, llms.txt and stub links (added 2026-11-07, SEO audit)
+Google cuts titles at about 60 characters and descriptions at about 155–160. The 2026-11-07 audit found 50 engine pages over those limits and 22 guides missing from `llms.txt`.
+- `<title>`: 60 characters or fewer, counted after HTML entities are decoded. Put the situation and place first; drop "| Pages of Purpose" when it pushes the title past 60.
+- `<meta name="description">`: 120–155 characters. When `og:`/`twitter:` title or description copy the meta values, keep them identical.
+- Before committing, check both lengths with python and confirm the page's URL appears exactly once in `llms.txt`.
+- Never link to a redirect stub (any page with `http-equiv="refresh"`, e.g. `/blog/what-happens-to-your-house-if-you-go-to-prison.html`, `/blog/sell-house-owner-in-jail.html`, `/blog/selling-partial-interest-property-maryland.html`). Link the stub's canonical page instead (`/blog/can-you-sell-house-while-incarcerated.html` for the two jail stubs, `/blog/can-co-owner-sell-house-maryland.html` for the partial-interest stub).
