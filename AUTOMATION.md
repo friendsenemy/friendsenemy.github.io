@@ -102,3 +102,6 @@ Google treats pages that repeat the same text with a different place name swappe
 - When a page targets the same situation as an existing page in another state or city, the body must be about what is different in the new place (its statutes, courts, deadlines, taxes, local institutions), not a reworded copy.
 - Report the highest score in the run report: `— dup max <score> vs <page>`.
 - Every SEO audit must run `python3 tools/check_duplicates.py --all` across the whole site and list every FAIL; as of 2026-11-07, 70 older location pages (67 city, 3 county, built from one template in April 2026) still fail and are being rewritten.
+
+## Jail / prison video (added 2026-11-09)
+Every new jail, prison or incarcerated-owner guide (the ones that get the `incarcerated-owner` specialist callout) must include the jail explainer video right after the `pp-specialist` callout: copy the whole `<figure class="pp-video">…</figure>` block and the `VideoObject` JSON-LD script from `blog/sell-house-while-in-jail-texas.html` exactly (video `/video/selling-house-from-jail-captioned.mp4`, captions burned in; poster `/video/selling-house-from-jail.jpg`). No `<track>` and no transcript dropdown. Do not re-encode or rename the video files.
