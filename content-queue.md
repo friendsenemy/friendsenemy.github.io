@@ -85,7 +85,7 @@
 | 60 | P2 | `sell-house-while-in-jail-michigan.html` | sell house while in jail Michigan | national jail cluster pos 4–10 (strongest authority on the site) | can-you-sell-house-while-incarcerated | done |
 | 61 | P2 | `sell-house-while-in-jail-virginia.html` | sell house while in jail Virginia | national jail cluster pos 4–10; neighbours the Maryland home market | can-you-sell-house-while-incarcerated | done |
 | 62 | P2 | `sell-house-while-in-jail-tennessee.html` | sell house while in jail Tennessee | national jail cluster pos 4–10; Nashville city impressions | can-you-sell-house-while-incarcerated | done |
-| 63 | P2 | `sell-house-while-in-jail-new-york.html` | sell house while in jail New York | national jail cluster pos 4–10 | can-you-sell-house-while-incarcerated | todo |
+| 63 | P2 | `sell-house-while-in-jail-new-york.html` | sell house while in jail New York | national jail cluster pos 4–10 | can-you-sell-house-while-incarcerated | done |
 | 64 | P3 | `sell-inherited-house-with-liens-washington-dc.html` | sell inherited house with liens Washington DC | "sell inherited property with liens washington dc" 14 impr pos 29 | heirs-cant-agree-sell-inherited-house | todo |
 | 65 | P3 | `partition-lawsuit-california.html` | partition lawsuit California how to avoid | "partition lawsuit" 65 impr pos 70, "how to win a partition action" 51 impr pos 79 | partition-lawsuit-explained | todo |
 | 70 | P2 | `inmate-inherits-house.html` | inheriting a house while incarcerated | heir + jail overlap; MD partial-interest/incarcerated page exists only for Maryland | can-you-sell-house-while-incarcerated | todo |
