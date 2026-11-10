@@ -92,7 +92,7 @@
 | 71 | P2 | `mortgage-while-incarcerated.html` | what happens to the mortgage when someone goes to prison | jail pillar long-tail; foreclosure risk drives urgency in every state guide | can-you-sell-house-while-incarcerated | done |
 | 72 | P2 | `sell-house-while-in-jail-louisiana.html` | sell house while in jail Louisiana | national jail cluster pos 4–10; state prison population top 35 | can-you-sell-house-while-incarcerated | done |
 | 73 | P2 | `sell-house-while-in-jail-alabama.html` | sell house while in jail Alabama | national jail cluster pos 4–10; state prison population top 35 | can-you-sell-house-while-incarcerated | done |
-| 74 | P2 | `sell-house-while-in-jail-missouri.html` | sell house while in jail Missouri | national jail cluster pos 4–10; state prison population top 35 | can-you-sell-house-while-incarcerated | todo |
+| 74 | P2 | `sell-house-while-in-jail-missouri.html` | sell house while in jail Missouri | national jail cluster pos 4–10; state prison population top 35 | can-you-sell-house-while-incarcerated | done |
 | 75 | P2 | `sell-house-while-in-jail-indiana.html` | sell house while in jail Indiana | national jail cluster pos 4–10; state prison population top 35 | can-you-sell-house-while-incarcerated | todo |
 | 76 | P2 | `sell-house-while-in-jail-oklahoma.html` | sell house while in jail Oklahoma | national jail cluster pos 4–10; state prison population top 35 | can-you-sell-house-while-incarcerated | todo |
 | 77 | P2 | `sell-house-while-in-jail-kentucky.html` | sell house while in jail Kentucky | national jail cluster pos 4–10; state prison population top 35 | can-you-sell-house-while-incarcerated | todo |
