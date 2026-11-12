@@ -142,6 +142,10 @@
     var c = get();
     if (c === 'no') return;
     if (c === 'ack' || c === 'yes') { loadTags(); return; }
+    /* Pages marked <meta name="pp-notice" content="off"> show no cookie notice; tags load right away.
+       "Your privacy choices" in the footer, GPC and DNT still turn them off. */
+    var nn = document.querySelector('meta[name="pp-notice"]');
+    if (nn && nn.getAttribute('content') === 'off') { loadTags(); return; }
     notice();
     /* Ad landing pages (<meta name="pp-tags" content="immediate">) load the tags while the notice is shown,
        so ad platforms can count short visits. "Opt out", GPC and DNT still stop them. */
