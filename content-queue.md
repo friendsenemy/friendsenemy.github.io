@@ -106,7 +106,7 @@
 | 85 | P2 | `sell-house-while-in-jail-arkansas.html` | sell house while in jail Arkansas | national jail cluster pos 4–10; state prison population top 35 | can-you-sell-house-while-incarcerated | done |
 | 86 | P2 | `sell-house-while-in-jail-oregon.html` | sell house while in jail Oregon | national jail cluster pos 4–10; state prison population top 35 | can-you-sell-house-while-incarcerated | done |
 | 87 | P2 | `sell-house-while-in-jail-massachusetts.html` | sell house while in jail Massachusetts | national jail cluster pos 4–10; state prison population top 35 | can-you-sell-house-while-incarcerated | done |
-| 88 | P2 | `sell-house-while-in-jail-minnesota.html` | sell house while in jail Minnesota | national jail cluster pos 4–10; state prison population top 35 | can-you-sell-house-while-incarcerated | todo |
+| 88 | P2 | `sell-house-while-in-jail-minnesota.html` | sell house while in jail Minnesota | national jail cluster pos 4–10; state prison population top 35 | can-you-sell-house-while-incarcerated | done |
 | 89 | P2 | `sell-house-while-in-jail-connecticut.html` | sell house while in jail Connecticut | national jail cluster pos 4–10; state prison population top 35 | can-you-sell-house-while-incarcerated | todo |
 | 90 | P2 | `sell-house-while-in-jail-iowa.html` | sell house while in jail Iowa | national jail cluster pos 4–10; state prison population top 35 | can-you-sell-house-while-incarcerated | todo |
 | 91 | P2 | `sell-house-while-in-jail-kansas.html` | sell house while in jail Kansas | national jail cluster pos 4–10; state prison population top 35 | can-you-sell-house-while-incarcerated | todo |
