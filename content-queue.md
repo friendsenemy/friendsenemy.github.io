@@ -60,7 +60,7 @@
 | 35 | P3 | `sell-house-during-divorce-portland-or.html` | sell house during divorce Portland OR | 642 impr city + divorce pos 31 | selling-house-during-divorce | done |
 | 36 | P3 | `sell-probate-house-miami-fl.html` | sell probate house Miami FL | 53 impr / city | what-happens-house-no-will | done |
 | 37 | P3 | `sell-probate-house-nashville-tn.html` | sell probate house Nashville TN | 165 impr Antioch+Nashville | what-happens-house-no-will | done |
-| 38 | P3 | `sell-house-while-in-jail-north-carolina.html` | sell house while in jail North Carolina | jail pillar + 242 impr Charlotte | can-you-sell-house-while-incarcerated | todo |
+| 38 | P3 | `sell-house-while-in-jail-north-carolina.html` | sell house while in jail North Carolina | jail pillar + 242 impr Charlotte | can-you-sell-house-while-incarcerated | done |
 | 39 | P3 | `sell-house-while-in-jail-arizona.html` | sell house while in jail Arizona | jail pillar + 78 impr Phoenix | can-you-sell-house-while-incarcerated | todo |
 | 40 | P3 | `sell-house-while-in-jail-illinois.html` | sell house while in jail Illinois | jail pillar + 22 impr Chicago | can-you-sell-house-while-incarcerated | todo |
 | 41 | P1 | `sell-inherited-house-baltimore-md.html` | sell inherited house Baltimore MD | 74 impr Baltimore inherited/probate queries, pos 17–23; plus Towson/Catonsville inherited queries pos 22–24 | heirs-cant-agree-sell-inherited-house | done |
