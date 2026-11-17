@@ -142,7 +142,7 @@ Built 2026-11-17 when queue #1 ran out. One row per state × niche (jail, heirs 
 
 | # | Pri | Target page (slug under `blog/`) | Primary query | GSC signal | Match pillar | Status |
 |---|---|---|---|---|---|---|
-| 92 | P2 | `heirs-cant-agree-sell-house-alabama.html` | heirs can't agree sell house Alabama | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
+| 92 | P2 | `heirs-cant-agree-sell-house-alabama.html` | heirs can't agree sell house Alabama | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | done |
 | 93 | P2 | `sell-inherited-house-alabama.html` | sell inherited house Alabama | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
 | 94 | P2 | `sell-co-owned-house-alabama.html` | one owner sell jointly owned house Alabama | queue #2 (state × niche) | can-co-owner-sell-house | todo |
 | 95 | P2 | `partition-lawsuit-alabama.html` | partition lawsuit Alabama | queue #2 (state × niche) | partition-lawsuit-explained | todo |
