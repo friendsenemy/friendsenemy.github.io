@@ -148,7 +148,7 @@ Built 2026-11-17 when queue #1 ran out. One row per state × niche (jail, heirs 
 | 95 | P2 | `partition-lawsuit-alabama.html` | partition lawsuit Alabama | queue #2 (state × niche) | partition-lawsuit-explained | done |
 | 96 | P2 | `sell-house-while-in-jail-alaska.html` | sell house while in jail Alaska | queue #2 (state × niche) | can-you-sell-house-while-incarcerated | done |
 | 97 | P2 | `heirs-cant-agree-sell-house-alaska.html` | heirs can't agree sell house Alaska | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | done |
-| 98 | P2 | `sell-inherited-house-alaska.html` | sell inherited house Alaska | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
+| 98 | P2 | `sell-inherited-house-alaska.html` | sell inherited house Alaska | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | done |
 | 99 | P2 | `sell-co-owned-house-alaska.html` | one owner sell jointly owned house Alaska | queue #2 (state × niche) | can-co-owner-sell-house | todo |
 | 100 | P2 | `partition-lawsuit-alaska.html` | partition lawsuit Alaska | queue #2 (state × niche) | partition-lawsuit-explained | todo |
 | 101 | P2 | `heirs-cant-agree-sell-house-arizona.html` | heirs can't agree sell house Arizona | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
