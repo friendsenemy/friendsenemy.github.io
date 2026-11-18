@@ -146,7 +146,7 @@ Built 2026-11-17 when queue #1 ran out. One row per state × niche (jail, heirs 
 | 93 | P2 | `sell-inherited-house-alabama.html` | sell inherited house Alabama | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | done |
 | 94 | P2 | `sell-co-owned-house-alabama.html` | one owner sell jointly owned house Alabama | queue #2 (state × niche) | can-co-owner-sell-house | done |
 | 95 | P2 | `partition-lawsuit-alabama.html` | partition lawsuit Alabama | queue #2 (state × niche) | partition-lawsuit-explained | done |
-| 96 | P2 | `sell-house-while-in-jail-alaska.html` | sell house while in jail Alaska | queue #2 (state × niche) | can-you-sell-house-while-incarcerated | todo |
+| 96 | P2 | `sell-house-while-in-jail-alaska.html` | sell house while in jail Alaska | queue #2 (state × niche) | can-you-sell-house-while-incarcerated | done |
 | 97 | P2 | `heirs-cant-agree-sell-house-alaska.html` | heirs can't agree sell house Alaska | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
 | 98 | P2 | `sell-inherited-house-alaska.html` | sell inherited house Alaska | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
 | 99 | P2 | `sell-co-owned-house-alaska.html` | one owner sell jointly owned house Alaska | queue #2 (state × niche) | can-co-owner-sell-house | todo |
