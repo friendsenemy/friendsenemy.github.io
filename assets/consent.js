@@ -57,9 +57,10 @@
     if (window.fbq && tagsOn) { try { fbq('track', 'Lead'); } catch(e){} }
   }, true);
   document.addEventListener('click', function(e){
-    var a = e.target.closest && e.target.closest('a[href^="tel:"]');
+    var a = e.target.closest && e.target.closest('a[href^="tel:"],a[href^="sms:"]');
     if (!a) return;
-    if (window.gtag) { try { gtag('event', 'phone_click'); } catch(x){} }
+    var sms = a.getAttribute('href').indexOf('sms:') === 0;
+    if (window.gtag) { try { gtag('event', sms ? 'text_click' : 'phone_click'); } catch(x){} }
     if (window.fbq && tagsOn) { try { fbq('track', 'Contact'); } catch(x){} }
   }, true);
 
