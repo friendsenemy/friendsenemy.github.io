@@ -155,7 +155,7 @@ Built 2026-11-17 when queue #1 ran out. One row per state × niche (jail, heirs 
 | 102 | P2 | `sell-co-owned-house-arizona.html` | one owner sell jointly owned house Arizona | queue #2 (state × niche) | can-co-owner-sell-house | done |
 | 103 | P2 | `partition-lawsuit-arizona.html` | partition lawsuit Arizona | queue #2 (state × niche) | partition-lawsuit-explained | done |
 | 104 | P2 | `heirs-cant-agree-sell-house-arkansas.html` | heirs can't agree sell house Arkansas | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | done |
-| 105 | P2 | `sell-inherited-house-arkansas.html` | sell inherited house Arkansas | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
+| 105 | P2 | `sell-inherited-house-arkansas.html` | sell inherited house Arkansas | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | done |
 | 106 | P2 | `sell-co-owned-house-arkansas.html` | one owner sell jointly owned house Arkansas | queue #2 (state × niche) | can-co-owner-sell-house | todo |
 | 107 | P2 | `partition-lawsuit-arkansas.html` | partition lawsuit Arkansas | queue #2 (state × niche) | partition-lawsuit-explained | todo |
 | 108 | P2 | `sell-inherited-house-california.html` | sell inherited house California | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
