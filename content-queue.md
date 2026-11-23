@@ -166,7 +166,7 @@ Built 2026-11-17 when queue #1 ran out. One row per state × niche (jail, heirs 
 | 113 | P2 | `heirs-cant-agree-sell-house-connecticut.html` | heirs can't agree sell house Connecticut | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
 | 114 | P2 | `sell-inherited-house-connecticut.html` | sell inherited house Connecticut | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
 | 115 | P1 | `sell-co-owned-house-connecticut.html` | one owner sell jointly owned house Connecticut | queue #2 (state × niche) | can-co-owner-sell-house | done |
-| 116 | P1 | `partition-lawsuit-connecticut.html` | partition lawsuit Connecticut | queue #2 (state × niche) | partition-lawsuit-explained | todo |
+| 116 | P1 | `partition-lawsuit-connecticut.html` | partition lawsuit Connecticut | queue #2 (state × niche) | partition-lawsuit-explained | done |
 | 117 | P2 | `sell-house-while-in-jail-delaware.html` | sell house while in jail Delaware | queue #2 (state × niche) | can-you-sell-house-while-incarcerated | todo |
 | 118 | P2 | `heirs-cant-agree-sell-house-delaware.html` | heirs can't agree sell house Delaware | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
 | 119 | P2 | `sell-inherited-house-delaware.html` | sell inherited house Delaware | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
