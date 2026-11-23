@@ -162,7 +162,7 @@ Built 2026-11-17 when queue #1 ran out. One row per state × niche (jail, heirs 
 | 109 | P2 | `heirs-cant-agree-sell-house-colorado.html` | heirs can't agree sell house Colorado | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | done |
 | 110 | P2 | `sell-inherited-house-colorado.html` | sell inherited house Colorado | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
 | 111 | P1 | `sell-co-owned-house-colorado.html` | one owner sell jointly owned house Colorado | queue #2 (state × niche) | can-co-owner-sell-house | done |
-| 112 | P1 | `partition-lawsuit-colorado.html` | partition lawsuit Colorado | queue #2 (state × niche) | partition-lawsuit-explained | todo |
+| 112 | P1 | `partition-lawsuit-colorado.html` | partition lawsuit Colorado | queue #2 (state × niche) | partition-lawsuit-explained | done |
 | 113 | P2 | `heirs-cant-agree-sell-house-connecticut.html` | heirs can't agree sell house Connecticut | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
 | 114 | P2 | `sell-inherited-house-connecticut.html` | sell inherited house Connecticut | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
 | 115 | P1 | `sell-co-owned-house-connecticut.html` | one owner sell jointly owned house Connecticut | queue #2 (state × niche) | can-co-owner-sell-house | todo |
