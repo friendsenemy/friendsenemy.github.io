@@ -182,7 +182,7 @@ Built 2026-11-17 when queue #1 ran out. One row per state × niche (jail, heirs 
 | 129 | P2 | `sell-house-while-in-jail-idaho.html` | sell house while in jail Idaho | queue #2 (state × niche) | can-you-sell-house-while-incarcerated | todo |
 | 130 | P2 | `heirs-cant-agree-sell-house-idaho.html` | heirs can't agree sell house Idaho | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
 | 131 | P2 | `sell-inherited-house-idaho.html` | sell inherited house Idaho | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
-| 132 | P1 | `sell-co-owned-house-idaho.html` | one owner sell jointly owned house Idaho | queue #2 (state × niche) | can-co-owner-sell-house | todo |
+| 132 | P1 | `sell-co-owned-house-idaho.html` | one owner sell jointly owned house Idaho | queue #2 (state × niche) | can-co-owner-sell-house | done |
 | 133 | P1 | `partition-lawsuit-idaho.html` | partition lawsuit Idaho | queue #2 (state × niche) | partition-lawsuit-explained | todo |
 | 134 | P2 | `heirs-cant-agree-sell-house-illinois.html` | heirs can't agree sell house Illinois | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
 | 135 | P2 | `sell-inherited-house-illinois.html` | sell inherited house Illinois | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
