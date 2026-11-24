@@ -178,7 +178,7 @@ Built 2026-11-17 when queue #1 ran out. One row per state × niche (jail, heirs 
 | 125 | P2 | `heirs-cant-agree-sell-house-hawaii.html` | heirs can't agree sell house Hawaii | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
 | 126 | P2 | `sell-inherited-house-hawaii.html` | sell inherited house Hawaii | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
 | 127 | P1 | `sell-co-owned-house-hawaii.html` | one owner sell jointly owned house Hawaii | queue #2 (state × niche) | can-co-owner-sell-house | done |
-| 128 | P1 | `partition-lawsuit-hawaii.html` | partition lawsuit Hawaii | queue #2 (state × niche) | partition-lawsuit-explained | todo |
+| 128 | P1 | `partition-lawsuit-hawaii.html` | partition lawsuit Hawaii | queue #2 (state × niche) | partition-lawsuit-explained | done |
 | 129 | P2 | `sell-house-while-in-jail-idaho.html` | sell house while in jail Idaho | queue #2 (state × niche) | can-you-sell-house-while-incarcerated | todo |
 | 130 | P2 | `heirs-cant-agree-sell-house-idaho.html` | heirs can't agree sell house Idaho | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
 | 131 | P2 | `sell-inherited-house-idaho.html` | sell inherited house Idaho | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
