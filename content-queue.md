@@ -171,7 +171,7 @@ Built 2026-11-17 when queue #1 ran out. One row per state × niche (jail, heirs 
 | 118 | P2 | `heirs-cant-agree-sell-house-delaware.html` | heirs can't agree sell house Delaware | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
 | 119 | P2 | `sell-inherited-house-delaware.html` | sell inherited house Delaware | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
 | 120 | P1 | `sell-co-owned-house-delaware.html` | one owner sell jointly owned house Delaware | queue #2 (state × niche) | can-co-owner-sell-house | done |
-| 121 | P1 | `partition-lawsuit-delaware.html` | partition lawsuit Delaware | queue #2 (state × niche) | partition-lawsuit-explained | todo |
+| 121 | P1 | `partition-lawsuit-delaware.html` | partition lawsuit Delaware | queue #2 (state × niche) | partition-lawsuit-explained | done |
 | 122 | P2 | `sell-inherited-house-georgia.html` | sell inherited house Georgia | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
 | 123 | P1 | `partition-lawsuit-georgia.html` | partition lawsuit Georgia | queue #2 (state × niche) | partition-lawsuit-explained | todo |
 | 124 | P2 | `sell-house-while-in-jail-hawaii.html` | sell house while in jail Hawaii | queue #2 (state × niche) | can-you-sell-house-while-incarcerated | todo |
