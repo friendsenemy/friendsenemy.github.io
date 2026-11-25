@@ -193,7 +193,7 @@ Built 2026-11-17 when queue #1 ran out. One row per state × niche (jail, heirs 
 | 140 | P1 | `partition-lawsuit-indiana.html` | partition lawsuit Indiana | queue #2 (state × niche) | partition-lawsuit-explained | done |
 | 141 | P2 | `heirs-cant-agree-sell-house-iowa.html` | heirs can't agree sell house Iowa | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
 | 142 | P2 | `sell-inherited-house-iowa.html` | sell inherited house Iowa | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
-| 143 | P1 | `sell-co-owned-house-iowa.html` | one owner sell jointly owned house Iowa | queue #2 (state × niche) | can-co-owner-sell-house | todo |
+| 143 | P1 | `sell-co-owned-house-iowa.html` | one owner sell jointly owned house Iowa | queue #2 (state × niche) | can-co-owner-sell-house | done |
 | 144 | P1 | `partition-lawsuit-iowa.html` | partition lawsuit Iowa | queue #2 (state × niche) | partition-lawsuit-explained | todo |
 | 145 | P2 | `heirs-cant-agree-sell-house-kansas.html` | heirs can't agree sell house Kansas | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
 | 146 | P2 | `sell-inherited-house-kansas.html` | sell inherited house Kansas | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
