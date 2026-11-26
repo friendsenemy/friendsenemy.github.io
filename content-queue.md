@@ -198,7 +198,7 @@ Built 2026-11-17 when queue #1 ran out. One row per state × niche (jail, heirs 
 | 145 | P2 | `heirs-cant-agree-sell-house-kansas.html` | heirs can't agree sell house Kansas | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
 | 146 | P2 | `sell-inherited-house-kansas.html` | sell inherited house Kansas | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
 | 147 | P1 | `sell-co-owned-house-kansas.html` | one owner sell jointly owned house Kansas | queue #2 (state × niche) | can-co-owner-sell-house | done |
-| 148 | P1 | `partition-lawsuit-kansas.html` | partition lawsuit Kansas | queue #2 (state × niche) | partition-lawsuit-explained | todo |
+| 148 | P1 | `partition-lawsuit-kansas.html` | partition lawsuit Kansas | queue #2 (state × niche) | partition-lawsuit-explained | done |
 | 149 | P2 | `heirs-cant-agree-sell-house-kentucky.html` | heirs can't agree sell house Kentucky | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
 | 150 | P2 | `sell-inherited-house-kentucky.html` | sell inherited house Kentucky | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
 | 151 | P1 | `sell-co-owned-house-kentucky.html` | one owner sell jointly owned house Kentucky | queue #2 (state × niche) | can-co-owner-sell-house | todo |
