@@ -201,7 +201,7 @@ Built 2026-11-17 when queue #1 ran out. One row per state × niche (jail, heirs 
 | 148 | P1 | `partition-lawsuit-kansas.html` | partition lawsuit Kansas | queue #2 (state × niche) | partition-lawsuit-explained | done |
 | 149 | P2 | `heirs-cant-agree-sell-house-kentucky.html` | heirs can't agree sell house Kentucky | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
 | 150 | P2 | `sell-inherited-house-kentucky.html` | sell inherited house Kentucky | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
-| 151 | P1 | `sell-co-owned-house-kentucky.html` | one owner sell jointly owned house Kentucky | queue #2 (state × niche) | can-co-owner-sell-house | todo |
+| 151 | P1 | `sell-co-owned-house-kentucky.html` | one owner sell jointly owned house Kentucky | queue #2 (state × niche) | can-co-owner-sell-house | done |
 | 152 | P1 | `partition-lawsuit-kentucky.html` | partition lawsuit Kentucky | queue #2 (state × niche) | partition-lawsuit-explained | todo |
 | 153 | P2 | `heirs-cant-agree-sell-house-louisiana.html` | heirs can't agree sell house Louisiana | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
 | 154 | P2 | `sell-inherited-house-louisiana.html` | sell inherited house Louisiana | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
