@@ -212,7 +212,7 @@ Built 2026-11-17 when queue #1 ran out. One row per state × niche (jail, heirs 
 | 159 | P2 | `sell-inherited-house-maine.html` | sell inherited house Maine | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
 | 160 | P1 | `sell-co-owned-house-maine.html` | one owner sell jointly owned house Maine | queue #2 (state × niche) | can-co-owner-sell-house | done |
 | 161 | P1 | `partition-lawsuit-maine.html` | partition lawsuit Maine | queue #2 (state × niche) | partition-lawsuit-explained | done |
-| 162 | P1 | `partition-lawsuit-maryland.html` | partition lawsuit Maryland | queue #2 (state × niche) | partition-lawsuit-explained | todo |
+| 162 | P1 | `partition-lawsuit-maryland.html` | partition lawsuit Maryland | queue #2 (state × niche) | partition-lawsuit-explained | done |
 | 163 | P2 | `heirs-cant-agree-sell-house-massachusetts.html` | heirs can't agree sell house Massachusetts | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
 | 164 | P2 | `sell-inherited-house-massachusetts.html` | sell inherited house Massachusetts | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
 | 165 | P1 | `sell-co-owned-house-massachusetts.html` | one owner sell jointly owned house Massachusetts | queue #2 (state × niche) | can-co-owner-sell-house | todo |
