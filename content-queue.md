@@ -206,7 +206,7 @@ Built 2026-11-17 when queue #1 ran out. One row per state × niche (jail, heirs 
 | 153 | P2 | `heirs-cant-agree-sell-house-louisiana.html` | heirs can't agree sell house Louisiana | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
 | 154 | P2 | `sell-inherited-house-louisiana.html` | sell inherited house Louisiana | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
 | 155 | P1 | `sell-co-owned-house-louisiana.html` | one owner sell jointly owned house Louisiana | queue #2 (state × niche) | can-co-owner-sell-house | done |
-| 156 | P1 | `partition-lawsuit-louisiana.html` | partition lawsuit Louisiana | queue #2 (state × niche) | partition-lawsuit-explained | todo |
+| 156 | P1 | `partition-lawsuit-louisiana.html` | partition lawsuit Louisiana | queue #2 (state × niche) | partition-lawsuit-explained | done |
 | 157 | P2 | `sell-house-while-in-jail-maine.html` | sell house while in jail Maine | queue #2 (state × niche) | can-you-sell-house-while-incarcerated | todo |
 | 158 | P2 | `heirs-cant-agree-sell-house-maine.html` | heirs can't agree sell house Maine | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
 | 159 | P2 | `sell-inherited-house-maine.html` | sell inherited house Maine | queue #2 (state × niche) | heirs-cant-agree-sell-inherited-house | todo |
